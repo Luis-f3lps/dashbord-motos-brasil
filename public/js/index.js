@@ -3,7 +3,6 @@ let dadosTotais = [];
 
 let graficoTipoMes, graficoEvolucaoPercentual, graficoVendasFabricanteTotais, graficoModelosMesAno;
 
-// Paleta moderna estilo "Incicle" (Azul corporativo, Coral, Amarelo, Verde, Roxo, Ciano, etc.)
 const paletaCores = [
     '#3b82f6', '#f97316', '#10b981', '#8b5cf6', '#06b6d4', 
     '#ec4899', '#f59e0b', '#6366f1', '#14b8a6', '#64748b', '#94a3b8'
@@ -21,10 +20,14 @@ window.onload = async () => {
         
         popularFiltrosIniciais();
         
-        // Define "City" como padrão no select de tipo da Seção 1, se existir
+        // Define "City" por padrão
         const selectTipoSec1 = document.getElementById('filtroTipoSec1');
-        if (selectTipoSec1) {
-            selectTipoSec1.value = "City";
+        if (selectTipoSec1) selectTipoSec1.value = "City";
+
+        // Define o último mês/ano disponível por padrão na Seção 1
+        const selectDataSec1 = document.getElementById('filtroDataSec1');
+        if (selectDataSec1 && selectDataSec1.options.length > 1) {
+            selectDataSec1.selectedIndex = selectDataSec1.options.length - 1;
         }
 
         atualizarDashboard();
@@ -57,16 +60,19 @@ function popularFiltrosIniciais() {
         return new Date(aA, mA - 1) - new Date(aB, mB - 1);
     });
 
+    // Opções especiais de período (Anos inteiros)
+    const opcoesPeriodo = ['Ano Todo (2025)', 'Ano Todo (2026)', ...datasUnicasOrdenadas];
+
     preencherSelect('filtroTipoSec1', tipos);
     preencherSelect('filtroDataSec1', datasUnicasOrdenadas);
     preencherSelect('filtroDataInicio', datasUnicasOrdenadas);
     preencherSelect('filtroDataFim', datasUnicasOrdenadas);
-    preencherSelect('filtroPeriodoFabricante', datasUnicasOrdenadas);
-    preencherSelect('filtroModeloMesAno', datasUnicasOrdenadas);
+    preencherSelect('filtroPeriodoFabricante', opcoesPeriodo);
+    preencherSelect('filtroModeloMesAno', opcoesPeriodo);
 }
 
 function atualizarDashboard() {
-    // 1. Seção Tipo + Mês/Ano com Lista ao lado (Padrão City)
+    // 1. Seção Tipo + Mês/Ano (Padrão City e último mês)
     const tipoSec1 = document.getElementById('filtroTipoSec1').value || "City";
     const dataSec1 = document.getElementById('filtroDataSec1').value;
     
@@ -74,50 +80,57 @@ function atualizarDashboard() {
         (tipoSec1 === "" || d['Tipo'] === tipoSec1) && 
         (dataSec1 === "" || d['Mês/Ano'] === dataSec1)
     );
-
     renderizarSecaoTipoMes(dadosSec1);
 
-    // 2. Seção Evolução Percentual com Intervalo de Período (Top 10 + Outros)
+    // 2. Seção Evolução Percentual (Top 10 + Outros) com intervalo
     const inicioIntervalo = document.getElementById('filtroDataInicio').value;
     const fimIntervalo = document.getElementById('filtroDataFim').value;
     renderizarEvolucaoPercentual(inicioIntervalo, fimIntervalo);
 
-    // 3. Seção Vendas por Fabricante (Totais) com período (Top 10 + Outros)
+    // 3. Vendas por Fabricante (Totais - Top 10 + Outros) com suporte a Ano Todo
     const periodoFab = document.getElementById('filtroPeriodoFabricante').value;
-    const dadosTotaisFiltrados = dadosTotais.filter(d => periodoFab === "" || d['Mês/Ano'] === periodoFab);
+    let dadosTotaisFiltrados = dadosTotais;
+    if (periodoFab === 'Ano Todo (2025)') {
+        dadosTotaisFiltrados = dadosTotais.filter(d => d['Mês/Ano'].endsWith('/2025'));
+    } else if (periodoFab === 'Ano Todo (2026)') {
+        dadosTotaisFiltrados = dadosTotais.filter(d => d['Mês/Ano'].endsWith('/2026'));
+    } else if (periodoFab !== "") {
+        dadosTotaisFiltrados = dadosTotais.filter(d => d['Mês/Ano'] === periodoFab);
+    }
     renderizarVendasFabricanteTotais(dadosTotaisFiltrados);
 
-    // 4. Seção Modelos por Mês/Ano
-    const mesAnoModelo = document.getElementById('filtroModeloMesAno').value;
-    const dadosModeloFiltrados = dadosDetalhados.filter(d => mesAnoModelo === "" || d['Mês/Ano'] === mesAnoModelo);
+    // 4. Modelos por Mês/Ano com suporte a Ano Todo
+    const periodoMod = document.getElementById('filtroModeloMesAno').value;
+    let dadosModeloFiltrados = dadosDetalhados;
+    if (periodoMod === 'Ano Todo (2025)') {
+        dadosModeloFiltrados = dadosDetalhados.filter(d => d['Mês/Ano'].endsWith('/2025'));
+    } else if (periodoMod === 'Ano Todo (2026)') {
+        dadosModeloFiltrados = dadosDetalhados.filter(d => d['Mês/Ano'].endsWith('/2026'));
+    } else if (periodoMod !== "") {
+        dadosModeloFiltrados = dadosDetalhados.filter(d => d['Mês/Ano'] === periodoMod);
+    }
     renderizarModelosMesAno(dadosModeloFiltrados);
 
     document.getElementById('contadorRegistros').innerText = `Dashboard atualizado com sucesso.`;
 }
 
-// --- AUXILIAR PARA AGRUPAR TOP 10 + OUTROS ---
-function processarTop10ComOutros(dados, chaveFabricante, chaveQtd) {
+// --- FUNÇÃO AUXILIAR: TOP 10 + OUTROS ---
+function obterTop10ComOutros(dados, chaveFab, chaveQtd) {
     const somatorio = {};
     dados.forEach(item => {
-        const fab = item[chaveFabricante] || 'Outros';
+        const fab = item[chaveFab] || 'Outros';
         somatorio[fab] = (somatorio[fab] || 0) + item[chaveQtd];
     });
 
-    // Ordena decrescente
     const ordenado = Object.entries(somatorio).sort((a, b) => b[1] - a[1]);
-    
-    if (ordenado.length <= 10) {
-        return Object.fromEntries(ordenado);
-    }
+    if (ordenado.length <= 10) return Object.fromEntries(ordenado);
 
     const top10 = Object.fromEntries(ordenado.slice(0, 10));
-    const outrosTotal = ordenado.slice(10).reduce((acc, curr) => acc + curr[1], 0);
-    
-    top10['Outros'] = outrosTotal;
+    top10['Outros'] = ordenado.slice(10).reduce((acc, curr) => acc + curr[1], 0);
     return top10;
 }
 
-// --- RENDERIZADORES DE GRÁFICOS E LISTAS ---
+// --- RENDERIZADORES ---
 
 function renderizarSecaoTipoMes(dados) {
     const elCanvas = document.getElementById('graficoTipoMes');
@@ -162,9 +175,6 @@ function renderizarEvolucaoPercentual(inicio, fim) {
     const el = document.getElementById('graficoEvolucaoPercentual');
     if (graficoEvolucaoPercentual) graficoEvolucaoPercentual.destroy();
 
-    let dadosFiltrados = [...dadosTotais];
-    
-    // Filtro por intervalo se preenchido
     const mesesUnicos = [...new Set(dadosTotais.map(d => d['Mês/Ano']))].sort((a, b) => {
         const [mA, aA] = a.split('/'); const [mB, aB] = b.split('/');
         return new Date(aA, mA - 1) - new Date(aB, mB - 1);
@@ -175,31 +185,26 @@ function renderizarEvolucaoPercentual(inicio, fim) {
         const idxInicio = inicio !== "" ? mesesUnicos.indexOf(inicio) : 0;
         const idxFim = fim !== "" ? mesesUnicos.indexOf(fim) : mesesUnicos.length - 1;
         mesesFiltrados = mesesUnicos.slice(Math.min(idxInicio, idxFim), Math.max(idxInicio, idxFim) + 1);
-        dadosFiltrados = dadosTotais.filter(d => mesesFiltrados.includes(d['Mês/Ano']));
     }
 
-    // Identifica quais são os Top 10 fabricantes gerais no período
-    const totalGeralFab = {};
-    dadosFiltrados.forEach(d => {
-        totalGeralFab[d['Fabricante']] = (totalGeralFab[d['Fabricante']] || 0) + d['Quantidade Vendida'];
-    });
-    const top10Fabricantes = Object.entries(totalGeralFab)
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, 10)
-        .map(x => x[0]);
+    const dadosFiltradosIntervalo = dadosTotais.filter(d => mesesFiltrados.includes(d['Mês/Ano']));
 
-    const fabricantesDataset = [...top10Fabricantes, 'Outros'];
+    // Top 10 fabricantes do período selecionado
+    const totalFabPeriodo = {};
+    dadosFiltradosIntervalo.forEach(d => {
+        totalFabPeriodo[d['Fabricante']] = (totalFabPeriodo[d['Fabricante']] || 0) + d['Quantidade Vendida'];
+    });
+    const top10Periodo = Object.entries(totalFabPeriodo).sort((a, b) => b[1] - a[1]).slice(0, 10).map(x => x[0]);
+    const fabricantesDataset = [...top10Periodo, 'Outros'];
 
     const datasets = fabricantesDataset.map((fab, index) => {
         const dataPoint = mesesFiltrados.map(mes => {
-            const regMes = dadosFiltrados.filter(d => d['Mês/Ano'] === mes);
+            const regMes = dadosFiltradosIntervalo.filter(d => d['Mês/Ano'] === mes);
             const totalMes = regMes.reduce((sum, r) => sum + r['Quantidade Vendida'], 0) || 1;
             
             let qtdFab = 0;
             if (fab === 'Outros') {
-                qtdFab = regMes
-                    .filter(r => !top10Fabricantes.includes(r['Fabricante']))
-                    .reduce((sum, r) => sum + r['Quantidade Vendida'], 0);
+                qtdFab = regMes.filter(r => !top10Periodo.includes(r['Fabricante'])).reduce((sum, r) => sum + r['Quantidade Vendida'], 0);
             } else {
                 const regFab = regMes.find(r => r['Fabricante'] === fab);
                 qtdFab = regFab ? regFab['Quantidade Vendida'] : 0;
@@ -231,8 +236,7 @@ function renderizarVendasFabricanteTotais(dados) {
     const el = document.getElementById('graficoVendasFabricanteTotais');
     if (graficoVendasFabricanteTotais) graficoVendasFabricanteTotais.destroy();
 
-    // Aplica Top 10 + Outros
-    const agrupadoTop10 = processarTop10ComOutros(dados, 'Fabricante', 'Quantidade Vendida');
+    const agrupadoTop10 = obterTop10ComOutros(dados, 'Fabricante', 'Quantidade Vendida');
 
     graficoVendasFabricanteTotais = new Chart(el, {
         type: 'bar',

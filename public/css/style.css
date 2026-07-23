@@ -6,8 +6,10 @@
 }
 
 body {
-  background-color: #0f1014;
-  color: #e2e8f0;
+  background-color: #f8fafc;
+  /* Fundo geral cinza/branco bem suave */
+  color: #1e293b;
+  /* Texto escuro corporativo */
   overflow-x: hidden;
 }
 
@@ -17,9 +19,10 @@ body {
   width: 100%;
 }
 
+/* Sidebar Estilo Clean / Fundo Branco */
 .sidebar {
   width: 260px;
-  background-color: #1a1c23;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   padding: 25px 0;
@@ -27,37 +30,39 @@ body {
   height: 100vh;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;
-  border-right: 1px solid #2d303a;
+  border-right: 1px solid #e2e8f0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.02);
 }
 
 .logo {
   text-align: center;
-  margin-bottom: 40px;
-  font-size: 22px;
+  margin-bottom: 35px;
+  font-size: 20px;
   font-weight: 800;
-  letter-spacing: 2px;
-  color: #f8fafc;
+  letter-spacing: 1px;
+  color: #0f172a;
   text-transform: uppercase;
 }
 
 .logo span {
   color: #3b82f6;
+  /* Azul moderno */
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
 }
 
 .nav-links li a {
   display: flex;
   align-items: center;
-  padding: 16px 30px;
-  color: #94a3b8;
+  padding: 14px 25px;
+  color: #64748b;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   transition: all 0.2s ease;
   border-left: 3px solid transparent;
@@ -65,24 +70,25 @@ body {
 
 .nav-links li a:hover,
 .nav-links li.active a {
-  background-color: #23252f;
-  color: #f8fafc;
-  border-left: 3px solid #3b82f6;
+  background-color: #f1f5f9;
+  color: #2563eb;
+  border-left: 3px solid #2563eb;
 }
 
 .nav-links i {
-  margin-right: 15px;
-  font-size: 18px;
+  margin-right: 12px;
+  font-size: 16px;
   width: 20px;
   text-align: center;
+  color: #3b82f6;
 }
 
+/* Conteúdo Principal */
 .main-content {
   flex: 1;
   margin-left: 260px;
   padding: 30px 40px;
-  background-color: #0f1014;
-  /* Ajustado para harmonizar com o tema escuro */
+  background-color: #f8fafc;
   min-height: 100vh;
 }
 
@@ -90,39 +96,47 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #2d303a;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e2e8f0;
   flex-wrap: wrap;
   gap: 15px;
 }
 
 .breadcrumb {
-  font-size: 13px;
-  color: #64748b;
+  font-size: 12px;
+  color: #94a3b8;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-weight: 600;
 }
 
 #contadorRegistros {
-  color: #3b82f6 !important;
-  font-size: 18px;
+  color: #2563eb !important;
+  font-size: 16px;
+  font-weight: 600;
 }
 
+/* Grid do Dashboard */
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 25px;
+  gap: 24px;
 }
 
+/* Cards Estilo Corporativo Limpo */
 .card {
-  background-color: #1a1c23;
-  border-radius: 8px;
-  padding: 25px;
-  border: 1px solid #2d303a;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
 }
 
 .card.wide {
@@ -130,12 +144,12 @@ body {
 }
 
 .card h3 {
-  font-size: 15px;
-  color: #cbd5e1;
-  margin-bottom: 20px;
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 18px;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   display: flex;
   align-items: center;
 }
@@ -144,64 +158,66 @@ body {
   content: '';
   display: inline-block;
   width: 4px;
-  height: 16px;
+  height: 14px;
   background-color: #3b82f6;
-  margin-right: 10px;
+  margin-right: 8px;
   border-radius: 2px;
 }
 
 .card h4 {
-  font-size: 14px;
-  color: #94a3b8;
-  margin-bottom: 12px;
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  font-weight: 600;
 }
 
 /* Filtros e Inputs */
 .filtros-container {
   display: flex;
-  gap: 15px;
+  gap: 12px;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .filtros-container select,
 .filtros-container input {
   flex: 1;
-  min-width: 180px;
-  padding: 12px 16px;
-  background-color: #23252f;
-  color: #f8fafc;
-  border: 1px solid #334155;
+  min-width: 170px;
+  padding: 10px 14px;
+  background-color: #ffffff;
+  color: #334155;
+  border: 1px solid #cbd5e1;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   outline: none;
   cursor: pointer;
   appearance: none;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2364748b%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
   background-repeat: no-repeat;
-  background-position: right 15px top 50%;
-  background-size: 12px auto;
+  background-position: right 12px top 50%;
+  background-size: 10px auto;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .filtros-container select:hover,
 .filtros-container input:hover {
-  border-color: #475569;
+  border-color: #94a3b8;
 }
 
 .filtros-container select:focus,
 .filtros-container input:focus {
   border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
 }
 
 .filtros-container select option {
-  background-color: #1a1c23;
-  color: #e2e8f0;
-  padding: 10px;
+  background-color: #ffffff;
+  color: #1e293b;
+  padding: 8px;
 }
 
 /* Layouts Flex para Gráfico + Lista */
@@ -217,14 +233,14 @@ body {
   min-width: 280px;
 }
 
-/* Container da Lista de Motos */
+/* Container da Lista de Motos (Estilo Clean) */
 .lista-motos-container {
-  max-height: 340px;
+  max-height: 330px;
   overflow-y: auto;
-  border: 1px solid #2d303a;
+  border: 1px solid #e2e8f0;
   padding: 12px;
   border-radius: 6px;
-  background: #121318;
+  background: #f8fafc;
 }
 
 .lista-motos-container::-webkit-scrollbar {
@@ -232,15 +248,15 @@ body {
 }
 
 .lista-motos-container::-webkit-scrollbar-thumb {
-  background-color: #334155;
+  background-color: #cbd5e1;
   border-radius: 3px;
 }
 
 .moto-item {
   padding: 10px 12px;
-  border-bottom: 1px solid #2d303a;
+  border-bottom: 1px solid #e2e8f0;
   font-size: 13px;
-  color: #cbd5e1;
+  color: #475569;
 }
 
 .moto-item:last-child {
@@ -248,8 +264,8 @@ body {
 }
 
 .moto-item strong {
-  color: #f8fafc;
-  font-size: 14px;
+  color: #0f172a;
+  font-size: 13.5px;
 }
 
 .chart-container {
@@ -263,15 +279,15 @@ body {
   position: fixed;
   top: 15px;
   right: 20px;
-  background-color: #1a1c23;
-  color: #f8fafc;
-  border: 1px solid #334155;
+  background-color: #ffffff;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
   padding: 10px 14px;
   border-radius: 6px;
   cursor: pointer;
   z-index: 1100;
   font-size: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 1200px) {
@@ -287,7 +303,7 @@ body {
 
   .sidebar.active {
     transform: translateX(0);
-    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
   }
 
   .main-content {

@@ -8,6 +8,51 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .filtros-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .filtros-container select, .filtros-container input {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            flex: 1;
+            min-width: 140px;
+        }
+        .flex-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .flex-col {
+            flex: 1;
+            min-width: 280px;
+        }
+        .lista-motos-container {
+            max-height: 350px;
+            overflow-y: auto;
+            border: 1px solid #2d303a;
+            padding: 12px;
+            border-radius: 6px;
+            background: #121318;
+        }
+        .moto-item {
+            padding: 10px 12px;
+            border-bottom: 1px solid #2d303a;
+            font-size: 13px;
+            color: #cbd5e1;
+        }
+        .moto-item:last-child {
+            border-bottom: none;
+        }
+        .moto-item strong {
+            color: #f8fafc;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,6 +74,7 @@
 
             <section class="dashboard-grid">
                 
+                <!-- SEÇÃO 1: Tipo da Moto (City padrão) + Último Mês padrão + Gráfico + Lista (Sem Motor) -->
                 <div class="card wide">
                     <h3>Análise por Tipo e Mês/Ano</h3>
                     <div class="filtros-container">
@@ -44,25 +90,26 @@
                             <canvas id="graficoTipoMes"></canvas>
                         </div>
                         <div class="flex-col">
-                            <h4>Informações das Motos</h4>
+                            <h4>Informações das Motos (Sem Motor)</h4>
                             <div class="lista-motos-container" id="listaMotosSec1">
-                                <p style="color: #888;">Selecione o tipo e o mês/ano acima.</p>
+                                <p style="color: #888;">Carregando dados...</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- SEÇÃO 2: Evolução de Participação (%) Top 10 + Outros com intervalo de período -->
                 <div class="card wide">
-                    <h3>Evolução de Participação (%) por Fabricante (Mês/Ano)</h3>
+                    <h3>Evolução de Participação (%) por Fabricante (Top 10 + Outros)</h3>
                     <div class="filtros-container">
                         <div>
-                            <label style="font-size: 12px; display:block;">De (Mês/Ano):</label>
+                            <label style="font-size: 12px; display:block; color:#94a3b8;">De (Mês/Ano):</label>
                             <select id="filtroDataInicio">
                                 <option value="">Início</option>
                             </select>
                         </div>
                         <div>
-                            <label style="font-size: 12px; display:block;">Até (Mês/Ano):</label>
+                            <label style="font-size: 12px; display:block; color:#94a3b8;">Até (Mês/Ano):</label>
                             <select id="filtroDataFim">
                                 <option value="">Fim</option>
                             </select>
@@ -73,21 +120,23 @@
                     </div>
                 </div>
 
+                <!-- SEÇÃO 3: Vendas por Fabricante (Dados Totais - Top 10 + Outros) com select por período / ano todo -->
                 <div class="card wide">
-                    <h3>Vendas por Fabricante (Dados Totais)</h3>
+                    <h3>Vendas por Fabricante (Dados Totais - Top 10 + Outros)</h3>
                     <div class="filtros-container">
                         <select id="filtroPeriodoFabricante">
-                            <option value="">Todos os Períodos</option>
+                            <option value="">Todo o Período (2025-2026)</option>
                         </select>
                     </div>
                     <div class="chart-container" style="position: relative; height:35vh;"><canvas id="graficoVendasFabricanteTotais"></canvas></div>
                 </div>
 
+                <!-- SEÇÃO 4: Modelos Vendidos por Mês / Ano com opção de Ano Todo -->
                 <div class="card wide">
                     <h3>Modelos Vendidos por Mês / Ano</h3>
                     <div class="filtros-container">
                         <select id="filtroModeloMesAno">
-                            <option value="">Todos os Meses/Anos</option>
+                            <option value="">Todo o Período (2025-2026)</option>
                         </select>
                     </div>
                     <div class="chart-container" style="position: relative; height:40vh; width:100%">
