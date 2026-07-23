@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard de Vendas - Motos</title>
-    <link rel="stylesheet" href="css/style
-    .css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        .filtros-container { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
-        .filtros-container select { padding: 10px; border-radius: 6px; border: 1px solid #ddd; flex: 1; min-width: 150px;}
+        .filtros-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .filtros-container select {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            flex: 1;
+            min-width: 150px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <nav class="sidebar" id="sidemenu">
@@ -34,10 +47,18 @@
                 <div class="card wide">
                     <h3>Filtros de Pesquisa</h3>
                     <div class="filtros-container">
-                        <select id="filtroMarca"><option value="">Todos os Fabricantes</option></select>
-                        <select id="filtroTipo"><option value="">Todos os Tipos</option></select>
-                        <select id="filtroMotor"><option value="">Todos os Motores</option></select>
-                        <select id="filtroData"><option value="">Todos os Meses/Anos</option></select>
+                        <select id="filtroMarca">
+                            <option value="">Todos os Fabricantes</option>
+                        </select>
+                        <select id="filtroTipo">
+                            <option value="">Todos os Tipos</option>
+                        </select>
+                        <select id="filtroMotor">
+                            <option value="">Todos os Motores</option>
+                        </select>
+                        <select id="filtroData">
+                            <option value="">Todos os Meses/Anos</option>
+                        </select>
                     </div>
                 </div>
 
@@ -67,4 +88,5 @@
     </div>
     <script src="/js/index.js"></script>
 </body>
+
 </html>
