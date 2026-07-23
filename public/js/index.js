@@ -3,7 +3,6 @@ let dadosTotais = [];
 
 let graficoTipoMes, graficoEvolucaoPercentual, graficoVendasFabricanteTotais, graficoModelosMesAno;
 
-// Mapeamento fixo de cores por Fabricante
 const coresFabricantes = {
     'HONDA': '#ff0000',          // Vermelho
     'YAMAHA': '#0000ff',         // Azul
@@ -11,13 +10,13 @@ const coresFabricantes = {
     'SUZUKI': '#87ceeb',         // Azul-claro
     'DUCATI': '#8b0000',         // Vermelho-escuro
     'H.DAVIDSON': '#000000',     // Preto
-    'BMW': '#1e293b',            // Escuro corporativo (para destacar no fundo branco)
+    'BMW': '#1e293b',            // Escuro corporativo
     'TRIUMPH': '#006400',        // Verde-escuro
     'KTM': '#ff8c00',            // Laranja
     'ROYAL ENFIELD': '#8b4513',  // Marrom
     'SHINERAY': '#ff69b4',       // Rosa
     'MOTTU': '#008000',          // Verde
-    'AVELLOZ': '#d97706',        // Amarelo escurecido (para legibilidade)
+    'AVELLOZ': '#d97706',        // Amarelo escurecido
     'BAJAJ': '#64748b',          // Prata/Cinza escuro
     'HAOJUE': '#800080',         // Roxo
     'OUTROS': '#64748b'          // Cinza
@@ -118,6 +117,7 @@ function atualizarDashboard() {
     }
     renderizarVendasFabricanteTotais(dadosTotaisFiltrados);
 
+    // Seção 4: Modelos por Mês/Ano (Considerando todos os tipos)
     const periodoMod = document.getElementById('filtroModeloMesAno').value;
     let dadosModeloFiltrados = dadosDetalhados;
     if (periodoMod === 'Ano Todo (2025)') {
@@ -276,13 +276,15 @@ function renderizarModelosMesAno(dados) {
     const el = document.getElementById('graficoModelosMesAno');
     if (graficoModelosMesAno) graficoModelosMesAno.destroy();
 
+    // Agrupa todos os modelos independentemente do tipo
     const agrupado = dados.reduce((acc, item) => {
         const mod = `${item['Marca']} ${item['Modelo']}`;
         acc[mod] = { qtd: (acc[mod]?.qtd || 0) + item['Quantidade Vendida'], marca: item['Marca'] };
         return acc;
     }, {});
 
-    const ordenado = Object.entries(agrupado).sort((a, b) => b[1].qtd - a[1].qtd).slice(0, 10);
+    // Ordena do maior para o menor e pega os top 15 para abranger bem todos os tipos
+    const ordenado = Object.entries(agrupado).sort((a, b) => b[1].qtd - a[1].qtd).slice(0, 15);
     
     const labels = ordenado.map(x => x[0]);
     const valores = ordenado.map(x => x[1].qtd);
@@ -292,7 +294,15 @@ function renderizarModelosMesAno(dados) {
         type: 'bar',
         data: {
             labels: labels,
+            datasets: [{ label: 'Quantidade Vendida (Todos os Tipos)', data: valores, backgroundColor: cores }]
         },
-        options: { responsive: true, maintainAspectRatio: false, indexAxis: 'y' }
+        options: { 
+            responsive: true, 
+            maintainAspectRatio: false, 
+            indexAxis: 'y',
+            plugins: {
+                legend: { display: false }
+            }
+        }
     });
 }
