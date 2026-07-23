@@ -54,27 +54,33 @@
                     </div>
                 </div>
 
-                <!-- SEÇÃO 2: Evolução de Participação (%) Top 10 + Outros com intervalo de período -->
-                <div class="card wide">
-                    <h3>Evolução de Participação (%) por Fabricante (Top 10 + Outros)</h3>
-                    <div class="filtros-container">
-                        <div>
-                            <label style="font-size: 12px; display:block; color:#94a3b8;">De (Mês/Ano):</label>
-                            <select id="filtroDataInicio">
-                                <option value="">Início</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label style="font-size: 12px; display:block; color:#94a3b8;">Até (Mês/Ano):</label>
-                            <select id="filtroDataFim">
-                                <option value="">Fim</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="chart-container" style="position: relative; height:40vh; width:100%">
-                        <canvas id="graficoEvolucaoPercentual"></canvas>
-                    </div>
-                </div>
+<!-- SEÇÃO 2: Evolução de Participação (%) Top 10 + Outros com intervalo de período -->
+<div class="card wide">
+    <h3>Evolução de Participação (%) por Fabricante</h3>
+    <div class="filtros-container">
+        <div>
+            <label style="font-size: 12px; display:block; color:#94a3b8;">Fabricante (Comparativo):</label>
+            <select id="filtroMarcaSec2">
+                <option value="">Top 10 + Outros (Padrão)</option>
+            </select>
+        </div>
+        <div>
+            <label style="font-size: 12px; display:block; color:#94a3b8;">De (Mês/Ano):</label>
+            <select id="filtroDataInicio">
+                <option value="">Início</option>
+            </select>
+        </div>
+        <div>
+            <label style="font-size: 12px; display:block; color:#94a3b8;">Até (Mês/Ano):</label>
+            <select id="filtroDataFim">
+                <option value="">Fim</option>
+            </select>
+        </div>
+    </div>
+    <div class="chart-container" style="position: relative; height:40vh; width:100%">
+        <canvas id="graficoEvolucaoPercentual"></canvas>
+    </div>
+</div>
 
                 <!-- SEÇÃO 3: Vendas por Fabricante (Dados Totais - Top 10 + Outros) com select por período / ano todo -->
                 <div class="card wide">

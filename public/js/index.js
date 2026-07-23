@@ -8,7 +8,6 @@ function limparNumero(valor) {
     return Number(String(valor).replace(/[^0-9.-]+/g, "")) || 0;
 }
 
-// FUNÇÃO BLINDADA: Lê a data não importa se tem barra invertida ou não
 function obterMesAno(item) {
     return item['Mês/Ano'] || item['Mês\\/Ano'] || "";
 }
@@ -29,6 +28,7 @@ const coresFabricantes = {
     'AVELLOZ': '#d97706',
     'BAJAJ': '#64748b',
     'HAOJUE': '#800080',
+    'RESTO DO MERCADO': '#94a3b8',
     'OUTROS': '#64748b'
 };
 
@@ -54,12 +54,14 @@ window.onload = async () => {
         
         popularFiltrosIniciais();
         
-        // Define "City" por padrão, mas deixa a data VAZIA ("") para carregar todo o período inicial e evitar tela em branco
+        // Define o Tipo padrão e seleciona o Mês MAIS RECENTE no primeiro select
         const selectTipoSec1 = document.getElementById('filtroTipoSec1');
         if (selectTipoSec1) selectTipoSec1.value = "City";
 
         const selectDataSec1 = document.getElementById('filtroDataSec1');
-        if (selectDataSec1) selectDataSec1.value = ""; 
+        if (selectDataSec1 && selectDataSec1.options.length > 1) {
+            selectDataSec1.selectedIndex = 1; // Pega o primeiro mês (que agora é o mais recente!)
+        }
 
         atualizarDashboard();
         
@@ -73,10 +75,10 @@ window.onload = async () => {
 };
 
 function popularFiltrosIniciais() {
-    const preencherSelect = (idSelect, valores) => {
+    const preencherSelect = (idSelect, valores, placeholder = "") => {
         const select = document.getElementById(idSelect);
         if (!select) return;
-        const primeiraOpcao = select.options[0] ? select.options[0].outerHTML : '';
+        const primeiraOpcao = select.options[0] ? select.options[0].outerHTML : (placeholder ? `<option value="">${placeholder}</option>` : '');
         select.innerHTML = primeiraOpcao;
         valores.filter(Boolean).forEach(valor => {
             select.innerHTML += `<option value="${valor}">${valor}</option>`;
@@ -85,25 +87,33 @@ function popularFiltrosIniciais() {
 
     const datasDet = [...new Set(dadosDetalhados.map(d => obterMesAno(d)))];
     const datasTot = [...new Set(dadosTotais.map(d => obterMesAno(d)))];
-    const datasUnicas = [...new Set([...datasDet, ...datasTot])].filter(Boolean).sort((a, b) => {
+    
+    // ORDENAÇÃO DE MESES: Do mais novo (2026, 2025...) para o mais antigo (2021)
+    const datasUnicasDecrescente = [...new Set([...datasDet, ...datasTot])].filter(Boolean).sort((a, b) => {
         const [mA, aA] = a.split('/'); const [mB, aB] = b.split('/');
-        return new Date(aA, mA - 1) - new Date(aB, mB - 1);
+        return new Date(aB, mB - 1) - new Date(aA, mA - 1);
     });
 
-    const anosUnicos = [...new Set(datasUnicas.map(d => d.split('/')[1]))].filter(Boolean).sort();
-    const opcoesAnos = anosUnicos.map(ano => `Ano Todo (${ano})`);
-    const opcoesPeriodo = [...opcoesAnos, ...datasUnicas];
+    // ORDENAÇÃO DE ANOS: Do mais recente para o antigo
+    const anosUnicosDecrescente = [...new Set(datasUnicasDecrescente.map(d => d.split('/')[1]))].filter(Boolean).sort().reverse();
+    const opcoesAnos = anosUnicosDecrescente.map(ano => `Ano Todo (${ano})`);
+    
+    // Opções gerais: Primeiro os Anos (do atual para trás), depois os Meses (do atual para trás)
+    const opcoesPeriodo = [...opcoesAnos, ...datasUnicasDecrescente];
+
+    // Popula todas as marcas para o select da Seção 2
+    const marcasUnicas = [...new Set(dadosTotais.map(d => d['Fabricante']))].filter(Boolean).sort();
 
     preencherSelect('filtroTipoSec1', [...new Set(dadosDetalhados.map(d => d['Tipo']))].filter(Boolean).sort());
-    preencherSelect('filtroDataSec1', datasUnicas);
-    preencherSelect('filtroDataInicio', datasUnicas);
-    preencherSelect('filtroDataFim', datasUnicas);
+    preencherSelect('filtroDataSec1', datasUnicasDecrescente);
+    preencherSelect('filtroDataInicio', datasUnicasDecrescente);
+    preencherSelect('filtroDataFim', datasUnicasDecrescente);
     preencherSelect('filtroPeriodoFabricante', opcoesPeriodo);
     preencherSelect('filtroModeloMesAno', opcoesPeriodo);
+    preencherSelect('filtroMarcaSec2', marcasUnicas);
 }
 
 function atualizarDashboard() {
-    // SEÇÃO 1: Análise por Tipo e Data (Usando a função blindada obterMesAno)
     const tipoSec1 = document.getElementById('filtroTipoSec1').value || "";
     const dataSec1 = document.getElementById('filtroDataSec1').value || "";
     
@@ -114,12 +124,11 @@ function atualizarDashboard() {
     });
     renderizarSecaoTipoMes(dadosSec1);
 
-    // SEÇÃO 2: Evolução Percentual
     const inicioIntervalo = document.getElementById('filtroDataInicio').value;
     const fimIntervalo = document.getElementById('filtroDataFim').value;
-    renderizarEvolucaoPercentual(inicioIntervalo, fimIntervalo);
+    const marcaSec2 = document.getElementById('filtroMarcaSec2') ? document.getElementById('filtroMarcaSec2').value : "";
+    renderizarEvolucaoPercentual(inicioIntervalo, fimIntervalo, marcaSec2);
 
-    // SEÇÃO 3: Vendas Totais por Fabricante
     const periodoFab = document.getElementById('filtroPeriodoFabricante').value;
     let dadosTotaisFiltrados = dadosTotais;
     if (periodoFab.startsWith('Ano Todo')) {
@@ -130,7 +139,6 @@ function atualizarDashboard() {
     }
     renderizarVendasFabricanteTotais(dadosTotaisFiltrados);
 
-    // SEÇÃO 4: Modelos por Mês/Ano
     const periodoMod = document.getElementById('filtroModeloMesAno').value;
     let dadosModeloFiltrados = dadosDetalhados;
     if (periodoMod.startsWith('Ano Todo')) {
@@ -208,10 +216,12 @@ function renderizarSecaoTipoMes(dados) {
     containerLista.innerHTML = htmlLista;
 }
 
-function renderizarEvolucaoPercentual(inicio, fim) {
+// SEÇÃO 2 ATUALIZADA: Gráfico com comparativo Marca vs Resto do Mercado
+function renderizarEvolucaoPercentual(inicio, fim, marcaSelecionada = "") {
     const el = document.getElementById('graficoEvolucaoPercentual');
     if (graficoEvolucaoPercentual) graficoEvolucaoPercentual.destroy();
 
+    // Como os meses no select estão decrescentes, no gráfico precisamos reverter para ordem CRONOLÓGICA (crescente)
     const mesesUnicos = [...new Set(dadosTotais.map(d => obterMesAno(d)))].filter(Boolean).sort((a, b) => {
         const [mA, aA] = a.split('/'); const [mB, aB] = b.split('/');
         return new Date(aA, mA - 1) - new Date(aB, mB - 1);
@@ -219,19 +229,29 @@ function renderizarEvolucaoPercentual(inicio, fim) {
 
     let mesesFiltrados = mesesUnicos;
     if (inicio !== "" || fim !== "") {
-        const idxInicio = inicio !== "" ? mesesUnicos.indexOf(inicio) : 0;
-        const idxFim = fim !== "" ? mesesUnicos.indexOf(fim) : mesesUnicos.length - 1;
-        mesesFiltrados = mesesUnicos.slice(Math.min(idxInicio, idxFim), Math.max(idxInicio, idxFim) + 1);
+        const idx1 = inicio !== "" ? mesesUnicos.indexOf(inicio) : 0;
+        const idx2 = fim !== "" ? mesesUnicos.indexOf(fim) : mesesUnicos.length - 1;
+        const idxInicio = Math.min(idx1, idx2);
+        const idxFim = Math.max(idx1, idx2);
+        mesesFiltrados = mesesUnicos.slice(idxInicio, idxFim + 1);
     }
 
     const dadosFiltradosIntervalo = dadosTotais.filter(d => mesesFiltrados.includes(obterMesAno(d)));
+    let fabricantesDataset = [];
+    let top10Periodo = [];
 
-    const totalFabPeriodo = {};
-    dadosFiltradosIntervalo.forEach(d => {
-        totalFabPeriodo[d['Fabricante']] = (totalFabPeriodo[d['Fabricante']] || 0) + limparNumero(d['Quantidade Vendida']);
-    });
-    const top10Periodo = Object.entries(totalFabPeriodo).sort((a, b) => b[1] - a[1]).slice(0, 10).map(x => x[0]);
-    const fabricantesDataset = [...top10Periodo, 'Outros'];
+    // SE O USUÁRIO ESCOLHEU UMA MARCA ESPECÍFICA:
+    if (marcaSelecionada !== "") {
+        fabricantesDataset = [marcaSelecionada, 'Resto do Mercado'];
+    } else {
+        // PADRÃO: TOP 10 + OUTROS
+        const totalFabPeriodo = {};
+        dadosFiltradosIntervalo.forEach(d => {
+            totalFabPeriodo[d['Fabricante']] = (totalFabPeriodo[d['Fabricante']] || 0) + limparNumero(d['Quantidade Vendida']);
+        });
+        top10Periodo = Object.entries(totalFabPeriodo).sort((a, b) => b[1] - a[1]).slice(0, 10).map(x => x[0]);
+        fabricantesDataset = [...top10Periodo, 'Outros'];
+    }
 
     const datasets = fabricantesDataset.map((fab) => {
         const dataPoint = mesesFiltrados.map(mes => {
@@ -239,7 +259,9 @@ function renderizarEvolucaoPercentual(inicio, fim) {
             const totalMes = regMes.reduce((sum, r) => sum + limparNumero(r['Quantidade Vendida']), 0) || 1;
             
             let qtdFab = 0;
-            if (fab === 'Outros') {
+            if (fab === 'Resto do Mercado') {
+                qtdFab = regMes.filter(r => r['Fabricante'] !== marcaSelecionada).reduce((sum, r) => sum + limparNumero(r['Quantidade Vendida']), 0);
+            } else if (fab === 'Outros') {
                 qtdFab = regMes.filter(r => !top10Periodo.includes(r['Fabricante'])).reduce((sum, r) => sum + limparNumero(r['Quantidade Vendida']), 0);
             } else {
                 const regFab = regMes.find(r => r['Fabricante'] === fab);
