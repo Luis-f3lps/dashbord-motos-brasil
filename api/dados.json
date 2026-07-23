@@ -1,5 +1,3749 @@
 [
     {
+        "Mês/Ano": "07/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 160",
+        "Quantidade Vendida": "29899",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 300F",
+        "Quantidade Vendida": "4594",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 150",
+        "Quantidade Vendida": "4107",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 250",
+        "Quantidade Vendida": "3525",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 150",
+        "Quantidade Vendida": "2980",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "City",
+        "Marca": "MOTTU",
+        "Modelo": "SPORT 110I",
+        "Quantidade Vendida": "2732",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YS150 FAZER",
+        "Quantidade Vendida": "1612",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 125",
+        "Quantidade Vendida": "838",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "City",
+        "Marca": "HAOJUE",
+        "Modelo": "DR160",
+        "Quantidade Vendida": "288",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 250F TWISTER",
+        "Quantidade Vendida": "80",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "CLASSIC 350",
+        "Quantidade Vendida": "271",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "METEOR",
+        "Quantidade Vendida": "241",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Custom",
+        "Marca": "KAWASAKI",
+        "Modelo": "VULCAN S",
+        "Quantidade Vendida": "102",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "INTERCEPTOR",
+        "Quantidade Vendida": "62",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "CONTINENTAL GT",
+        "Quantidade Vendida": "46",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "BONNEVILLE",
+        "Quantidade Vendida": "41",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FL FBS",
+        "Quantidade Vendida": "28",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Custom",
+        "Marca": "BMW",
+        "Modelo": "R18",
+        "Quantidade Vendida": "23",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "SPEED TWIN",
+        "Quantidade Vendida": "19",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHCS",
+        "Quantidade Vendida": "18",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR160",
+        "Quantidade Vendida": "11594",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ 250",
+        "Quantidade Vendida": "3615",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 190",
+        "Quantidade Vendida": "3274",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "CROSSER 150",
+        "Quantidade Vendida": "3169",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 125",
+        "Quantidade Vendida": "1062",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 300",
+        "Quantidade Vendida": "388",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "BMW",
+        "Modelo": "G310 GS",
+        "Quantidade Vendida": "370",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HAOJUE",
+        "Modelo": "NK 150",
+        "Quantidade Vendida": "130",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "DAFRA",
+        "Modelo": "NH 190",
+        "Quantidade Vendida": "101",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ150",
+        "Quantidade Vendida": "75",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "R1250GS",
+        "Quantidade Vendida": "398",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER 900",
+        "Quantidade Vendida": "332",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CB 500X",
+        "Quantidade Vendida": "281",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "NC 750X",
+        "Quantidade Vendida": "278",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F850 GS",
+        "Quantidade Vendida": "184",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CRF 1100L",
+        "Quantidade Vendida": "130",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "HIMALAYAN",
+        "Quantidade Vendida": "117",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "KAWASAKI",
+        "Modelo": "VERSYS 650",
+        "Quantidade Vendida": "89",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER",
+        "Quantidade Vendida": "69",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER 1200",
+        "Quantidade Vendida": "39",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT03",
+        "Quantidade Vendida": "712",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "333",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT09",
+        "Quantidade Vendida": "201",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT07",
+        "Quantidade Vendida": "169",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 650R",
+        "Quantidade Vendida": "118",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z900",
+        "Quantidade Vendida": "98",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 1000R",
+        "Quantidade Vendida": "82",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z400",
+        "Quantidade Vendida": "79",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "BMW",
+        "Modelo": "G310 R",
+        "Quantidade Vendida": "64",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX-S750",
+        "Quantidade Vendida": "53",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "BIZ",
+        "Quantidade Vendida": "13792",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 110I",
+        "Quantidade Vendida": "12187",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "PCX 160",
+        "Quantidade Vendida": "2891",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "ELITE 125",
+        "Quantidade Vendida": "2597",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "ADV 150",
+        "Quantidade Vendida": "1481",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NEO 125",
+        "Quantidade Vendida": "1428",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NMAX",
+        "Quantidade Vendida": "1190",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "FLUO 125",
+        "Quantidade Vendida": "997",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 50",
+        "Quantidade Vendida": "851",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "AVELLOZ",
+        "Modelo": "AZ1",
+        "Quantidade Vendida": "750",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Sport",
+        "Marca": "YAMAHA",
+        "Modelo": "YZF R3",
+        "Quantidade Vendida": "181",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 400",
+        "Quantidade Vendida": "100",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Sport",
+        "Marca": "BMW",
+        "Modelo": "S1000 RR",
+        "Quantidade Vendida": "74",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 650R",
+        "Quantidade Vendida": "66",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 300",
+        "Quantidade Vendida": "33",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX 6",
+        "Quantidade Vendida": "26",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Sport",
+        "Marca": "DUCATI",
+        "Modelo": "PANIGALE V4",
+        "Quantidade Vendida": "17",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 650",
+        "Quantidade Vendida": "13",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX 1300",
+        "Quantidade Vendida": "12",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX10",
+        "Quantidade Vendida": "12",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHTK",
+        "Quantidade Vendida": "30",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLTRK",
+        "Quantidade Vendida": "18",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLH RXS",
+        "Quantidade Vendida": "11",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHX",
+        "Quantidade Vendida": "8",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLT",
+        "Quantidade Vendida": "6",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "R1250 RT",
+        "Quantidade Vendida": "5",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "K 1600",
+        "Quantidade Vendida": "1",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "07/2023",
+        "Tipo": "Touring",
+        "Marca": "HONDA",
+        "Modelo": "GOLDWING",
+        "Quantidade Vendida": "0",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 160",
+        "Quantidade Vendida": "36843",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 300F",
+        "Quantidade Vendida": "5309",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 250",
+        "Quantidade Vendida": "4254",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 150",
+        "Quantidade Vendida": "4047",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 150",
+        "Quantidade Vendida": "3412",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YS150 FAZER",
+        "Quantidade Vendida": "1691",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "City",
+        "Marca": "MOTTU",
+        "Modelo": "SPORT 110I",
+        "Quantidade Vendida": "976",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 125",
+        "Quantidade Vendida": "808",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "City",
+        "Marca": "HAOJUE",
+        "Modelo": "DR160",
+        "Quantidade Vendida": "314",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 250F TWISTER",
+        "Quantidade Vendida": "71",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "CLASSIC 350",
+        "Quantidade Vendida": "281",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "METEOR",
+        "Quantidade Vendida": "214",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Custom",
+        "Marca": "KAWASAKI",
+        "Modelo": "VULCAN S",
+        "Quantidade Vendida": "108",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "INTERCEPTOR",
+        "Quantidade Vendida": "86",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "CONTINENTAL GT",
+        "Quantidade Vendida": "36",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "BONNEVILLE",
+        "Quantidade Vendida": "31",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "SPEED TWIN",
+        "Quantidade Vendida": "25",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FL FBS",
+        "Quantidade Vendida": "16",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Custom",
+        "Marca": "BMW",
+        "Modelo": "R18",
+        "Quantidade Vendida": "16",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHCS",
+        "Quantidade Vendida": "9",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR160",
+        "Quantidade Vendida": "14119",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "CROSSER 150",
+        "Quantidade Vendida": "3709",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ 250",
+        "Quantidade Vendida": "3668",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 190",
+        "Quantidade Vendida": "3229",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 125",
+        "Quantidade Vendida": "1263",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 300",
+        "Quantidade Vendida": "411",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "BMW",
+        "Modelo": "G310 GS",
+        "Quantidade Vendida": "347",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HAOJUE",
+        "Modelo": "NK 150",
+        "Quantidade Vendida": "137",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "DAFRA",
+        "Modelo": "NH 190",
+        "Quantidade Vendida": "120",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "KAWASAKI",
+        "Modelo": "VERSYS 300",
+        "Quantidade Vendida": "119",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "R1250GS",
+        "Quantidade Vendida": "488",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CB 500X",
+        "Quantidade Vendida": "430",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F850 GS",
+        "Quantidade Vendida": "315",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER 900",
+        "Quantidade Vendida": "302",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "NC 750X",
+        "Quantidade Vendida": "292",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CRF 1100L",
+        "Quantidade Vendida": "134",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "HIMALAYAN",
+        "Quantidade Vendida": "111",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "KAWASAKI",
+        "Modelo": "VERSYS 650",
+        "Quantidade Vendida": "102",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER",
+        "Quantidade Vendida": "69",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER 1200",
+        "Quantidade Vendida": "62",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT03",
+        "Quantidade Vendida": "793",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "334",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT09",
+        "Quantidade Vendida": "215",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT07",
+        "Quantidade Vendida": "214",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 650R",
+        "Quantidade Vendida": "172",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z900",
+        "Quantidade Vendida": "119",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX-S750",
+        "Quantidade Vendida": "75",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z400",
+        "Quantidade Vendida": "71",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 1000R",
+        "Quantidade Vendida": "70",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "BMW",
+        "Modelo": "G310 R",
+        "Quantidade Vendida": "50",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "BIZ",
+        "Quantidade Vendida": "18905",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 110I",
+        "Quantidade Vendida": "13783",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "PCX 160",
+        "Quantidade Vendida": "3597",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "ELITE 125",
+        "Quantidade Vendida": "2944",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "ADV 150",
+        "Quantidade Vendida": "1583",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "FLUO 125",
+        "Quantidade Vendida": "1258",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NEO 125",
+        "Quantidade Vendida": "1255",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 50",
+        "Quantidade Vendida": "1041",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NMAX",
+        "Quantidade Vendida": "1027",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "AVELLOZ",
+        "Modelo": "AZ1",
+        "Quantidade Vendida": "859",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Sport",
+        "Marca": "YAMAHA",
+        "Modelo": "YZF R3",
+        "Quantidade Vendida": "146",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 400",
+        "Quantidade Vendida": "104",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 650R",
+        "Quantidade Vendida": "69",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Sport",
+        "Marca": "BMW",
+        "Modelo": "S1000 RR",
+        "Quantidade Vendida": "48",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 300",
+        "Quantidade Vendida": "39",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX 6",
+        "Quantidade Vendida": "29",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Sport",
+        "Marca": "DUCATI",
+        "Modelo": "PANIGALE V4",
+        "Quantidade Vendida": "21",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 650",
+        "Quantidade Vendida": "19",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX 1300",
+        "Quantidade Vendida": "15",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX10",
+        "Quantidade Vendida": "6",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHTK",
+        "Quantidade Vendida": "29",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLTRK",
+        "Quantidade Vendida": "16",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHX",
+        "Quantidade Vendida": "9",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "R1250 RT",
+        "Quantidade Vendida": "9",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLT",
+        "Quantidade Vendida": "9",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLH RXS",
+        "Quantidade Vendida": "8",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Touring",
+        "Marca": "HONDA",
+        "Modelo": "GOLDWING",
+        "Quantidade Vendida": "5",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "08/2023",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "K 1600",
+        "Quantidade Vendida": "2",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 160",
+        "Quantidade Vendida": "35054",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 300F",
+        "Quantidade Vendida": "4822",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 150",
+        "Quantidade Vendida": "3828",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 250",
+        "Quantidade Vendida": "3512",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 150",
+        "Quantidade Vendida": "3159",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YS150 FAZER",
+        "Quantidade Vendida": "1814",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "City",
+        "Marca": "MOTTU",
+        "Modelo": "SPORT 110I",
+        "Quantidade Vendida": "898",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 125",
+        "Quantidade Vendida": "685",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "City",
+        "Marca": "HAOJUE",
+        "Modelo": "DR160",
+        "Quantidade Vendida": "367",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 250F TWISTER",
+        "Quantidade Vendida": "60",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "METEOR",
+        "Quantidade Vendida": "242",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "CLASSIC 350",
+        "Quantidade Vendida": "227",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "HUNTER",
+        "Quantidade Vendida": "99",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Custom",
+        "Marca": "KAWASAKI",
+        "Modelo": "VULCAN S",
+        "Quantidade Vendida": "96",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "INTERCEPTOR",
+        "Quantidade Vendida": "62",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Custom",
+        "Marca": "BMW",
+        "Modelo": "R18",
+        "Quantidade Vendida": "28",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "BONNEVILLE",
+        "Quantidade Vendida": "23",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "CONTINENTAL GT",
+        "Quantidade Vendida": "20",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "SPEED TWIN",
+        "Quantidade Vendida": "16",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FL FBS",
+        "Quantidade Vendida": "12",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR160",
+        "Quantidade Vendida": "12273",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ 250",
+        "Quantidade Vendida": "3606",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 190",
+        "Quantidade Vendida": "3219",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "CROSSER 150",
+        "Quantidade Vendida": "2914",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 125",
+        "Quantidade Vendida": "1168",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 300",
+        "Quantidade Vendida": "338",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "BMW",
+        "Modelo": "G310 GS",
+        "Quantidade Vendida": "314",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HAOJUE",
+        "Modelo": "NK 150",
+        "Quantidade Vendida": "148",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "DAFRA",
+        "Modelo": "NH 190",
+        "Quantidade Vendida": "137",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "KAWASAKI",
+        "Modelo": "VERSYS 300",
+        "Quantidade Vendida": "77",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "R1250GS",
+        "Quantidade Vendida": "498",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CB 500X",
+        "Quantidade Vendida": "428",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F850 GS",
+        "Quantidade Vendida": "305",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "NC 750X",
+        "Quantidade Vendida": "279",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER 900",
+        "Quantidade Vendida": "205",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CRF 1100L",
+        "Quantidade Vendida": "116",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "KAWASAKI",
+        "Modelo": "VERSYS 650",
+        "Quantidade Vendida": "94",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "HIMALAYAN",
+        "Quantidade Vendida": "69",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER 1200",
+        "Quantidade Vendida": "61",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER SPORT 660",
+        "Quantidade Vendida": "60",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT03",
+        "Quantidade Vendida": "703",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "312",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT09",
+        "Quantidade Vendida": "220",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT07",
+        "Quantidade Vendida": "196",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 650R",
+        "Quantidade Vendida": "119",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z900",
+        "Quantidade Vendida": "118",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 1000R",
+        "Quantidade Vendida": "69",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z400",
+        "Quantidade Vendida": "65",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX-S750",
+        "Quantidade Vendida": "65",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "BMW",
+        "Modelo": "G310 R",
+        "Quantidade Vendida": "41",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "BIZ",
+        "Quantidade Vendida": "20133",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 110I",
+        "Quantidade Vendida": "13307",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "PCX 160",
+        "Quantidade Vendida": "3718",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "ELITE 125",
+        "Quantidade Vendida": "2570",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "ADV 150",
+        "Quantidade Vendida": "1245",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NMAX",
+        "Quantidade Vendida": "1112",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NEO 125",
+        "Quantidade Vendida": "1095",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "FLUO 125",
+        "Quantidade Vendida": "1016",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 50",
+        "Quantidade Vendida": "896",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "AVELLOZ",
+        "Modelo": "AZ1",
+        "Quantidade Vendida": "809",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Sport",
+        "Marca": "YAMAHA",
+        "Modelo": "YZF R3",
+        "Quantidade Vendida": "131",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 400",
+        "Quantidade Vendida": "88",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Sport",
+        "Marca": "BMW",
+        "Modelo": "S1000 RR",
+        "Quantidade Vendida": "75",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 650R",
+        "Quantidade Vendida": "66",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 300",
+        "Quantidade Vendida": "33",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX 6",
+        "Quantidade Vendida": "29",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Sport",
+        "Marca": "DUCATI",
+        "Modelo": "PANIGALE V4",
+        "Quantidade Vendida": "21",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 650",
+        "Quantidade Vendida": "16",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX 1300",
+        "Quantidade Vendida": "12",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX10",
+        "Quantidade Vendida": "4",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHTK",
+        "Quantidade Vendida": "29",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLTRK",
+        "Quantidade Vendida": "16",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHX",
+        "Quantidade Vendida": "9",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "R1250 RT",
+        "Quantidade Vendida": "9",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLT",
+        "Quantidade Vendida": "9",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLH RXS",
+        "Quantidade Vendida": "8",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Touring",
+        "Marca": "HONDA",
+        "Modelo": "GOLDWING",
+        "Quantidade Vendida": "2",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "09/2023",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "K 1600",
+        "Quantidade Vendida": "1",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 160",
+        "Quantidade Vendida": "34096",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 300F",
+        "Quantidade Vendida": "4893",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 250",
+        "Quantidade Vendida": "3578",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 150",
+        "Quantidade Vendida": "3567",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 150",
+        "Quantidade Vendida": "3322",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YS150 FAZER",
+        "Quantidade Vendida": "1706",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 125",
+        "Quantidade Vendida": "787",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "City",
+        "Marca": "MOTTU",
+        "Modelo": "SPORT 110I",
+        "Quantidade Vendida": "594",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "City",
+        "Marca": "HAOJUE",
+        "Modelo": "DR160",
+        "Quantidade Vendida": "378",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 250F TWISTER",
+        "Quantidade Vendida": "39",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "HUNTER",
+        "Quantidade Vendida": "256",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "CLASSIC 350",
+        "Quantidade Vendida": "239",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "METEOR",
+        "Quantidade Vendida": "219",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Custom",
+        "Marca": "KAWASAKI",
+        "Modelo": "VULCAN S",
+        "Quantidade Vendida": "71",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "INTERCEPTOR",
+        "Quantidade Vendida": "70",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "CONTINENTAL GT",
+        "Quantidade Vendida": "45",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Custom",
+        "Marca": "BMW",
+        "Modelo": "R18",
+        "Quantidade Vendida": "29",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "SPEED TWIN",
+        "Quantidade Vendida": "21",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FL FBS",
+        "Quantidade Vendida": "17",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "BONNEVILLE",
+        "Quantidade Vendida": "9",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR160",
+        "Quantidade Vendida": "12619",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ 250",
+        "Quantidade Vendida": "3699",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 190",
+        "Quantidade Vendida": "3234",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "CROSSER 150",
+        "Quantidade Vendida": "2945",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 125",
+        "Quantidade Vendida": "1312",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 300",
+        "Quantidade Vendida": "1066",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HAOJUE",
+        "Modelo": "NK 150",
+        "Quantidade Vendida": "165",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "DAFRA",
+        "Modelo": "NH 190",
+        "Quantidade Vendida": "137",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "BMW",
+        "Modelo": "G310 GS",
+        "Quantidade Vendida": "136",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "SCRAM 411",
+        "Quantidade Vendida": "118",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "R1250GS",
+        "Quantidade Vendida": "452",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CB 500X",
+        "Quantidade Vendida": "414",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "NC 750X",
+        "Quantidade Vendida": "339",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER 900",
+        "Quantidade Vendida": "245",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F850 GS",
+        "Quantidade Vendida": "224",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CRF 1100L",
+        "Quantidade Vendida": "136",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "HIMALAYAN",
+        "Quantidade Vendida": "92",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER SPORT 660",
+        "Quantidade Vendida": "74",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "KAWASAKI",
+        "Modelo": "VERSYS 650",
+        "Quantidade Vendida": "65",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER 1200",
+        "Quantidade Vendida": "62",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT03",
+        "Quantidade Vendida": "768",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "370",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT09",
+        "Quantidade Vendida": "226",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT07",
+        "Quantidade Vendida": "170",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 650R",
+        "Quantidade Vendida": "103",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z900",
+        "Quantidade Vendida": "97",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 1000R",
+        "Quantidade Vendida": "80",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z400",
+        "Quantidade Vendida": "68",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX-S750",
+        "Quantidade Vendida": "51",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "TRIUMPH",
+        "Modelo": "TRIDENT 660",
+        "Quantidade Vendida": "47",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "BIZ",
+        "Quantidade Vendida": "21574",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 110I",
+        "Quantidade Vendida": "13287",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "PCX 160",
+        "Quantidade Vendida": "3755",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "ELITE 125",
+        "Quantidade Vendida": "2700",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "ADV 150",
+        "Quantidade Vendida": "1482",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NEO 125",
+        "Quantidade Vendida": "1174",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NMAX",
+        "Quantidade Vendida": "1061",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "FLUO 125",
+        "Quantidade Vendida": "976",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "AVELLOZ",
+        "Modelo": "AZI",
+        "Quantidade Vendida": "888",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 50",
+        "Quantidade Vendida": "846",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Sport",
+        "Marca": "YAMAHA",
+        "Modelo": "YZF R3",
+        "Quantidade Vendida": "144",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 400",
+        "Quantidade Vendida": "104",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Sport",
+        "Marca": "BMW",
+        "Modelo": "S1000 RR",
+        "Quantidade Vendida": "91",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 650R",
+        "Quantidade Vendida": "79",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX 6",
+        "Quantidade Vendida": "31",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 300",
+        "Quantidade Vendida": "27",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 650",
+        "Quantidade Vendida": "16",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Sport",
+        "Marca": "DUCATI",
+        "Modelo": "PANIGALE V4",
+        "Quantidade Vendida": "15",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX10",
+        "Quantidade Vendida": "14",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX 1300",
+        "Quantidade Vendida": "7",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Touring",
+        "Marca": "HONDA",
+        "Modelo": "GOLDWING",
+        "Quantidade Vendida": "18",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLTRK",
+        "Quantidade Vendida": "10",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHTK",
+        "Quantidade Vendida": "10",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLH RXS",
+        "Quantidade Vendida": "10",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLT",
+        "Quantidade Vendida": "6",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHX",
+        "Quantidade Vendida": "5",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "R1250 RT",
+        "Quantidade Vendida": "4",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "10/2023",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "K 1600",
+        "Quantidade Vendida": "0",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 160",
+        "Quantidade Vendida": "35609",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 300F",
+        "Quantidade Vendida": "4150",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 150",
+        "Quantidade Vendida": "2731",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 250",
+        "Quantidade Vendida": "2474",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 150",
+        "Quantidade Vendida": "2165",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YS150 FAZER",
+        "Quantidade Vendida": "1286",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 125",
+        "Quantidade Vendida": "730",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "City",
+        "Marca": "HAOJUE",
+        "Modelo": "DR160",
+        "Quantidade Vendida": "347",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "City",
+        "Marca": "MOTTU",
+        "Modelo": "SPORT 110I",
+        "Quantidade Vendida": "160",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 250F TWISTER",
+        "Quantidade Vendida": "38",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "HUNTER",
+        "Quantidade Vendida": "293",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "CLASSIC 350",
+        "Quantidade Vendida": "254",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "METEOR",
+        "Quantidade Vendida": "215",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Custom",
+        "Marca": "KAWASAKI",
+        "Modelo": "VULCAN S",
+        "Quantidade Vendida": "81",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "INTERCEPTOR",
+        "Quantidade Vendida": "75",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "CONTINENTAL GT",
+        "Quantidade Vendida": "42",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Custom",
+        "Marca": "BMW",
+        "Modelo": "R18",
+        "Quantidade Vendida": "20",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FL FBS",
+        "Quantidade Vendida": "14",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "SPEED TWIN",
+        "Quantidade Vendida": "14",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "BONNEVILLE",
+        "Quantidade Vendida": "10",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR160",
+        "Quantidade Vendida": "12398",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "CROSSER 150",
+        "Quantidade Vendida": "3149",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 190",
+        "Quantidade Vendida": "2665",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ 250",
+        "Quantidade Vendida": "2358",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 300",
+        "Quantidade Vendida": "1965",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 125",
+        "Quantidade Vendida": "1390",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "BMW",
+        "Modelo": "G310 GS",
+        "Quantidade Vendida": "192",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "SCRAM 411",
+        "Quantidade Vendida": "176",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HAOJUE",
+        "Modelo": "NK 150",
+        "Quantidade Vendida": "124",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "DAFRA",
+        "Modelo": "NH 190",
+        "Quantidade Vendida": "119",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "R1250GS",
+        "Quantidade Vendida": "507",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "NC 750X",
+        "Quantidade Vendida": "288",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CB 500X",
+        "Quantidade Vendida": "223",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F850 GS",
+        "Quantidade Vendida": "193",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER 900",
+        "Quantidade Vendida": "176",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "HIMALAYAN",
+        "Quantidade Vendida": "118",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CRF 1100L",
+        "Quantidade Vendida": "101",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "KAWASAKI",
+        "Modelo": "VERSYS 650",
+        "Quantidade Vendida": "72",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER SPORT 660",
+        "Quantidade Vendida": "68",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER 1200",
+        "Quantidade Vendida": "39",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT03",
+        "Quantidade Vendida": "503",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "353",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT07",
+        "Quantidade Vendida": "188",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT09",
+        "Quantidade Vendida": "180",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z400",
+        "Quantidade Vendida": "119",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z900",
+        "Quantidade Vendida": "113",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 650R",
+        "Quantidade Vendida": "89",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 1000R",
+        "Quantidade Vendida": "72",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX-S750",
+        "Quantidade Vendida": "60",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "TRIUMPH",
+        "Modelo": "TRIDENT 660",
+        "Quantidade Vendida": "45",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "BIZ",
+        "Quantidade Vendida": "21228",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 110I",
+        "Quantidade Vendida": "13390",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "PCX 160",
+        "Quantidade Vendida": "3662",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "ELITE 125",
+        "Quantidade Vendida": "2717",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "ADV 150",
+        "Quantidade Vendida": "1383",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "AVELLOZ",
+        "Modelo": "AZI",
+        "Quantidade Vendida": "957",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 50",
+        "Quantidade Vendida": "840",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NEO 125",
+        "Quantidade Vendida": "739",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "FLUO 125",
+        "Quantidade Vendida": "687",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NMAX",
+        "Quantidade Vendida": "641",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Sport",
+        "Marca": "YAMAHA",
+        "Modelo": "YZF R3",
+        "Quantidade Vendida": "131",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 400",
+        "Quantidade Vendida": "123",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Sport",
+        "Marca": "BMW",
+        "Modelo": "S1000 RR",
+        "Quantidade Vendida": "75",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 300",
+        "Quantidade Vendida": "42",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX 6",
+        "Quantidade Vendida": "39",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 650R",
+        "Quantidade Vendida": "28",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 650",
+        "Quantidade Vendida": "26",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Sport",
+        "Marca": "DUCATI",
+        "Modelo": "PANIGALE V4",
+        "Quantidade Vendida": "16",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX10",
+        "Quantidade Vendida": "12",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX 1300",
+        "Quantidade Vendida": "11",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLTRK",
+        "Quantidade Vendida": "20",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHX",
+        "Quantidade Vendida": "12",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLT",
+        "Quantidade Vendida": "12",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHTK",
+        "Quantidade Vendida": "8",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Touring",
+        "Marca": "HONDA",
+        "Modelo": "GOLDWING",
+        "Quantidade Vendida": "5",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLH RXS",
+        "Quantidade Vendida": "4",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "R1250 RT",
+        "Quantidade Vendida": "4",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "11/2023",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "K 1600",
+        "Quantidade Vendida": "0",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 160",
+        "Quantidade Vendida": "36809",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 300F",
+        "Quantidade Vendida": "4588",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 150",
+        "Quantidade Vendida": "2297",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 150",
+        "Quantidade Vendida": "2023",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 250",
+        "Quantidade Vendida": "1793",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YS150 FAZER",
+        "Quantidade Vendida": "1022",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 125",
+        "Quantidade Vendida": "494",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "City",
+        "Marca": "HAOJUE",
+        "Modelo": "DR160",
+        "Quantidade Vendida": "439",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "City",
+        "Marca": "MOTTU",
+        "Modelo": "SPORT 110I",
+        "Quantidade Vendida": "49",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 250F TWISTER",
+        "Quantidade Vendida": "36",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "HUNTER",
+        "Quantidade Vendida": "420",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "METEOR",
+        "Quantidade Vendida": "413",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "CLASSIC 350",
+        "Quantidade Vendida": "335",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Custom",
+        "Marca": "BMW",
+        "Modelo": "C400 X",
+        "Quantidade Vendida": "171",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "INTERCEPTOR",
+        "Quantidade Vendida": "103",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Custom",
+        "Marca": "KAWASAKI",
+        "Modelo": "VULCAN S",
+        "Quantidade Vendida": "89",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Custom",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "CONTINENTAL GT",
+        "Quantidade Vendida": "42",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FL FBS",
+        "Quantidade Vendida": "20",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "BONNEVILLE",
+        "Quantidade Vendida": "19",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Custom",
+        "Marca": "BMW",
+        "Modelo": "R18",
+        "Quantidade Vendida": "18",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR160",
+        "Quantidade Vendida": "12671",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "CROSSER 150",
+        "Quantidade Vendida": "3350",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 190",
+        "Quantidade Vendida": "2266",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ 250",
+        "Quantidade Vendida": "2044",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 300",
+        "Quantidade Vendida": "2030",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 125",
+        "Quantidade Vendida": "1607",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "BMW",
+        "Modelo": "G310 GS",
+        "Quantidade Vendida": "315",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "SCRAM 411",
+        "Quantidade Vendida": "204",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "HAOJUE",
+        "Modelo": "NK 150",
+        "Quantidade Vendida": "172",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Trail/Fun",
+        "Marca": "DAFRA",
+        "Modelo": "NH 190",
+        "Quantidade Vendida": "144",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "R1250GS",
+        "Quantidade Vendida": "534",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER 900",
+        "Quantidade Vendida": "275",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "NC 750X",
+        "Quantidade Vendida": "209",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F850 GS",
+        "Quantidade Vendida": "175",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "ROYAL ENFIELD",
+        "Modelo": "HIMALAYAN",
+        "Quantidade Vendida": "163",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CB 500X",
+        "Quantidade Vendida": "128",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "KAWASAKI",
+        "Modelo": "VERSYS 650",
+        "Quantidade Vendida": "91",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CRF 1100L",
+        "Quantidade Vendida": "83",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER SPORT 660",
+        "Quantidade Vendida": "75",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER 1200",
+        "Quantidade Vendida": "36",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT03",
+        "Quantidade Vendida": "361",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "286",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT07",
+        "Quantidade Vendida": "199",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT09",
+        "Quantidade Vendida": "118",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 650R",
+        "Quantidade Vendida": "113",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z400",
+        "Quantidade Vendida": "88",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z900",
+        "Quantidade Vendida": "81",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 1000R",
+        "Quantidade Vendida": "74",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX-S750",
+        "Quantidade Vendida": "59",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Naked/Roadster",
+        "Marca": "TRIUMPH",
+        "Modelo": "TRIDENT 660",
+        "Quantidade Vendida": "35",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "BIZ",
+        "Quantidade Vendida": "22250",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 110I",
+        "Quantidade Vendida": "13930",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "PCX 160",
+        "Quantidade Vendida": "4281",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "ELITE 125",
+        "Quantidade Vendida": "2726",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "ADV 150",
+        "Quantidade Vendida": "1317",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "AVELLOZ",
+        "Modelo": "AZ1",
+        "Quantidade Vendida": "938",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 50",
+        "Quantidade Vendida": "757",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NEO 125",
+        "Quantidade Vendida": "603",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "FLUO 125",
+        "Quantidade Vendida": "527",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NMAX",
+        "Quantidade Vendida": "456",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Sport",
+        "Marca": "YAMAHA",
+        "Modelo": "YZF R3",
+        "Quantidade Vendida": "131",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 400",
+        "Quantidade Vendida": "123",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Sport",
+        "Marca": "BMW",
+        "Modelo": "S1000 RR",
+        "Quantidade Vendida": "75",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 300",
+        "Quantidade Vendida": "42",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX 6",
+        "Quantidade Vendida": "39",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 650R",
+        "Quantidade Vendida": "28",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 650",
+        "Quantidade Vendida": "26",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Sport",
+        "Marca": "DUCATI",
+        "Modelo": "PANIGALE V4",
+        "Quantidade Vendida": "16",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX10",
+        "Quantidade Vendida": "20",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX 1300",
+        "Quantidade Vendida": "11",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLTRK",
+        "Quantidade Vendida": "18",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLT",
+        "Quantidade Vendida": "14",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHX",
+        "Quantidade Vendida": "12",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHTK",
+        "Quantidade Vendida": "8",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLH RXS",
+        "Quantidade Vendida": "6",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Touring",
+        "Marca": "HONDA",
+        "Modelo": "GOLDWING",
+        "Quantidade Vendida": "5",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "R1250 RT",
+        "Quantidade Vendida": "4",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "12/2023",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "K 1600",
+        "Quantidade Vendida": "0",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
         "Mês/Ano": "01/2024",
         "Fabricante": "HONDA",
         "Quantidade Vendida": "102696",
