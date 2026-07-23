@@ -31,7 +31,7 @@ app.get('/api/motos', (req, res) => {
             const jsonMotos = JSON.parse(data);
             res.json(jsonMotos);
         } catch (parseErro) {
-            console.error("Erro de formatação no dados.json:", parseErro);
+            console.error("Erro de formatação no modelos.json:", parseErro);
             res.status(500).json({ erro: "Arquivo JSON mal formatado." });
         }
     });
