@@ -292,7 +292,6 @@ function renderizarModelosMesAno(dados) {
         type: 'bar',
         data: {
             labels: labels,
-            datasets: [{ label: 'Quantidade Vendida', data: valores, backgroundColor: cores }]
         },
         options: { responsive: true, maintainAspectRatio: false, indexAxis: 'y' }
     });
