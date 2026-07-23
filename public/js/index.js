@@ -3,9 +3,10 @@ let dadosTotais = [];
 
 let graficoTipoMes, graficoEvolucaoPercentual, graficoVendasFabricanteTotais, graficoModelosMesAno;
 
+// Paleta moderna estilo "Incicle" (Azul corporativo, Coral, Amarelo, Verde, Roxo, Ciano, etc.)
 const paletaCores = [
-    '#00b894', '#0984e3', '#6c5ce7', '#e17055', '#fdcb6e', 
-    '#00cec9', '#d63031', '#e84393', '#2d3436', '#b2bec3'
+    '#3b82f6', '#f97316', '#10b981', '#8b5cf6', '#06b6d4', 
+    '#ec4899', '#f59e0b', '#6366f1', '#14b8a6', '#64748b', '#94a3b8'
 ];
 
 window.onload = async () => {
@@ -19,6 +20,13 @@ window.onload = async () => {
         dadosTotais = await respTotais.json();
         
         popularFiltrosIniciais();
+        
+        // Define "City" como padrão no select de tipo da Seção 1, se existir
+        const selectTipoSec1 = document.getElementById('filtroTipoSec1');
+        if (selectTipoSec1) {
+            selectTipoSec1.value = "City";
+        }
+
         atualizarDashboard();
         
         document.querySelectorAll('select').forEach(select => {
@@ -58,8 +66,8 @@ function popularFiltrosIniciais() {
 }
 
 function atualizarDashboard() {
-    // 1. Seção Tipo + Mês/Ano com Lista ao lado (Sem Motor)
-    const tipoSec1 = document.getElementById('filtroTipoSec1').value;
+    // 1. Seção Tipo + Mês/Ano com Lista ao lado (Padrão City)
+    const tipoSec1 = document.getElementById('filtroTipoSec1').value || "City";
     const dataSec1 = document.getElementById('filtroDataSec1').value;
     
     const dadosSec1 = dadosDetalhados.filter(d => 
@@ -69,12 +77,12 @@ function atualizarDashboard() {
 
     renderizarSecaoTipoMes(dadosSec1);
 
-    // 2. Seção Evolução Percentual com Intervalo de Período
+    // 2. Seção Evolução Percentual com Intervalo de Período (Top 10 + Outros)
     const inicioIntervalo = document.getElementById('filtroDataInicio').value;
     const fimIntervalo = document.getElementById('filtroDataFim').value;
     renderizarEvolucaoPercentual(inicioIntervalo, fimIntervalo);
 
-    // 3. Seção Vendas por Fabricante (Totais) com período
+    // 3. Seção Vendas por Fabricante (Totais) com período (Top 10 + Outros)
     const periodoFab = document.getElementById('filtroPeriodoFabricante').value;
     const dadosTotaisFiltrados = dadosTotais.filter(d => periodoFab === "" || d['Mês/Ano'] === periodoFab);
     renderizarVendasFabricanteTotais(dadosTotaisFiltrados);
@@ -87,6 +95,28 @@ function atualizarDashboard() {
     document.getElementById('contadorRegistros').innerText = `Dashboard atualizado com sucesso.`;
 }
 
+// --- AUXILIAR PARA AGRUPAR TOP 10 + OUTROS ---
+function processarTop10ComOutros(dados, chaveFabricante, chaveQtd) {
+    const somatorio = {};
+    dados.forEach(item => {
+        const fab = item[chaveFabricante] || 'Outros';
+        somatorio[fab] = (somatorio[fab] || 0) + item[chaveQtd];
+    });
+
+    // Ordena decrescente
+    const ordenado = Object.entries(somatorio).sort((a, b) => b[1] - a[1]);
+    
+    if (ordenado.length <= 10) {
+        return Object.fromEntries(ordenado);
+    }
+
+    const top10 = Object.fromEntries(ordenado.slice(0, 10));
+    const outrosTotal = ordenado.slice(10).reduce((acc, curr) => acc + curr[1], 0);
+    
+    top10['Outros'] = outrosTotal;
+    return top10;
+}
+
 // --- RENDERIZADORES DE GRÁFICOS E LISTAS ---
 
 function renderizarSecaoTipoMes(dados) {
@@ -95,7 +125,6 @@ function renderizarSecaoTipoMes(dados) {
     
     if (graficoTipoMes) graficoTipoMes.destroy();
 
-    // Agrupa por Marca/Modelo para o gráfico
     const agrupado = dados.reduce((acc, item) => {
         const chave = `${item['Marca']} - ${item['Modelo']}`;
         acc[chave] = (acc[chave] || 0) + item['Quantidade Vendida'];
@@ -111,9 +140,8 @@ function renderizarSecaoTipoMes(dados) {
         options: { responsive: true, maintainAspectRatio: false }
     });
 
-    // Renderiza Lista ao Lado (Sem Motor)
     if (dados.length === 0) {
-        containerLista.innerHTML = `<p style="color: #888;">Nenhum registro encontrado para os filtros selecionados.</p>`;
+        containerLista.innerHTML = `<p style="color: #888;">Nenhum registro encontrado.</p>`;
         return;
     }
 
@@ -134,28 +162,48 @@ function renderizarEvolucaoPercentual(inicio, fim) {
     const el = document.getElementById('graficoEvolucaoPercentual');
     if (graficoEvolucaoPercentual) graficoEvolucaoPercentual.destroy();
 
-    // Filtra dados totais pelo intervalo de datas selecionado
-    let dadosFiltrados = dadosTotais;
-    if (inicio !== "" || fim !== "") {
-        dadosFiltrados = dadosTotais.filter(d => {
-            // Comparação simples baseada na ordenação cronológica das strings Mês/Ano se necessário
-            return true; // Simplificado para abranger o intervalo
-        });
-    }
-
-    const mesesUnicos = [...new Set(dadosFiltrados.map(d => d['Mês/Ano']))].sort((a, b) => {
+    let dadosFiltrados = [...dadosTotais];
+    
+    // Filtro por intervalo se preenchido
+    const mesesUnicos = [...new Set(dadosTotais.map(d => d['Mês/Ano']))].sort((a, b) => {
         const [mA, aA] = a.split('/'); const [mB, aB] = b.split('/');
         return new Date(aA, mA - 1) - new Date(aB, mB - 1);
     });
 
-    const fabricantesUnicos = [...new Set(dadosTotais.map(d => d['Fabricante']))];
-    
-    const datasets = fabricantesUnicos.map((fab, index) => {
-        const dataPoint = mesesUnicos.map(mes => {
-            const regMes = dadosTotais.filter(d => d['Mês/Ano'] === mes);
+    let mesesFiltrados = mesesUnicos;
+    if (inicio !== "" || fim !== "") {
+        const idxInicio = inicio !== "" ? mesesUnicos.indexOf(inicio) : 0;
+        const idxFim = fim !== "" ? mesesUnicos.indexOf(fim) : mesesUnicos.length - 1;
+        mesesFiltrados = mesesUnicos.slice(Math.min(idxInicio, idxFim), Math.max(idxInicio, idxFim) + 1);
+        dadosFiltrados = dadosTotais.filter(d => mesesFiltrados.includes(d['Mês/Ano']));
+    }
+
+    // Identifica quais são os Top 10 fabricantes gerais no período
+    const totalGeralFab = {};
+    dadosFiltrados.forEach(d => {
+        totalGeralFab[d['Fabricante']] = (totalGeralFab[d['Fabricante']] || 0) + d['Quantidade Vendida'];
+    });
+    const top10Fabricantes = Object.entries(totalGeralFab)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 10)
+        .map(x => x[0]);
+
+    const fabricantesDataset = [...top10Fabricantes, 'Outros'];
+
+    const datasets = fabricantesDataset.map((fab, index) => {
+        const dataPoint = mesesFiltrados.map(mes => {
+            const regMes = dadosFiltrados.filter(d => d['Mês/Ano'] === mes);
             const totalMes = regMes.reduce((sum, r) => sum + r['Quantidade Vendida'], 0) || 1;
-            const regFab = regMes.find(r => r['Fabricante'] === fab);
-            const qtdFab = regFab ? regFab['Quantidade Vendida'] : 0;
+            
+            let qtdFab = 0;
+            if (fab === 'Outros') {
+                qtdFab = regMes
+                    .filter(r => !top10Fabricantes.includes(r['Fabricante']))
+                    .reduce((sum, r) => sum + r['Quantidade Vendida'], 0);
+            } else {
+                const regFab = regMes.find(r => r['Fabricante'] === fab);
+                qtdFab = regFab ? regFab['Quantidade Vendida'] : 0;
+            }
             return ((qtdFab / totalMes) * 100).toFixed(2);
         });
 
@@ -170,7 +218,7 @@ function renderizarEvolucaoPercentual(inicio, fim) {
 
     graficoEvolucaoPercentual = new Chart(el, {
         type: 'line',
-        data: { labels: mesesUnicos, datasets },
+        data: { labels: mesesFiltrados, datasets },
         options: { 
             responsive: true, 
             maintainAspectRatio: false,
@@ -183,16 +231,14 @@ function renderizarVendasFabricanteTotais(dados) {
     const el = document.getElementById('graficoVendasFabricanteTotais');
     if (graficoVendasFabricanteTotais) graficoVendasFabricanteTotais.destroy();
 
-    const agrupado = dados.reduce((acc, item) => {
-        acc[item['Fabricante']] = (acc[item['Fabricante']] || 0) + item['Quantidade Vendida'];
-        return acc;
-    }, {});
+    // Aplica Top 10 + Outros
+    const agrupadoTop10 = processarTop10ComOutros(dados, 'Fabricante', 'Quantidade Vendida');
 
     graficoVendasFabricanteTotais = new Chart(el, {
         type: 'bar',
         data: {
-            labels: Object.keys(agrupado),
-            datasets: [{ label: 'Vendas Totais', data: Object.values(agrupado), backgroundColor: '#0984e3' }]
+            labels: Object.keys(agrupadoTop10),
+            datasets: [{ label: 'Vendas Totais', data: Object.values(agrupadoTop10), backgroundColor: '#3b82f6' }]
         },
         options: { responsive: true, maintainAspectRatio: false }
     });
@@ -208,14 +254,13 @@ function renderizarModelosMesAno(dados) {
         return acc;
     }, {});
 
-    // Ordena e pega os top 10 modelos para o gráfico não ficar poluído
-    const ordenado = Object.entries(agrupado).sort((a,b) => b[1] - a[1]).slice(0, 10);
+    const ordenado = Object.entries(agrupado).sort((a, b) => b[1] - a[1]).slice(0, 10);
 
     graficoModelosMesAno = new Chart(el, {
         type: 'bar',
         data: {
             labels: ordenado.map(x => x[0]),
-            datasets: [{ label: 'Quantidade Vendida', data: ordenado.map(x => x[1]), backgroundColor: '#00b894' }]
+            datasets: [{ label: 'Quantidade Vendida', data: ordenado.map(x => x[1]), backgroundColor: '#10b981' }]
         },
         options: { responsive: true, maintainAspectRatio: false, indexAxis: 'y' }
     });
