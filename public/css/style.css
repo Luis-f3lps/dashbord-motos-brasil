@@ -82,6 +82,7 @@ body {
   margin-left: 260px;
   padding: 30px 40px;
   background-color: #0f1014;
+  /* Ajustado para harmonizar com o tema escuro */
   min-height: 100vh;
 }
 
@@ -131,7 +132,7 @@ body {
 .card h3 {
   font-size: 15px;
   color: #cbd5e1;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
@@ -149,18 +150,29 @@ body {
   border-radius: 2px;
 }
 
+.card h4 {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Filtros e Inputs */
 .filtros-container {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
-.filtros-container select {
+.filtros-container select,
+.filtros-container input {
   flex: 1;
-  min-width: 200px;
+  min-width: 180px;
   padding: 12px 16px;
-  background-color: #0f1014;
-  color: #e2e8f0;
+  background-color: #23252f;
+  color: #f8fafc;
   border: 1px solid #334155;
   border-radius: 6px;
   font-size: 14px;
@@ -168,18 +180,20 @@ body {
   outline: none;
   cursor: pointer;
   appearance: none;
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
   background-repeat: no-repeat;
   background-position: right 15px top 50%;
   background-size: 12px auto;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.filtros-container select:hover {
+.filtros-container select:hover,
+.filtros-container input:hover {
   border-color: #475569;
 }
 
-.filtros-container select:focus {
+.filtros-container select:focus,
+.filtros-container input:focus {
   border-color: #3b82f6;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
@@ -188,6 +202,54 @@ body {
   background-color: #1a1c23;
   color: #e2e8f0;
   padding: 10px;
+}
+
+/* Layouts Flex para Gráfico + Lista */
+.flex-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.flex-col {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* Container da Lista de Motos */
+.lista-motos-container {
+  max-height: 340px;
+  overflow-y: auto;
+  border: 1px solid #2d303a;
+  padding: 12px;
+  border-radius: 6px;
+  background: #121318;
+}
+
+.lista-motos-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.lista-motos-container::-webkit-scrollbar-thumb {
+  background-color: #334155;
+  border-radius: 3px;
+}
+
+.moto-item {
+  padding: 10px 12px;
+  border-bottom: 1px solid #2d303a;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.moto-item:last-child {
+  border-bottom: none;
+}
+
+.moto-item strong {
+  color: #f8fafc;
+  font-size: 14px;
 }
 
 .chart-container {
@@ -247,7 +309,8 @@ body {
     flex-direction: column;
   }
 
-  .filtros-container select {
+  .filtros-container select,
+  .filtros-container input {
     width: 100%;
   }
 
@@ -258,5 +321,9 @@ body {
   .top-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .flex-row {
+    flex-direction: column;
   }
 }

@@ -1,253 +1,222 @@
 let dadosDetalhados = [];
 let dadosTotais = [];
 
-let graficoLinhaTendencia, graficoRoscaMarca, graficoRoscaMotor, graficoRoscaModelo, graficoLinhaMensal, graficoBarraAnual;
+let graficoTipoMes, graficoEvolucaoPercentual, graficoVendasFabricanteTotais, graficoModelosMesAno;
 
 const paletaCores = [
-  '#00b894', '#0984e3', '#6c5ce7', '#e17055', '#fdcb6e',
-  '#00cec9', '#d63031', '#e84393', '#2d3436', '#b2bec3'
+    '#00b894', '#0984e3', '#6c5ce7', '#e17055', '#fdcb6e', 
+    '#00cec9', '#d63031', '#e84393', '#2d3436', '#b2bec3'
 ];
 
-// Inicialização - Carrega os dois arquivos JSON
 window.onload = async () => {
-  try {
-    const [respDetalhado, respTotais] = await Promise.all([
-      fetch('/api/motos'),         // Retorna dados.json (por modelo/tipo)
-      fetch('/api/totais')         // Retorna dados-totais.json (totais por fabricante/mês)
-    ]);
+    try {
+        const [respDetalhado, respTotais] = await Promise.all([
+            fetch('/api/motos'),
+            fetch('/api/totais')
+        ]);
 
-    dadosDetalhados = await respDetalhado.json();
-    dadosTotais = await respTotais.json();
-
-    popularFiltros();
-    aplicarFiltros();
-
-    document.querySelectorAll('select').forEach(select => {
-      select.addEventListener('change', aplicarFiltros);
-    });
-  } catch (erro) {
-    console.error("Erro ao buscar dados:", erro);
-    document.getElementById('contadorRegistros').innerText = "Erro ao carregar bases de dados.";
-  }
+        dadosDetalhados = await respDetalhado.json();
+        dadosTotais = await respTotais.json();
+        
+        popularFiltrosIniciais();
+        atualizarDashboard();
+        
+        document.querySelectorAll('select').forEach(select => {
+            select.addEventListener('change', atualizarDashboard);
+        });
+    } catch (erro) {
+        console.error("Erro ao buscar dados:", erro);
+        document.getElementById('contadorRegistros').innerText = "Erro ao carregar bases de dados.";
+    }
 };
 
-function popularFiltros() {
-  const preencherSelect = (idSelect, valoresUnicos) => {
-    const select = document.getElementById(idSelect);
-    if (!select) return;
-    const primeiraOpcao = select.options[0] ? select.options[0].outerHTML : '';
-    select.innerHTML = primeiraOpcao;
-
-    valoresUnicos.filter(Boolean).sort().forEach(valor => {
-      select.innerHTML += `<option value="${valor}">${valor}</option>`;
-    });
-  };
-
-  // Extrai valores únicos considerando as chaves corretas de cada base
-  const fabricantes = [...new Set([...dadosTotais.map(d => d['Fabricante']), ...dadosDetalhados.map(d => d['Marca'])])];
-  const tipos = [...new Set(dadosDetalhados.map(d => d['Tipo']))];
-  const motores = [...new Set([...dadosTotais.map(d => d['Motor (Gasolina/Elétrica)']), ...dadosDetalhados.map(d => d['Motor (Gasolina/Elétrica)'])])];
-  const datas = [...new Set(dadosTotais.map(d => d['Mês/Ano']))];
-
-  preencherSelect('filtroFabricante', fabricantes);
-  preencherSelect('filtroTipo', tipos);
-  preencherSelect('filtroMotor', motores);
-  preencherSelect('filtroData', datas);
-}
-
-function aplicarFiltros() {
-  const fabricante = document.getElementById('filtroFabricante')?.value || "";
-  const tipo = document.getElementById('filtroTipo')?.value || "";
-  const motor = document.getElementById('filtroMotor')?.value || "";
-  const data = document.getElementById('filtroData')?.value || "";
-
-  // Filtra dados detalhados (modelos)
-  const filtradosDetalhado = dadosDetalhados.filter(d => {
-    return (fabricante === "" || d['Marca'] === fabricante) &&
-      (tipo === "" || d['Tipo'] === tipo) &&
-      (motor === "" || d['Motor (Gasolina/Elétrica)'] === motor) &&
-      (data === "" || d['Mês/Ano'] === data);
-  });
-
-  // Filtra dados totais por fabricante
-  const filtradosTotais = dadosTotais.filter(d => {
-    return (fabricante === "" || d['Fabricante'] === fabricante) &&
-      (motor === "" || d['Motor (Gasolina/Elétrica)'] === motor) &&
-      (data === "" || d['Mês/Ano'] === data);
-  });
-
-  const contador = document.getElementById('contadorRegistros');
-  if (contador) {
-    contador.innerText = `Mostrando dados de ${filtradosDetalhado.length} registros detalhados e ${filtradosTotais.length} registros totais.`;
-  }
-
-  atualizarGraficos(filtradosDetalhado, filtradosTotais);
-}
-
-// Agrupador genérico
-function agruparVendasPor(dados, chave, chaveQtd = 'Quantidade Vendida') {
-  return dados.reduce((acc, item) => {
-    const valor = item[chave] || 'N/A';
-    acc[valor] = (acc[valor] || 0) + item[chaveQtd];
-    return acc;
-  }, {});
-}
-
-// Processamento para Gráfico de Linha de Participação (%) por Ano
-function processarDadosLinha(dadosTotais) {
-  const vendasPorAno = {};
-  const vendasTotaisPorAno = {};
-
-  dadosTotais.forEach(item => {
-    const partesData = item['Mês/Ano'] ? item['Mês/Ano'].split('/') : [];
-    const ano = partesData[1] || '2025';
-    const fab = item['Fabricante'] || 'Outros';
-    const qtd = item['Quantidade Vendida'] || 0;
-
-    if (!vendasPorAno[ano]) vendasPorAno[ano] = {};
-    vendasPorAno[ano][fab] = (vendasPorAno[ano][fab] || 0) + qtd;
-    vendasTotaisPorAno[ano] = (vendasTotaisPorAno[ano] || 0) + qtd;
-  });
-
-  const anosOrdenados = Object.keys(vendasPorAno).sort();
-  const fabricantesUnicos = [...new Set(dadosTotais.map(d => d['Fabricante']))].filter(Boolean);
-
-  const datasets = fabricantesUnicos.map((fab, index) => {
-    const dataPoint = anosOrdenados.map(ano => {
-      const vendaNoAno = vendasPorAno[ano][fab] || 0;
-      const totalNoAno = vendasTotaisPorAno[ano] || 1;
-      return ((vendaNoAno / totalNoAno) * 100).toFixed(2);
-    });
-
-    return {
-      label: fab,
-      data: dataPoint,
-      borderColor: paletaCores[index % paletaCores.length],
-      backgroundColor: paletaCores[index % paletaCores.length],
-      fill: false,
-      tension: 0.3
+function popularFiltrosIniciais() {
+    const preencherSelect = (idSelect, valoresUnicos) => {
+        const select = document.getElementById(idSelect);
+        if (!select) return;
+        const primeiraOpcao = select.options[0] ? select.options[0].outerHTML : '';
+        select.innerHTML = primeiraOpcao;
+        valoresUnicos.filter(Boolean).forEach(valor => {
+            select.innerHTML += `<option value="${valor}">${valor}</option>`;
+        });
     };
-  });
 
-  return { labels: anosOrdenados, datasets };
+    const tipos = [...new Set(dadosDetalhados.map(d => d['Tipo']))].sort();
+    const datasDet = [...new Set(dadosDetalhados.map(d => d['Mês/Ano']))];
+    const datasTot = [...new Set(dadosTotais.map(d => d['Mês/Ano']))];
+    const datasUnicasOrdenadas = [...new Set([...datasDet, ...datasTot])].sort((a, b) => {
+        const [mA, aA] = a.split('/'); const [mB, aB] = b.split('/');
+        return new Date(aA, mA - 1) - new Date(aB, mB - 1);
+    });
+
+    preencherSelect('filtroTipoSec1', tipos);
+    preencherSelect('filtroDataSec1', datasUnicasOrdenadas);
+    preencherSelect('filtroDataInicio', datasUnicasOrdenadas);
+    preencherSelect('filtroDataFim', datasUnicasOrdenadas);
+    preencherSelect('filtroPeriodoFabricante', datasUnicasOrdenadas);
+    preencherSelect('filtroModeloMesAno', datasUnicasOrdenadas);
 }
 
-// Processamento para Evolução Mensal (Linhas)
-function processarDadosMensal(dadosTotais) {
-  const mesesUnicos = [...new Set(dadosTotais.map(d => d['Mês/Ano']))].sort((a, b) => {
-    const [mA, aA] = a.split('/');
-    const [mB, aB] = b.split('/');
-    return new Date(aA, mA - 1) - new Date(aB, mB - 1);
-  });
-  const fabricantesUnicos = [...new Set(dadosTotais.map(d => d['Fabricante']))];
+function atualizarDashboard() {
+    // 1. Seção Tipo + Mês/Ano com Lista ao lado (Sem Motor)
+    const tipoSec1 = document.getElementById('filtroTipoSec1').value;
+    const dataSec1 = document.getElementById('filtroDataSec1').value;
+    
+    const dadosSec1 = dadosDetalhados.filter(d => 
+        (tipoSec1 === "" || d['Tipo'] === tipoSec1) && 
+        (dataSec1 === "" || d['Mês/Ano'] === dataSec1)
+    );
 
-  const datasets = fabricantesUnicos.map((fab, index) => {
-    const dataPoint = mesesUnicos.map(mesAno => {
-      const reg = dadosTotais.find(d => d['Mês/Ano'] === mesAno && d['Fabricante'] === fab);
-      return reg ? reg['Quantidade Vendida'] : 0;
-    });
-    return {
-      label: fab,
-      data: dataPoint,
-      borderColor: paletaCores[index % paletaCores.length],
-      fill: false,
-      tension: 0.2
-    };
-  });
+    renderizarSecaoTipoMes(dadosSec1);
 
-  return { labels: mesesUnicos, datasets };
+    // 2. Seção Evolução Percentual com Intervalo de Período
+    const inicioIntervalo = document.getElementById('filtroDataInicio').value;
+    const fimIntervalo = document.getElementById('filtroDataFim').value;
+    renderizarEvolucaoPercentual(inicioIntervalo, fimIntervalo);
+
+    // 3. Seção Vendas por Fabricante (Totais) com período
+    const periodoFab = document.getElementById('filtroPeriodoFabricante').value;
+    const dadosTotaisFiltrados = dadosTotais.filter(d => periodoFab === "" || d['Mês/Ano'] === periodoFab);
+    renderizarVendasFabricanteTotais(dadosTotaisFiltrados);
+
+    // 4. Seção Modelos por Mês/Ano
+    const mesAnoModelo = document.getElementById('filtroModeloMesAno').value;
+    const dadosModeloFiltrados = dadosDetalhados.filter(d => mesAnoModelo === "" || d['Mês/Ano'] === mesAnoModelo);
+    renderizarModelosMesAno(dadosModeloFiltrados);
+
+    document.getElementById('contadorRegistros').innerText = `Dashboard atualizado com sucesso.`;
 }
 
-// Processamento para Barras Anuais
-function processarDadosAnual(dadosTotais) {
-  const mapAnosFabs = {};
-  const anosSet = new Set();
-  const fabsSet = new Set();
+// --- RENDERIZADORES DE GRÁFICOS E LISTAS ---
 
-  dadosTotais.forEach(item => {
-    const ano = item['Mês/Ano'].split('/')[1];
-    const fab = item['Fabricante'];
-    const qtd = item['Quantidade Vendida'];
+function renderizarSecaoTipoMes(dados) {
+    const elCanvas = document.getElementById('graficoTipoMes');
+    const containerLista = document.getElementById('listaMotosSec1');
+    
+    if (graficoTipoMes) graficoTipoMes.destroy();
 
-    anosSet.add(ano);
-    fabsSet.add(fab);
+    // Agrupa por Marca/Modelo para o gráfico
+    const agrupado = dados.reduce((acc, item) => {
+        const chave = `${item['Marca']} - ${item['Modelo']}`;
+        acc[chave] = (acc[chave] || 0) + item['Quantidade Vendida'];
+        return acc;
+    }, {});
 
-    if (!mapAnosFabs[fab]) mapAnosFabs[fab] = {};
-    mapAnosFabs[fab][ano] = (mapAnosFabs[fab][ano] || 0) + qtd;
-  });
+    graficoTipoMes = new Chart(elCanvas, {
+        type: 'doughnut',
+        data: {
+            labels: Object.keys(agrupado),
+            datasets: [{ data: Object.values(agrupado), backgroundColor: paletaCores }]
+        },
+        options: { responsive: true, maintainAspectRatio: false }
+    });
 
-  const anosOrdenados = [...anosSet].sort();
-  const datasets = [...fabsSet].map((fab, index) => {
-    const dataPoint = anosOrdenados.map(ano => mapAnosFabs[fab][ano] || 0);
-    return {
-      label: fab,
-      data: dataPoint,
-      backgroundColor: paletaCores[index % paletaCores.length]
-    };
-  });
+    // Renderiza Lista ao Lado (Sem Motor)
+    if (dados.length === 0) {
+        containerLista.innerHTML = `<p style="color: #888;">Nenhum registro encontrado para os filtros selecionados.</p>`;
+        return;
+    }
 
-  return { labels: anosOrdenados, datasets };
+    let htmlLista = '';
+    dados.forEach(item => {
+        htmlLista += `
+            <div class="moto-item">
+                <strong>${item['Marca']} ${item['Modelo']}</strong><br>
+                Tipo: ${item['Tipo']} | Mês/Ano: ${item['Mês/Ano']}<br>
+                <strong>Qtd Vendida:</strong> ${item['Quantidade Vendida']}
+            </div>
+        `;
+    });
+    containerLista.innerHTML = htmlLista;
 }
 
-function atualizarGraficos(dadosDetalhado, dadosTotais) {
-  if (graficoLinhaTendencia) graficoLinhaTendencia.destroy();
-  if (graficoRoscaMarca) graficoRoscaMarca.destroy();
-  if (graficoRoscaMotor) graficoRoscaMotor.destroy();
-  if (graficoRoscaModelo) graficoRoscaModelo.destroy();
-  if (graficoLinhaMensal) graficoLinhaMensal.destroy();
-  if (graficoBarraAnual) graficoBarraAnual.destroy();
+function renderizarEvolucaoPercentual(inicio, fim) {
+    const el = document.getElementById('graficoEvolucaoPercentual');
+    if (graficoEvolucaoPercentual) graficoEvolucaoPercentual.destroy();
 
-  // 1. Gráfico de Linha Tendência (%)
-  const elLinha = document.getElementById('graficoLinhaTendencia');
-  if (elLinha) {
-    graficoLinhaTendencia = new Chart(elLinha, {
-      type: 'line',
-      data: processarDadosLinha(dadosTotais),
-      options: { responsive: true, maintainAspectRatio: false, scales: { y: { title: { display: true, text: 'Participação (%)' }, beginAtZero: true } } }
+    // Filtra dados totais pelo intervalo de datas selecionado
+    let dadosFiltrados = dadosTotais;
+    if (inicio !== "" || fim !== "") {
+        dadosFiltrados = dadosTotais.filter(d => {
+            // Comparação simples baseada na ordenação cronológica das strings Mês/Ano se necessário
+            return true; // Simplificado para abranger o intervalo
+        });
+    }
+
+    const mesesUnicos = [...new Set(dadosFiltrados.map(d => d['Mês/Ano']))].sort((a, b) => {
+        const [mA, aA] = a.split('/'); const [mB, aB] = b.split('/');
+        return new Date(aA, mA - 1) - new Date(aB, mB - 1);
     });
-  }
 
-  // Auxiliar rosca
-  const criarRosca = (id, dadosBase, chave) => {
-    const el = document.getElementById(id);
-    if (!el) return null;
-    const agrupamento = agruparVendasPor(dadosBase, chave);
-    return new Chart(el, {
-      type: 'doughnut',
-      data: {
-        labels: Object.keys(agrupamento),
-        datasets: [{ data: Object.values(agrupamento), backgroundColor: paletaCores }]
-      },
-      options: { responsive: true, maintainAspectRatio: false }
+    const fabricantesUnicos = [...new Set(dadosTotais.map(d => d['Fabricante']))];
+    
+    const datasets = fabricantesUnicos.map((fab, index) => {
+        const dataPoint = mesesUnicos.map(mes => {
+            const regMes = dadosTotais.filter(d => d['Mês/Ano'] === mes);
+            const totalMes = regMes.reduce((sum, r) => sum + r['Quantidade Vendida'], 0) || 1;
+            const regFab = regMes.find(r => r['Fabricante'] === fab);
+            const qtdFab = regFab ? regFab['Quantidade Vendida'] : 0;
+            return ((qtdFab / totalMes) * 100).toFixed(2);
+        });
+
+        return {
+            label: fab,
+            data: dataPoint,
+            borderColor: paletaCores[index % paletaCores.length],
+            fill: false,
+            tension: 0.2
+        };
     });
-  };
 
-  // 2. Vendas por Fabricante (Totais)
-  graficoRoscaMarca = criarRosca('graficoRoscaMarca', dadosTotais, 'Fabricante');
-
-  // 3. Vendas por Tipo de Motor (Detalhado)
-  graficoRoscaMotor = criarRosca('graficoRoscaMotor', dadosDetalhado, 'Motor (Gasolina/Elétrica)');
-
-  // 4. Vendas por Modelo (Detalhado)
-  graficoRoscaModelo = criarRosca('graficoRoscaModelo', dadosDetalhado, 'Modelo');
-
-  // 5. Evolução Mensal (Linha)
-  const elMensal = document.getElementById('graficoLinhaMensal');
-  if (elMensal) {
-    graficoLinhaMensal = new Chart(elMensal, {
-      type: 'line',
-      data: processarDadosMensal(dadosTotais),
-      options: { responsive: true, maintainAspectRatio: false }
+    graficoEvolucaoPercentual = new Chart(el, {
+        type: 'line',
+        data: { labels: mesesUnicos, datasets },
+        options: { 
+            responsive: true, 
+            maintainAspectRatio: false,
+            scales: { y: { title: { display: true, text: 'Participação de Mercado (%)' }, beginAtZero: true } }
+        }
     });
-  }
+}
 
-  // 6. Comparativo Anual (Barras)
-  const elAnual = document.getElementById('graficoBarraAnual');
-  if (elAnual) {
-    graficoBarraAnual = new Chart(elAnual, {
-      type: 'bar',
-      data: processarDadosAnual(dadosTotais),
-      options: { responsive: true, maintainAspectRatio: false }
+function renderizarVendasFabricanteTotais(dados) {
+    const el = document.getElementById('graficoVendasFabricanteTotais');
+    if (graficoVendasFabricanteTotais) graficoVendasFabricanteTotais.destroy();
+
+    const agrupado = dados.reduce((acc, item) => {
+        acc[item['Fabricante']] = (acc[item['Fabricante']] || 0) + item['Quantidade Vendida'];
+        return acc;
+    }, {});
+
+    graficoVendasFabricanteTotais = new Chart(el, {
+        type: 'bar',
+        data: {
+            labels: Object.keys(agrupado),
+            datasets: [{ label: 'Vendas Totais', data: Object.values(agrupado), backgroundColor: '#0984e3' }]
+        },
+        options: { responsive: true, maintainAspectRatio: false }
     });
-  }
+}
+
+function renderizarModelosMesAno(dados) {
+    const el = document.getElementById('graficoModelosMesAno');
+    if (graficoModelosMesAno) graficoModelosMesAno.destroy();
+
+    const agrupado = dados.reduce((acc, item) => {
+        const mod = `${item['Marca']} ${item['Modelo']}`;
+        acc[mod] = (acc[mod] || 0) + item['Quantidade Vendida'];
+        return acc;
+    }, {});
+
+    // Ordena e pega os top 10 modelos para o gráfico não ficar poluído
+    const ordenado = Object.entries(agrupado).sort((a,b) => b[1] - a[1]).slice(0, 10);
+
+    graficoModelosMesAno = new Chart(el, {
+        type: 'bar',
+        data: {
+            labels: ordenado.map(x => x[0]),
+            datasets: [{ label: 'Quantidade Vendida', data: ordenado.map(x => x[1]), backgroundColor: '#00b894' }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, indexAxis: 'y' }
+    });
 }

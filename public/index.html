@@ -8,21 +8,6 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        .filtros-container {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-        .filtros-container select {
-            padding: 10px;
-            border-radius: 6px;
-            border: 1px solid #ddd;
-            flex: 1;
-            min-width: 150px;
-        }
-    </style>
 </head>
 
 <body>
@@ -43,55 +28,77 @@
             </header>
 
             <section class="dashboard-grid">
+                
+                <!-- DIV 1: Tipo da Moto + Mês/Ano + Gráfico + Lista ao lado (sem motor) -->
                 <div class="card wide">
-                    <h3>Filtros de Pesquisa</h3>
+                    <h3>Análise por Tipo e Mês/Ano</h3>
                     <div class="filtros-container">
-                        <select id="filtroFabricante">
-                            <option value="">Todos os Fabricantes</option>
+                        <select id="filtroTipoSec1">
+                            <option value="">Selecione o Tipo (ex: City)</option>
                         </select>
-                        <select id="filtroTipo">
-                            <option value="">Todos os Tipos</option>
+                        <select id="filtroDataSec1">
+                            <option value="">Selecione o Mês/Ano</option>
                         </select>
-                        <select id="filtroMotor">
-                            <option value="">Todos os Motores</option>
+                    </div>
+                    <div class="flex-row">
+                        <div class="flex-col" style="position: relative; height:350px;">
+                            <canvas id="graficoTipoMes"></canvas>
+                        </div>
+                        <div class="flex-col">
+                            <h4>Informações das Motos (Sem Motor)</h4>
+                            <div class="lista-motos-container" id="listaMotosSec1">
+                                <p style="color: #888;">Selecione o tipo e o mês/ano acima.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DIV 2: Evolução porcentagem de fabricante por mês ano com intervalo de período -->
+                <div class="card wide">
+                    <h3>Evolução de Participação (%) por Fabricante (Mês/Ano)</h3>
+                    <div class="filtros-container">
+                        <div>
+                            <label style="font-size: 12px; display:block;">De (Mês/Ano):</label>
+                            <select id="filtroDataInicio">
+                                <option value="">Início</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label style="font-size: 12px; display:block;">Até (Mês/Ano):</label>
+                            <select id="filtroDataFim">
+                                <option value="">Fim</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="chart-container" style="position: relative; height:40vh; width:100%">
+                        <canvas id="graficoEvolucaoPercentual"></canvas>
+                    </div>
+                </div>
+
+                <!-- DIV 3: Vendas por Fabricante (Dados Totais) com select por período -->
+                <div class="card wide">
+                    <h3>Vendas por Fabricante (Dados Totais)</h3>
+                    <div class="filtros-container">
+                        <select id="filtroPeriodoFabricante">
+                            <option value="">Todos os Períodos</option>
                         </select>
-                        <select id="filtroData">
+                    </div>
+                    <div class="chart-container" style="position: relative; height:35vh;"><canvas id="graficoVendasFabricanteTotais"></canvas></div>
+                </div>
+
+                <!-- DIV 4: Gráfico Modelos Vendidos por Mês/Ano -->
+                <div class="card wide">
+                    <h3>Modelos Vendidos por Mês / Ano</h3>
+                    <div class="filtros-container">
+                        <select id="filtroModeloMesAno">
                             <option value="">Todos os Meses/Anos</option>
                         </select>
                     </div>
-                </div>
-
-                <div class="card wide">
-                    <h3>Evolução de Vendas (%) por Fabricante/Ano</h3>
                     <div class="chart-container" style="position: relative; height:40vh; width:100%">
-                        <canvas id="graficoLinhaTendencia"></canvas>
+                        <canvas id="graficoModelosMesAno"></canvas>
                     </div>
                 </div>
 
-                <div class="card">
-                    <h3>Vendas por Fabricante (Totais)</h3>
-                    <div class="chart-container" style="position: relative; height:30vh;"><canvas id="graficoRoscaMarca"></canvas></div>
-                </div>
-
-                <div class="card">
-                    <h3>Vendas por Tipo de Motor</h3>
-                    <div class="chart-container" style="position: relative; height:30vh;"><canvas id="graficoRoscaMotor"></canvas></div>
-                </div>
-
-                <div class="card">
-                    <h3>Vendas por Modelo</h3>
-                    <div class="chart-container" style="position: relative; height:30vh;"><canvas id="graficoRoscaModelo"></canvas></div>
-                </div>
-
-                <div class="card wide">
-                    <h3>Evolução Mensal de Vendas (Totais)</h3>
-                    <div class="chart-container" style="position: relative; height:40vh; width:100%"><canvas id="graficoLinhaMensal"></canvas></div>
-                </div>
-
-                <div class="card wide">
-                    <h3>Comparativo Anual por Fabricante</h3>
-                    <div class="chart-container" style="position: relative; height:40vh; width:100%"><canvas id="graficoBarraAnual"></canvas></div>
-                </div>
             </section>
         </main>
     </div>
