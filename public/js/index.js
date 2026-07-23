@@ -1,131 +1,176 @@
 let dadosOriginais = [];
-let graficoLinhaTendencia, graficoRoscaMarca, graficoRoscaMotor, graficoRoscaModelo;
+let graficoLinhaMensal, graficoBarraAnual, graficoRoscaMotor;
 
-const paletaCores = ['#00b894', '#0984e3', '#6c5ce7', '#e17055', '#fdcb6e', '#00cec9', '#d63031', '#e84393'];
+const paletaCores = [
+  '#00b894', '#0984e3', '#6c5ce7', '#e17055', '#fdcb6e',
+  '#00cec9', '#d63031', '#e84393', '#2d3436', '#b2bec3'
+];
 
 // Inicialização
 window.onload = async () => {
-    try {
-        const resposta = await fetch('/api/motos');
-        dadosOriginais = await resposta.json();
-        
-        popularFiltros();
-        aplicarFiltros(); 
-        
-        document.querySelectorAll('select').forEach(select => {
-            select.addEventListener('change', aplicarFiltros);
-        });
-    } catch (erro) {
-        console.error("Erro ao buscar dados:", erro);
-    }
+  try {
+    const resposta = await fetch('/api/motos');
+    dadosOriginais = await resposta.json();
+
+    popularFiltros();
+    aplicarFiltros();
+
+    document.querySelectorAll('select').forEach(select => {
+      select.addEventListener('change', aplicarFiltros);
+    });
+  } catch (erro) {
+    console.error("Erro ao buscar dados:", erro);
+  }
 };
 
 function popularFiltros() {
-    const preencherSelect = (idSelect, chave) => {
-        const select = document.getElementById(idSelect);
-        const valoresUnicos = [...new Set(dadosOriginais.map(d => d[chave]))].sort();
-        valoresUnicos.forEach(valor => {
-            if(valor) select.innerHTML += `<option value="${valor}">${valor}</option>`;
-        });
-    };
+  const preencherSelect = (idSelect, chave) => {
+    const select = document.getElementById(idSelect);
+    if (!select) return;
+    const valoresUnicos = [...new Set(dadosOriginais.map(d => d[chave]))].sort();
+    valoresUnicos.forEach(valor => {
+      if (valor) select.innerHTML += `<option value="${valor}">${valor}</option>`;
+    });
+  };
 
-    preencherSelect('filtroMarca', 'Marca');
-    preencherSelect('filtroTipo', 'Tipo');
-    preencherSelect('filtroMotor', 'Motor (Gasolina/Elétrica)');
-    preencherSelect('filtroData', 'Mês/Ano');
+  preencherSelect('filtroFabricante', 'Fabricante');
+  preencherSelect('filtroMotor', 'Motor (Gasolina/Elétrica)');
+  preencherSelect('filtroData', 'Mês/Ano');
 }
 
 function aplicarFiltros() {
-    const marca = document.getElementById('filtroMarca').value;
-    const tipo = document.getElementById('filtroTipo').value;
-    const motor = document.getElementById('filtroMotor').value;
-    const data = document.getElementById('filtroData').value;
+  const fabricante = document.getElementById('filtroFabricante') ? document.getElementById('filtroFabricante').value : "";
+  const motor = document.getElementById('filtroMotor') ? document.getElementById('filtroMotor').value : "";
+  const data = document.getElementById('filtroData') ? document.getElementById('filtroData').value : "";
 
-    const dadosFiltrados = dadosOriginais.filter(d => {
-        return (marca === "" || d['Marca'] === marca) &&
-               (tipo === "" || d['Tipo'] === tipo) &&
-               (motor === "" || d['Motor (Gasolina/Elétrica)'] === motor) &&
-               (data === "" || d['Mês/Ano'] === data);
-    });
+  const dadosFiltrados = dadosOriginais.filter(d => {
+    return (fabricante === "" || d['Fabricante'] === fabricante) &&
+      (motor === "" || d['Motor (Gasolina/Elétrica)'] === motor) &&
+      (data === "" || d['Mês/Ano'] === data);
+  });
 
-    document.getElementById('contadorRegistros').innerText = `Mostrando dados de ${dadosFiltrados.length} registros.`;
-    atualizarGraficos(dadosFiltrados);
+  const contador = document.getElementById('contadorRegistros');
+  if (contador) {
+    contador.innerText = `Mostrando dados de ${dadosFiltrados.length} registros.`;
+  }
+
+  atualizarGraficos(dadosFiltrados);
 }
 
-// Agrupador para Gráficos de Rosca
+// Agrupador genérico
 function agruparVendasPor(dados, chave) {
-    return dados.reduce((acc, item) => {
-        const valor = item[chave] || 'N/A';
-        acc[valor] = (acc[valor] || 0) + item['Quantidade Vendida'];
-        return acc;
-    }, {});
+  return dados.reduce((acc, item) => {
+    const valor = item[chave] || 'N/A';
+    acc[valor] = (acc[valor] || 0) + item['Quantidade Vendida'];
+    return acc;
+  }, {});
 }
 
-function processarDadosLinha(dados) {
-    const vendasPorAno = {};
-    const vendasTotaisPorAno = {};
+// 1. Processar dados para Gráfico de Linha por Mês (Evolução Temporal)
+function processarDadosMensal(dados) {
+  const mesesUnicos = [...new Set(dados.map(d => d['Mês/Ano']))].sort((a, b) => {
+    const [mesA, anoA] = a.split('/');
+    const [mesB, anoB] = b.split('/');
+    return new Date(anoA, mesA - 1) - new Date(anoB, mesB - 1);
+  });
 
-    dados.forEach(item => {
-        const ano = item['Mês/Ano'].split('/')[1]; // Extrai o ano
-        const marca = item['Marca'];
-        const qtd = item['Quantidade Vendida'];
+  const fabricantesUnicos = [...new Set(dados.map(d => d['Fabricante']))];
 
-        if (!vendasPorAno[ano]) vendasPorAno[ano] = {};
-        vendasPorAno[ano][marca] = (vendasPorAno[ano][marca] || 0) + qtd;
-        vendasTotaisPorAno[ano] = (vendasTotaisPorAno[ano] || 0) + qtd;
+  const datasets = fabricantesUnicos.map((fab, index) => {
+    const dataPoint = mesesUnicos.map(mesAno => {
+      const registro = dados.find(d => d['Mês/Ano'] === mesAno && d['Fabricante'] === fab);
+      return registro ? registro['Quantidade Vendida'] : 0;
     });
 
-    const anosOrdenados = Object.keys(vendasPorAno).sort();
-    const marcasUnicas = [...new Set(dados.map(d => d['Marca']))];
-    
-    const datasets = marcasUnicas.map((marca, index) => {
-        const dataPoint = anosOrdenados.map(ano => {
-            const vendaMarcaNoAno = vendasPorAno[ano][marca] || 0;
-            const totalNoAno = vendasTotaisPorAno[ano] || 1; 
-            return ((vendaMarcaNoAno / totalNoAno) * 100).toFixed(2); // Retorna a porcentagem
-        });
+    return {
+      label: fab,
+      data: dataPoint,
+      borderColor: paletaCores[index % paletaCores.length],
+      backgroundColor: paletaCores[index % paletaCores.length],
+      fill: false,
+      tension: 0.2
+    };
+  });
 
-        return {
-            label: marca,
-            data: dataPoint,
-            borderColor: paletaCores[index % paletaCores.length],
-            fill: false,
-            tension: 0.3
-        };
+  return { labels: mesesUnicos, datasets };
+}
+
+// 2. Processar dados para Gráfico de Barras por Ano (Consolidado Anual)
+function processarDadosAnual(dados) {
+  const vendasPorAnoFabricante = {};
+  const anosSet = new Set();
+  const fabricantesSet = new Set();
+
+  dados.forEach(item => {
+    const ano = item['Mês/Ano'].split('/')[1]; // Extrai o ano (ex: '2025')
+    const fab = item['Fabricante'];
+    const qtd = item['Quantidade Vendida'];
+
+    anosSet.add(ano);
+    fabricantesSet.add(fab);
+
+    if (!vendasPorAnoFabricante[fab]) vendasPorAnoFabricante[fab] = {};
+    vendasPorAnoFabricante[fab][ano] = (vendasPorAnoFabricante[fab][ano] || 0) + qtd;
+  });
+
+  const anosOrdenados = [...anosSet].sort();
+  const fabricantesUnicos = [...fabricantesSet];
+
+  const datasets = fabricantesUnicos.map((fab, index) => {
+    const dataPoint = anosOrdenados.map(ano => {
+      return vendasPorAnoFabricante[fab][ano] || 0;
     });
 
-    return { labels: anosOrdenados, datasets };
+    return {
+      label: fab,
+      data: dataPoint,
+      backgroundColor: paletaCores[index % paletaCores.length]
+    };
+  });
+
+  return { labels: anosOrdenados, datasets };
 }
 
 function atualizarGraficos(dados) {
-    if (graficoLinhaTendencia) graficoLinhaTendencia.destroy();
-    if (graficoRoscaMarca) graficoRoscaMarca.destroy();
-    if (graficoRoscaMotor) graficoRoscaMotor.destroy();
-    if (graficoRoscaModelo) graficoRoscaModelo.destroy();
+  if (graficoLinhaMensal) graficoLinhaMensal.destroy();
+  if (graficoBarraAnual) graficoBarraAnual.destroy();
+  if (graficoRoscaMotor) graficoRoscaMotor.destroy();
 
-    const dadosLinha = processarDadosLinha(dados);
-    graficoLinhaTendencia = new Chart(document.getElementById('graficoLinhaTendencia'), {
-        type: 'line',
-        data: dadosLinha,
-        options: {
-            responsive: true, maintainAspectRatio: false,
-            scales: { y: { title: { display: true, text: 'Porcentagem do Mercado (%)' }, beginAtZero: true } }
-        }
-    });
+  // Gráfico de Linha por Mês
+  const dadosMensais = processarDadosMensal(dados);
+  graficoLinhaMensal = new Chart(document.getElementById('graficoLinhaMensal'), {
+    type: 'line',
+    data: dadosMensais,
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { title: { display: true, text: 'Vendas Totais por Fabricante (Mensal)' } },
+      scales: { y: { title: { display: true, text: 'Quantidade Vendida' }, beginAtZero: true } }
+    }
+  });
 
-    const criarRosca = (id, chave) => {
-        const agrupamento = agruparVendasPor(dados, chave);
-        return new Chart(document.getElementById(id), {
-            type: 'doughnut',
-            data: {
-                labels: Object.keys(agrupamento),
-                datasets: [{ data: Object.values(agrupamento), backgroundColor: paletaCores }]
-            },
-            options: { responsive: true, maintainAspectRatio: false }
-        });
-    };
+  // Gráfico de Barras por Ano
+  const dadosAnuais = processarDadosAnual(dados);
+  graficoBarraAnual = new Chart(document.getElementById('graficoBarraAnual'), {
+    type: 'bar',
+    data: dadosAnuais,
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { title: { display: true, text: 'Vendas Totais por Fabricante (Anual)' } },
+      scales: { y: { title: { display: true, text: 'Quantidade Vendida' }, beginAtZero: true } }
+    }
+  });
 
-    graficoRoscaMarca = criarRosca('graficoRoscaMarca', 'Marca');
-    graficoRoscaMotor = criarRosca('graficoRoscaMotor', 'Motor (Gasolina/Elétrica)');
-    graficoRoscaModelo = criarRosca('graficoRoscaModelo', 'Modelo');
+  // Gráfico de Rosca por Tipo de Motor
+  const agrupamentoMotor = agruparVendasPor(dados, 'Motor (Gasolina/Elétrica)');
+  graficoRoscaMotor = new Chart(document.getElementById('graficoRoscaMotor'), {
+    type: 'doughnut',
+    data: {
+      labels: Object.keys(agrupamentoMotor),
+      datasets: [{ data: Object.values(agrupamentoMotor), backgroundColor: ['#0984e3', '#00b894'] }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { title: { display: true, text: 'Participação por Motorização' } }
+    }
+  });
 }

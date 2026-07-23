@@ -1,10 +1,6 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const { neon } = require('@neondatabase/serverless');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const cookieParser = require('cookie-parser');
 
 const app = express();
 
