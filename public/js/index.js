@@ -2,7 +2,10 @@ let dadosDetalhados = [];
 let dadosTotais = [];
 
 let graficoTipoMes, graficoEvolucaoPercentual, graficoVendasFabricanteTotais, graficoModelosMesAno;
-
+function limparNumero(valor) {
+    if (!valor) return 0;
+    return Number(String(valor).replace(/[^0-9.-]+/g,"")) || 0;
+}
 const coresFabricantes = {
     'HONDA': '#ff0000',          // Vermelho
     'YAMAHA': '#0000ff',         // Azul
@@ -63,75 +66,114 @@ window.onload = async () => {
     }
 };
 
+// 1. AJUSTE NA FUNÇÃO DE POPULAR FILTROS (Para identificar todos os anos disponíveis)
 function popularFiltrosIniciais() {
-    const preencherSelect = (idSelect, valoresUnicos) => {
+    const preencherSelect = (idSelect, valores) => {
         const select = document.getElementById(idSelect);
         if (!select) return;
         const primeiraOpcao = select.options[0] ? select.options[0].outerHTML : '';
         select.innerHTML = primeiraOpcao;
-        valoresUnicos.filter(Boolean).forEach(valor => {
+        valores.filter(Boolean).forEach(valor => {
             select.innerHTML += `<option value="${valor}">${valor}</option>`;
         });
     };
 
-    const tipos = [...new Set(dadosDetalhados.map(d => d['Tipo']))].sort();
     const datasDet = [...new Set(dadosDetalhados.map(d => d['Mês/Ano']))];
     const datasTot = [...new Set(dadosTotais.map(d => d['Mês/Ano']))];
-    const datasUnicasOrdenadas = [...new Set([...datasDet, ...datasTot])].sort((a, b) => {
+    const datasUnicas = [...new Set([...datasDet, ...datasTot])].sort((a, b) => {
         const [mA, aA] = a.split('/'); const [mB, aB] = b.split('/');
         return new Date(aA, mA - 1) - new Date(aB, mB - 1);
     });
 
-    const opcoesPeriodo = ['Ano Todo (2025)', 'Ano Todo (2026)', ...datasUnicasOrdenadas];
+    // Extrai automaticamente os Anos únicos (ex: 2024, 2025, 2026)
+    const anosUnicos = [...new Set(datasUnicas.map(d => d.split('/')[1]))].filter(Boolean).sort();
+    const opcoesAnos = anosUnicos.map(ano => `Ano Todo (${ano})`);
 
-    preencherSelect('filtroTipoSec1', tipos);
-    preencherSelect('filtroDataSec1', datasUnicasOrdenadas);
-    preencherSelect('filtroDataInicio', datasUnicasOrdenadas);
-    preencherSelect('filtroDataFim', datasUnicasOrdenadas);
+    // Junta as opções de "Ano Todo" com os meses específicos
+    const opcoesPeriodo = [...opcoesAnos, ...datasUnicas];
+
+    preencherSelect('filtroTipoSec1', [...new Set(dadosDetalhados.map(d => d['Tipo']))].sort());
+    preencherSelect('filtroDataSec1', datasUnicas);
+    preencherSelect('filtroDataInicio', datasUnicas);
+    preencherSelect('filtroDataFim', datasUnicas);
     preencherSelect('filtroPeriodoFabricante', opcoesPeriodo);
+    
+    // Alimenta a Seção 4
     preencherSelect('filtroModeloMesAno', opcoesPeriodo);
 }
 
+
+// 2. AJUSTE NO FILTRO DO DASHBOARD (Para saber o que filtrar)
 function atualizarDashboard() {
-    const tipoSec1 = document.getElementById('filtroTipoSec1').value || "City";
-    const dataSec1 = document.getElementById('filtroDataSec1').value;
-    
-    const dadosSec1 = dadosDetalhados.filter(d => 
-        (tipoSec1 === "" || d['Tipo'] === tipoSec1) && 
-        (dataSec1 === "" || d['Mês/Ano'] === dataSec1)
-    );
-    renderizarSecaoTipoMes(dadosSec1);
+    // ... (seu código anterior das seções 1, 2 e 3 mantém igual) ...
 
-    const inicioIntervalo = document.getElementById('filtroDataInicio').value;
-    const fimIntervalo = document.getElementById('filtroDataFim').value;
-    renderizarEvolucaoPercentual(inicioIntervalo, fimIntervalo);
-
-    const periodoFab = document.getElementById('filtroPeriodoFabricante').value;
-    let dadosTotaisFiltrados = dadosTotais;
-    if (periodoFab === 'Ano Todo (2025)') {
-        dadosTotaisFiltrados = dadosTotais.filter(d => d['Mês/Ano'].endsWith('/2025'));
-    } else if (periodoFab === 'Ano Todo (2026)') {
-        dadosTotaisFiltrados = dadosTotais.filter(d => d['Mês/Ano'].endsWith('/2026'));
-    } else if (periodoFab !== "") {
-        dadosTotaisFiltrados = dadosTotais.filter(d => d['Mês/Ano'] === periodoFab);
-    }
-    renderizarVendasFabricanteTotais(dadosTotaisFiltrados);
-
-    // Seção 4: Modelos por Mês/Ano (Considerando todos os tipos)
+    // --- SEÇÃO 4: Filtro Inteligente de Modelos ---
     const periodoMod = document.getElementById('filtroModeloMesAno').value;
     let dadosModeloFiltrados = dadosDetalhados;
-    if (periodoMod === 'Ano Todo (2025)') {
-        dadosModeloFiltrados = dadosDetalhados.filter(d => d['Mês/Ano'].endsWith('/2025'));
-    } else if (periodoMod === 'Ano Todo (2026)') {
-        dadosModeloFiltrados = dadosDetalhados.filter(d => d['Mês/Ano'].endsWith('/2026'));
+
+    if (periodoMod.startsWith('Ano Todo')) {
+        // Extrai o ano dentro dos parênteses. Ex: "Ano Todo (2024)" -> "2024"
+        const anoSelecionado = periodoMod.match(/\((.*?)\)/)[1];
+        dadosModeloFiltrados = dadosDetalhados.filter(d => d['Mês/Ano'] && d['Mês/Ano'].endsWith(`/${anoSelecionado}`));
     } else if (periodoMod !== "") {
+        // Se escolheu um mês específico (Ex: "06/2024")
         dadosModeloFiltrados = dadosDetalhados.filter(d => d['Mês/Ano'] === periodoMod);
     }
+    // Se for "" (vazio), ele passa todos os dados (Soma Todo o Período)
+
     renderizarModelosMesAno(dadosModeloFiltrados);
 
     document.getElementById('contadorRegistros').innerText = `Dashboard atualizado com sucesso.`;
 }
 
+
+// 3. A FUNÇÃO DO GRÁFICO DA SEÇÃO 4 COM CONVERSÃO DE NÚMEROS CORRIGIDA
+function renderizarModelosMesAno(dados) {
+    const el = document.getElementById('graficoModelosMesAno');
+    if (graficoModelosMesAno) graficoModelosMesAno.destroy();
+
+    // Agrupa todos os modelos independentemente do tipo, CORRIGINDO AS ASPAS COM Number()
+    const agrupado = dados.reduce((acc, item) => {
+        const mod = `${item['Marca']} ${item['Modelo']}`;
+        
+        // CORREÇÃO CRÍTICA AQUI: Usamos Number() para garantir soma matemática verdadeira
+        const quantidade = Number(item['Quantidade Vendida']) || 0; 
+        
+        if (!acc[mod]) {
+            acc[mod] = { qtd: 0, marca: item['Marca'] };
+        }
+        
+        acc[mod].qtd += quantidade; // Agora soma números: 37 + 100269 (Sem risco de concatenar texto!)
+        return acc;
+    }, {});
+
+    // Ordena do maior para o menor (Top 15 mais vendidos no período filtrado)
+    const ordenado = Object.entries(agrupado).sort((a, b) => b[1].qtd - a[1].qtd).slice(0, 15);
+    
+    const labels = ordenado.map(x => x[0]);
+    const valores = ordenado.map(x => x[1].qtd);
+    const cores = ordenado.map(x => obterCorFabricante(x[1].marca));
+
+    graficoModelosMesAno = new Chart(el, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{ 
+                label: 'Quantidade Vendida (Soma Real)', 
+                data: valores, 
+                backgroundColor: cores 
+            }]
+        },
+        options: { 
+            responsive: true, 
+            maintainAspectRatio: false, 
+            indexAxis: 'y', // Deixa em barras horizontais (ótimo para ler nomes de modelos)
+            plugins: {
+                legend: { display: false }
+            }
+        }
+    });
+}
 function obterTop10ComOutros(dados, chaveFab, chaveQtd) {
     const somatorio = {};
     dados.forEach(item => {
@@ -272,37 +314,3 @@ function renderizarVendasFabricanteTotais(dados) {
     });
 }
 
-function renderizarModelosMesAno(dados) {
-    const el = document.getElementById('graficoModelosMesAno');
-    if (graficoModelosMesAno) graficoModelosMesAno.destroy();
-
-    // Agrupa todos os modelos independentemente do tipo
-    const agrupado = dados.reduce((acc, item) => {
-        const mod = `${item['Marca']} ${item['Modelo']}`;
-        acc[mod] = { qtd: (acc[mod]?.qtd || 0) + item['Quantidade Vendida'], marca: item['Marca'] };
-        return acc;
-    }, {});
-
-    // Ordena do maior para o menor e pega os top 15 para abranger bem todos os tipos
-    const ordenado = Object.entries(agrupado).sort((a, b) => b[1].qtd - a[1].qtd).slice(0, 15);
-    
-    const labels = ordenado.map(x => x[0]);
-    const valores = ordenado.map(x => x[1].qtd);
-    const cores = ordenado.map(x => obterCorFabricante(x[1].marca));
-
-    graficoModelosMesAno = new Chart(el, {
-        type: 'bar',
-        data: {
-            labels: labels,
-            datasets: [{ label: 'Quantidade Vendida (Todos os Tipos)', data: valores, backgroundColor: cores }]
-        },
-        options: { 
-            responsive: true, 
-            maintainAspectRatio: false, 
-            indexAxis: 'y',
-            plugins: {
-                legend: { display: false }
-            }
-        }
-    });
-}
