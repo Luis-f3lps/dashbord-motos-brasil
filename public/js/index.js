@@ -52,8 +52,7 @@ window.onload = async () => {
 
         const selectDataSec1 = document.getElementById('filtroDataSec1');
         if (selectDataSec1 && selectDataSec1.options.length > 1) {
-            selectDataSec1.selectedIndex = selectDataSec1.options.length - 1;
-        }
+selectDataSec1.selectedIndex = 1;        }
 
         atualizarDashboard();
         
