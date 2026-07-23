@@ -2,27 +2,34 @@ let dadosDetalhados = [];
 let dadosTotais = [];
 
 let graficoTipoMes, graficoEvolucaoPercentual, graficoVendasFabricanteTotais, graficoModelosMesAno;
+
 function limparNumero(valor) {
     if (!valor) return 0;
-    return Number(String(valor).replace(/[^0-9.-]+/g,"")) || 0;
+    return Number(String(valor).replace(/[^0-9.-]+/g, "")) || 0;
 }
+
+// FUNÇÃO BLINDADA: Lê a data não importa se tem barra invertida ou não
+function obterMesAno(item) {
+    return item['Mês/Ano'] || item['Mês\\/Ano'] || "";
+}
+
 const coresFabricantes = {
-    'HONDA': '#ff0000',          // Vermelho
-    'YAMAHA': '#0000ff',         // Azul
-    'KAWASAKI': '#32cd32',       // Verde-limão
-    'SUZUKI': '#87ceeb',         // Azul-claro
-    'DUCATI': '#8b0000',         // Vermelho-escuro
-    'H.DAVIDSON': '#000000',     // Preto
-    'BMW': '#1e293b',            // Escuro corporativo
-    'TRIUMPH': '#006400',        // Verde-escuro
-    'KTM': '#ff8c00',            // Laranja
-    'ROYAL ENFIELD': '#8b4513',  // Marrom
-    'SHINERAY': '#ff69b4',       // Rosa
-    'MOTTU': '#008000',          // Verde
-    'AVELLOZ': '#d97706',        // Amarelo escurecido
-    'BAJAJ': '#64748b',          // Prata/Cinza escuro
-    'HAOJUE': '#800080',         // Roxo
-    'OUTROS': '#64748b'          // Cinza
+    'HONDA': '#ff0000',
+    'YAMAHA': '#0000ff',
+    'KAWASAKI': '#32cd32',
+    'SUZUKI': '#87ceeb',
+    'DUCATI': '#8b0000',
+    'H.DAVIDSON': '#000000',
+    'BMW': '#1e293b',
+    'TRIUMPH': '#006400',
+    'KTM': '#ff8c00',
+    'ROYAL ENFIELD': '#8b4513',
+    'SHINERAY': '#ff69b4',
+    'MOTTU': '#008000',
+    'AVELLOZ': '#d97706',
+    'BAJAJ': '#64748b',
+    'HAOJUE': '#800080',
+    'OUTROS': '#64748b'
 };
 
 function obterCorFabricante(fabricante) {
@@ -47,12 +54,12 @@ window.onload = async () => {
         
         popularFiltrosIniciais();
         
+        // Define "City" por padrão, mas deixa a data VAZIA ("") para carregar todo o período inicial e evitar tela em branco
         const selectTipoSec1 = document.getElementById('filtroTipoSec1');
         if (selectTipoSec1) selectTipoSec1.value = "City";
 
         const selectDataSec1 = document.getElementById('filtroDataSec1');
-        if (selectDataSec1 && selectDataSec1.options.length > 1) {
-selectDataSec1.selectedIndex = 1;        }
+        if (selectDataSec1) selectDataSec1.value = ""; 
 
         atualizarDashboard();
         
@@ -65,7 +72,6 @@ selectDataSec1.selectedIndex = 1;        }
     }
 };
 
-// 1. AJUSTE NA FUNÇÃO DE POPULAR FILTROS (Para identificar todos os anos disponíveis)
 function popularFiltrosIniciais() {
     const preencherSelect = (idSelect, valores) => {
         const select = document.getElementById(idSelect);
@@ -77,107 +83,71 @@ function popularFiltrosIniciais() {
         });
     };
 
-    const datasDet = [...new Set(dadosDetalhados.map(d => d['Mês/Ano']))];
-    const datasTot = [...new Set(dadosTotais.map(d => d['Mês/Ano']))];
-    const datasUnicas = [...new Set([...datasDet, ...datasTot])].sort((a, b) => {
+    const datasDet = [...new Set(dadosDetalhados.map(d => obterMesAno(d)))];
+    const datasTot = [...new Set(dadosTotais.map(d => obterMesAno(d)))];
+    const datasUnicas = [...new Set([...datasDet, ...datasTot])].filter(Boolean).sort((a, b) => {
         const [mA, aA] = a.split('/'); const [mB, aB] = b.split('/');
         return new Date(aA, mA - 1) - new Date(aB, mB - 1);
     });
 
-    // Extrai automaticamente os Anos únicos (ex: 2024, 2025, 2026)
     const anosUnicos = [...new Set(datasUnicas.map(d => d.split('/')[1]))].filter(Boolean).sort();
     const opcoesAnos = anosUnicos.map(ano => `Ano Todo (${ano})`);
-
-    // Junta as opções de "Ano Todo" com os meses específicos
     const opcoesPeriodo = [...opcoesAnos, ...datasUnicas];
 
-    preencherSelect('filtroTipoSec1', [...new Set(dadosDetalhados.map(d => d['Tipo']))].sort());
+    preencherSelect('filtroTipoSec1', [...new Set(dadosDetalhados.map(d => d['Tipo']))].filter(Boolean).sort());
     preencherSelect('filtroDataSec1', datasUnicas);
     preencherSelect('filtroDataInicio', datasUnicas);
     preencherSelect('filtroDataFim', datasUnicas);
     preencherSelect('filtroPeriodoFabricante', opcoesPeriodo);
-    
-    // Alimenta a Seção 4
     preencherSelect('filtroModeloMesAno', opcoesPeriodo);
 }
 
-
-// 2. AJUSTE NO FILTRO DO DASHBOARD (Para saber o que filtrar)
 function atualizarDashboard() {
-    // ... (seu código anterior das seções 1, 2 e 3 mantém igual) ...
+    // SEÇÃO 1: Análise por Tipo e Data (Usando a função blindada obterMesAno)
+    const tipoSec1 = document.getElementById('filtroTipoSec1').value || "";
+    const dataSec1 = document.getElementById('filtroDataSec1').value || "";
+    
+    const dadosSec1 = dadosDetalhados.filter(d => {
+        const condTipo = (tipoSec1 === "" || d['Tipo'] === tipoSec1);
+        const condData = (dataSec1 === "" || obterMesAno(d) === dataSec1);
+        return condTipo && condData;
+    });
+    renderizarSecaoTipoMes(dadosSec1);
 
-    // --- SEÇÃO 4: Filtro Inteligente de Modelos ---
+    // SEÇÃO 2: Evolução Percentual
+    const inicioIntervalo = document.getElementById('filtroDataInicio').value;
+    const fimIntervalo = document.getElementById('filtroDataFim').value;
+    renderizarEvolucaoPercentual(inicioIntervalo, fimIntervalo);
+
+    // SEÇÃO 3: Vendas Totais por Fabricante
+    const periodoFab = document.getElementById('filtroPeriodoFabricante').value;
+    let dadosTotaisFiltrados = dadosTotais;
+    if (periodoFab.startsWith('Ano Todo')) {
+        const anoSelecionado = periodoFab.match(/\((.*?)\)/)[1];
+        dadosTotaisFiltrados = dadosTotais.filter(d => obterMesAno(d).endsWith(`/${anoSelecionado}`));
+    } else if (periodoFab !== "") {
+        dadosTotaisFiltrados = dadosTotais.filter(d => obterMesAno(d) === periodoFab);
+    }
+    renderizarVendasFabricanteTotais(dadosTotaisFiltrados);
+
+    // SEÇÃO 4: Modelos por Mês/Ano
     const periodoMod = document.getElementById('filtroModeloMesAno').value;
     let dadosModeloFiltrados = dadosDetalhados;
-
     if (periodoMod.startsWith('Ano Todo')) {
-        // Extrai o ano dentro dos parênteses. Ex: "Ano Todo (2024)" -> "2024"
         const anoSelecionado = periodoMod.match(/\((.*?)\)/)[1];
-        dadosModeloFiltrados = dadosDetalhados.filter(d => d['Mês/Ano'] && d['Mês/Ano'].endsWith(`/${anoSelecionado}`));
+        dadosModeloFiltrados = dadosDetalhados.filter(d => obterMesAno(d).endsWith(`/${anoSelecionado}`));
     } else if (periodoMod !== "") {
-        // Se escolheu um mês específico (Ex: "06/2024")
-        dadosModeloFiltrados = dadosDetalhados.filter(d => d['Mês/Ano'] === periodoMod);
+        dadosModeloFiltrados = dadosDetalhados.filter(d => obterMesAno(d) === periodoMod);
     }
-    // Se for "" (vazio), ele passa todos os dados (Soma Todo o Período)
-
     renderizarModelosMesAno(dadosModeloFiltrados);
 
     document.getElementById('contadorRegistros').innerText = `Dashboard atualizado com sucesso.`;
 }
 
-
-// 3. A FUNÇÃO DO GRÁFICO DA SEÇÃO 4 COM CONVERSÃO DE NÚMEROS CORRIGIDA
-function renderizarModelosMesAno(dados) {
-    const el = document.getElementById('graficoModelosMesAno');
-    if (graficoModelosMesAno) graficoModelosMesAno.destroy();
-
-    // Agrupa todos os modelos independentemente do tipo, CORRIGINDO AS ASPAS COM Number()
-    const agrupado = dados.reduce((acc, item) => {
-        const mod = `${item['Marca']} ${item['Modelo']}`;
-        
-        // CORREÇÃO CRÍTICA AQUI: Usamos Number() para garantir soma matemática verdadeira
-        const quantidade = Number(item['Quantidade Vendida']) || 0; 
-        
-        if (!acc[mod]) {
-            acc[mod] = { qtd: 0, marca: item['Marca'] };
-        }
-        
-        acc[mod].qtd += quantidade; // Agora soma números: 37 + 100269 (Sem risco de concatenar texto!)
-        return acc;
-    }, {});
-
-    // Ordena do maior para o menor (Top 15 mais vendidos no período filtrado)
-    const ordenado = Object.entries(agrupado).sort((a, b) => b[1].qtd - a[1].qtd).slice(0, 15);
-    
-    const labels = ordenado.map(x => x[0]);
-    const valores = ordenado.map(x => x[1].qtd);
-    const cores = ordenado.map(x => obterCorFabricante(x[1].marca));
-
-    graficoModelosMesAno = new Chart(el, {
-        type: 'bar',
-        data: {
-            labels: labels,
-            datasets: [{ 
-                label: 'Quantidade Vendida (Soma Real)', 
-                data: valores, 
-                backgroundColor: cores 
-            }]
-        },
-        options: { 
-            responsive: true, 
-            maintainAspectRatio: false, 
-            indexAxis: 'y', // Deixa em barras horizontais (ótimo para ler nomes de modelos)
-            plugins: {
-                legend: { display: false }
-            }
-        }
-    });
-}
 function obterTop10ComOutros(dados, chaveFab, chaveQtd) {
     const somatorio = {};
     dados.forEach(item => {
         const fab = item[chaveFab] || 'Outros';
-        // AQUI: Usando limparNumero para garantir soma matemática sem erro de texto
         somatorio[fab] = (somatorio[fab] || 0) + limparNumero(item[chaveQtd]);
     });
 
@@ -195,9 +165,16 @@ function renderizarSecaoTipoMes(dados) {
     
     if (graficoTipoMes) graficoTipoMes.destroy();
 
+    if (!dados || dados.length === 0) {
+        if (elCanvas) {
+            graficoTipoMes = new Chart(elCanvas, { type: 'doughnut', data: { labels: [], datasets: [] } });
+        }
+        containerLista.innerHTML = `<p style="color: #888; padding: 10px;">Nenhum registro encontrado para o filtro selecionado.</p>`;
+        return;
+    }
+
     const agrupado = dados.reduce((acc, item) => {
         const chave = `${item['Marca']} - ${item['Modelo']}`;
-        // AQUI: Protegendo a soma do gráfico de rosca contra textos com aspas
         acc[chave] = (acc[chave] || 0) + limparNumero(item['Quantidade Vendida']);
         return acc;
     }, {});
@@ -216,21 +193,15 @@ function renderizarSecaoTipoMes(dados) {
         options: { responsive: true, maintainAspectRatio: false }
     });
 
-    if (dados.length === 0) {
-        containerLista.innerHTML = `<p style="color: #888;">Nenhum registro encontrado.</p>`;
-        return;
-    }
-
     let htmlLista = '';
     dados.forEach(item => {
         const corMarca = obterCorFabricante(item['Marca']);
-        // Limpando também na exibição visual da lista ao lado do gráfico
         const qtdLimpa = limparNumero(item['Quantidade Vendida']);
         htmlLista += `
-            <div class="moto-item">
+            <div class="moto-item" style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 4px;">
                 <strong style="color: ${corMarca};">${item['Marca']}</strong> <strong>${item['Modelo']}</strong><br>
-                Tipo: ${item['Tipo']} | Mês/Ano: ${item['Mês/Ano']}<br>
-                <strong>Qtd Vendida:</strong> ${qtdLimpa}
+                Tipo: ${item['Tipo']} | Mês/Ano: ${obterMesAno(item)}<br>
+                <strong>Qtd Vendida:</strong> ${qtdLimpa.toLocaleString('pt-BR')}
             </div>
         `;
     });
@@ -241,7 +212,7 @@ function renderizarEvolucaoPercentual(inicio, fim) {
     const el = document.getElementById('graficoEvolucaoPercentual');
     if (graficoEvolucaoPercentual) graficoEvolucaoPercentual.destroy();
 
-    const mesesUnicos = [...new Set(dadosTotais.map(d => d['Mês/Ano']))].sort((a, b) => {
+    const mesesUnicos = [...new Set(dadosTotais.map(d => obterMesAno(d)))].filter(Boolean).sort((a, b) => {
         const [mA, aA] = a.split('/'); const [mB, aB] = b.split('/');
         return new Date(aA, mA - 1) - new Date(aB, mB - 1);
     });
@@ -253,11 +224,10 @@ function renderizarEvolucaoPercentual(inicio, fim) {
         mesesFiltrados = mesesUnicos.slice(Math.min(idxInicio, idxFim), Math.max(idxInicio, idxFim) + 1);
     }
 
-    const dadosFiltradosIntervalo = dadosTotais.filter(d => mesesFiltrados.includes(d['Mês/Ano']));
+    const dadosFiltradosIntervalo = dadosTotais.filter(d => mesesFiltrados.includes(obterMesAno(d)));
 
     const totalFabPeriodo = {};
     dadosFiltradosIntervalo.forEach(d => {
-        // AQUI: Protegendo o cálculo das linhas de evolução percentual
         totalFabPeriodo[d['Fabricante']] = (totalFabPeriodo[d['Fabricante']] || 0) + limparNumero(d['Quantidade Vendida']);
     });
     const top10Periodo = Object.entries(totalFabPeriodo).sort((a, b) => b[1] - a[1]).slice(0, 10).map(x => x[0]);
@@ -265,8 +235,7 @@ function renderizarEvolucaoPercentual(inicio, fim) {
 
     const datasets = fabricantesDataset.map((fab) => {
         const dataPoint = mesesFiltrados.map(mes => {
-            const regMes = dadosFiltradosIntervalo.filter(d => d['Mês/Ano'] === mes);
-            // AQUI: Somando com limparNumero()
+            const regMes = dadosFiltradosIntervalo.filter(d => obterMesAno(d) === mes);
             const totalMes = regMes.reduce((sum, r) => sum + limparNumero(r['Quantidade Vendida']), 0) || 1;
             
             let qtdFab = 0;
@@ -319,3 +288,45 @@ function renderizarVendasFabricanteTotais(dados) {
     });
 }
 
+function renderizarModelosMesAno(dados) {
+    const el = document.getElementById('graficoModelosMesAno');
+    if (graficoModelosMesAno) graficoModelosMesAno.destroy();
+
+    const agrupado = dados.reduce((acc, item) => {
+        const mod = `${item['Marca']} ${item['Modelo']}`;
+        const quantidade = limparNumero(item['Quantidade Vendida']); 
+        
+        if (!acc[mod]) {
+            acc[mod] = { qtd: 0, marca: item['Marca'] };
+        }
+        
+        acc[mod].qtd += quantidade; 
+        return acc;
+    }, {});
+
+    const ordenado = Object.entries(agrupado).sort((a, b) => b[1].qtd - a[1].qtd).slice(0, 15);
+    
+    const labels = ordenado.map(x => x[0]);
+    const valores = ordenado.map(x => x[1].qtd);
+    const cores = ordenado.map(x => obterCorFabricante(x[1].marca));
+
+    graficoModelosMesAno = new Chart(el, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{ 
+                label: 'Quantidade Vendida', 
+                data: valores, 
+                backgroundColor: cores 
+            }]
+        },
+        options: { 
+            responsive: true, 
+            maintainAspectRatio: false, 
+            indexAxis: 'y',
+            plugins: {
+                legend: { display: false }
+            }
+        }
+    });
+}
