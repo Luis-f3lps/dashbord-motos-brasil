@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data:;">
+    <link rel="icon" href="/images/icon.png" type="image/png">
+    <title>Dashboards dos projetos do IFNMG</title>
+
+    <link rel="stylesheet" href="/css/style2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="container">
+        <nav class="sidebar" id="sidemenu">
+            <div class="logo">
+                <div class="logo-box"></div>
+                <span>Admin</span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="/index"><i class="fas fa-chart-pie"></i> <span>Ir para o Dashboard</span></a>
+                </li>
+                <li class="active">
+                    <a href="#adicionar"><i class="fas fa-plus-circle"></i> <span>Adicionar Projeto</span></a>
+                </li>
+                <li>
+                    <a href="#gerenciar"><i class="fas fa-tasks"></i> <span>Gerenciar Projetos</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-header" id="topo">
+                <div class="header-left">
+                    <div class="breadcrumb"><i class="fas fa-cog"></i> / Administração</div>
+                    <p id="statusAdmin" style="font-weight: bold; color: #4caf50;">Carregando sistema...</p>
+                </div>
+            </header>
+
+            <section class="dashboard-grid" style="display: flex; flex-direction: column; gap: 20px;">
+
+                <div class="card wide" id="adicionar">
+                    <h3><i class="fas fa-plus-circle"></i> Adicionar Novo Projeto</h3>
+                    <form id="formNovoProjeto" onsubmit="adicionarProjeto(event)"
+                        style="margin-top: 15px; display: flex; flex-direction: column; gap: 15px;">
+                        <input type="text" id="addTitulo" placeholder="Título do Projeto" required
+                            style="padding: 12px; border: 1px solid #ddd; border-radius: 4px; width: 100%;">
+
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <select id="addArea" required
+                                style="padding: 12px; border: 1px solid #ddd; border-radius: 4px; flex: 1; min-width: 200px; background-color: white; color: #555;">
+                                <option value="" disabled selected>Selecione a Grande Área</option>
+                                <option value="Ciências Agrárias">Ciências Agrárias</option>
+                                <option value="Ciências Biológicas">Ciências Biológicas</option>
+                                <option value="Ciências da Saúde">Ciências da Saúde</option>
+                                <option value="Ciências Exatas e da Terra">Ciências Exatas e da Terra</option>
+                                <option value="Ciências Humanas">Ciências Humanas</option>
+                                <option value="Ciências Sociais Aplicadas">Ciências Sociais Aplicadas</option>
+                                <option value="Engenharias">Engenharias</option>
+                                <option value="Interdisciplinar">Interdisciplinar</option>
+                                <option value="Letras e Artes">Letras e Artes</option>
+                                <option value="Lingüística">Lingüística</option>
+                                <option value="Não Informado">Não Informado</option>
+                            </select>
+                            <select id="addUnidade" required
+                                style="padding: 12px; border: 1px solid #ddd; border-radius: 4px; flex: 1; min-width: 200px; background-color: white; color: #555;">
+                                <option value="" disabled selected>Selecione a Unidade / Campus</option>
+                                <option value="Almenara">Almenara</option>
+                                <option value="Araçuaí">Araçuaí</option>
+                                <option value="Arinos">Arinos</option>
+                                <option value="CEAD">CEAD</option>
+                                <option value="Diamantina">Diamantina</option>
+                                <option value="Janaúba">Janaúba</option>
+                                <option value="Januária">Januária</option>
+                                <option value="Montes Claros">Montes Claros</option>
+                                <option value="Pirapora">Pirapora</option>
+                                <option value="Porteirinha">Porteirinha</option>
+                                <option value="Reitoria">Reitoria</option>
+                                <option value="Salinas">Salinas</option>
+                                <option value="Teófilo Otoni">Teófilo Otoni</option>
+                            </select>
+                        </div>
+
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <input type="text" id="addCoordenador" placeholder="Coordenador" required
+                                style="padding: 12px; border: 1px solid #ddd; border-radius: 4px; flex: 1; min-width: 200px;">
+
+                            <select id="addTipo" required
+                                style="padding: 12px; border: 1px solid #ddd; border-radius: 4px; flex: 1; min-width: 200px; background-color: white; color: #555;">
+                                <option value="" disabled selected>Selecione o Tipo de Pesquisa</option>
+                                <option value="Pesquisa Básica">Pesquisa Básica</option>
+                                <option value="Desenvolvimento Científico/Tecnológico">Desenvolvimento
+                                    Científico/Tecnológico</option>
+                                <option value="Desenvolvimento Experimental">Desenvolvimento Experimental</option>
+                                <option value="Desenvolvimento Institucional">Desenvolvimento Institucional</option>
+                                <option value="Inovação">Inovação</option>
+                            </select>
+                        </div>
+
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <input type="date" id="addInicio" title="Data de Início"
+                                style="padding: 12px; border: 1px solid #ddd; border-radius: 4px; flex: 1; min-width: 200px;">
+                            <input type="text" id="addSEI" placeholder="Processo SEI"
+                                style="padding: 12px; border: 1px solid #ddd; border-radius: 4px; flex: 1; min-width: 200px;">
+                        </div>
+
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <input type="email" id="addEmail" placeholder="E-mail do Coordenador"
+                                style="padding: 12px; border: 1px solid #ddd; border-radius: 4px; flex: 1;">
+
+                            <select id="addFormacao" required
+                                style="padding: 12px; border: 1px solid #ddd; border-radius: 4px; flex: 1; background-color: white; color: #555;">
+                                <option value="" disabled selected>Selecione o Nível de Formação</option>
+                                <option value="Graduação">Graduação</option>
+                                <option value="Especialista">Especialista</option>
+                                <option value="Mestrado">Mestrado</option>
+                                <option value="Doutorado">Doutorado</option>
+                                <option value="Não Informado">Não Informado</option>
+                            </select>
+                        </div>
+                        <button type="submit" id="btnSalvar"
+                            style="background: #00b894; color: white; border: none; padding: 15px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 1.1em; transition: 0.3s;">
+                            <i class="fas fa-save"></i> Salvar no Banco de Dados
+                        </button>
+                    </form>
+                </div>
+                <div class="card wide" id="importar">
+                    <h3><i class="fas fa-file-csv"></i> Importar Projetos via CSV</h3>
+                    <p style="color: #636e72; font-size: 0.9em; margin-top: 10px;">
+                        Seu arquivo CSV deve ser separado por <b>ponto e vírgula ( ; )</b> e ter as colunas exatamente
+                        nesta ordem:<br>
+                        <i>Título ; Área ; Unidade ; Coordenador ; E-mail ; Tipo ; Formação ; Carreira ;
+                            Início(YYYY-MM-DD) ; Término(YYYY-MM-DD) ; SEI ; Ética</i>
+                    </p>
+
+                    <div style="margin-top: 15px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                        <input type="file" id="arquivoCSV" accept=".csv"
+                            style="padding: 10px; border: 1px solid #ddd; border-radius: 4px; background: #f8f9fa;">
+
+                        <button onclick="processarCSV()" id="btnImportar"
+                            style="background: #0984e3; color: white; border: none; padding: 12px 20px; border-radius: 4px; cursor: pointer; font-weight: bold; transition: 0.3s;">
+                            <i class="fas fa-upload"></i> Processar e Salvar no Banco
+                        </button>
+                    </div>
+                </div>
+                <div class="card wide" id="gerenciar">
+                    <h3><i class="fas fa-tasks"></i> Projetos Existentes (Para Apagar)</h3>
+                    <div id="listaAdmin" style="margin-top: 15px;">
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+
+</html>
