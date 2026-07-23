@@ -1,121 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/icon.png" type="image/png">
-    <title>Dashboards dos projetos do IFNMG</title>
+    <title>Dashboard de Vendas - Motos</title>
     <link rel="stylesheet" href="css/style2.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .filtros-container { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+        .filtros-container select { padding: 10px; border-radius: 6px; border: 1px solid #ddd; flex: 1; min-width: 150px;}
+    </style>
 </head>
-
 <body>
-    <div class="menu-toggle" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-    </div>
     <div class="container">
         <nav class="sidebar" id="sidemenu">
-            <div class="logo">
-                <div class="logo-box"></div>
-                <span>IFNMG</span>
-            </div>
+            <div class="logo"><span>Painel Motos</span></div>
             <ul class="nav-links">
-                <li class="active">
-                    <a href="#topo"><i class="fas fa-th-large"></i> <span>Início</span></a>
-                </li>
-                <li>
-                    <a href="#pesquisar"><i class="fa-solid fa-magnifying-glass"></i> <span>Pesquisar</span></a>
-                </li>
-                <li>
-                    <a href="#lista-projetos"><i class="fas fa-list"></i> <span>Lista de Projetos</span></a>
-                </li>
-                <li>
-                    <a href="#area-graficos"><i class="fas fa-chart-line"></i> <span>Gráficos</span></a>
-                </li>
-
-                <li>
-                    <a href="/admin" style="color: #e17055;"><i class="fas fa-cog"></i>
-                        <span>Administração</span></a>
-                </li>
+                <li class="active"><a href="#topo"><i class="fas fa-motorcycle"></i> <span>Dashboard</span></a></li>
             </ul>
         </nav>
 
         <main class="main-content">
             <header class="top-header" id="topo">
                 <div class="header-left">
-                    <div class="breadcrumb"><i class="fas fa-home"></i> / Dashboard / Projetos</div>
-                    <p id="contadorProjetos" style="font-weight: bold; color: #4caf50;">Carregando projetos...</p>
-                </div>
-
-                <div class="header-right" id="pesquisar">
-                    <select id="selectUnidade"
-                        style="padding: 10px; border-radius: 6px; border: 1px solid #ddd; color: #555;">
-                        <option value="">Todas as Unidades</option>
-                    </select>
-
-                    <div class="search-bar">
-                        <input type="text" id="barraPesquisa" placeholder="Pesquisar projeto, área ou coordenador...">
-                        <i class="fas fa-search"></i>
-                    </div>
+                    <div class="breadcrumb"><i class="fas fa-home"></i> / Dashboard / Vendas</div>
+                    <p id="contadorRegistros" style="font-weight: bold; color: #4caf50;">Carregando dados...</p>
                 </div>
             </header>
 
             <section class="dashboard-grid">
+                <div class="card wide">
+                    <h3>Filtros de Pesquisa</h3>
+                    <div class="filtros-container">
+                        <select id="filtroMarca"><option value="">Todos os Fabricantes</option></select>
+                        <select id="filtroTipo"><option value="">Todos os Tipos</option></select>
+                        <select id="filtroMotor"><option value="">Todos os Motores</option></select>
+                        <select id="filtroData"><option value="">Todos os Meses/Anos</option></select>
+                    </div>
+                </div>
 
-                <div class="card wide" id="lista-projetos">
-                    <h3><i class="fas fa-list"></i> Lista de Projetos Recentes</h3>
-                    <div id="containerLista">
-                    </div>
-                </div>
-                <div class="card" id="area-graficos">
-                    <h3>Distribuição por Unidade</h3>
-                    <div class="chart-container">
-                        <canvas id="graficoUnidades"></canvas>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Evolução por Ano</h3>
-                    <div class="chart-container">
-                        <canvas id="graficoAno"></canvas>
+                <div class="card wide">
+                    <h3>Evolução de Vendas (%) por Fabricante/Ano</h3>
+                    <div class="chart-container" style="position: relative; height:40vh; width:100%">
+                        <canvas id="graficoLinhaTendencia"></canvas>
                     </div>
                 </div>
 
                 <div class="card">
-                    <h3>Projetos por Área</h3>
-                    <div class="chart-container">
-                        <canvas id="graficoAreas"></canvas>
-                    </div>
+                    <h3>Vendas por Fabricante</h3>
+                    <div class="chart-container"><canvas id="graficoRoscaMarca"></canvas></div>
                 </div>
+
                 <div class="card">
-                    <h3>Projetos por Coordenadores</h3>
-                    <select id="selectAnoCoordenador" style="padding: 5px; border-radius: 4px; margin-bottom: 10px;">
-                    </select>
-                    <div class="chart-container">
-                        <canvas id="graficoCoordenadores"></canvas>
-                    </div>
+                    <h3>Vendas por Tipo de Motor</h3>
+                    <div class="chart-container"><canvas id="graficoRoscaMotor"></canvas></div>
                 </div>
 
-                <div class="card card-small">
-                    <h3>Tipo de Pesquisa</h3>
-                    <div class="chart-container">
-                        <canvas id="graficoTipos"></canvas>
-                    </div>
+                <div class="card">
+                    <h3>Vendas por Modelo</h3>
+                    <div class="chart-container"><canvas id="graficoRoscaModelo"></canvas></div>
                 </div>
-
-                <div class="card card-small">
-                    <h3>Nível de Formação</h3>
-                    <div class="chart-container">
-                        <canvas id="graficoFormacao"></canvas>
-                    </div>
-                </div>
-
             </section>
         </main>
     </div>
-
     <script src="/js/index.js"></script>
 </body>
-
 </html>
