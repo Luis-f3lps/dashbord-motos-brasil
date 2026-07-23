@@ -81,7 +81,38 @@
         <canvas id="graficoEvolucaoPercentual"></canvas>
     </div>
 </div>
-
+<!-- SEÇÃO 5: Comparativo de Crescimento / Queda por Modelo -->
+<div class="card wide">
+    <h3>Comparativo de Vendas por Modelo (Crescimento / Queda)</h3>
+    <div class="filtros-container">
+        <div>
+            <label style="font-size: 12px; display:block; color:#94a3b8;">Modelo:</label>
+            <select id="filtroCompModelo">
+                <option value="">Selecione o Modelo</option>
+            </select>
+        </div>
+        <div>
+            <label style="font-size: 12px; display:block; color:#94a3b8;">Período A (Base):</label>
+            <select id="filtroCompPeriodoA">
+                <option value="">Período Anterior</option>
+            </select>
+        </div>
+        <div>
+            <label style="font-size: 12px; display:block; color:#94a3b8;">Período B (Comparação):</label>
+            <select id="filtroCompPeriodoB">
+                <option value="">Período Atual</option>
+            </select>
+        </div>
+    </div>
+    
+    <!-- Área onde o JS vai desenhar o resultado -->
+    <div id="areaResultadoComparativo" style="margin-top: 20px; padding: 25px; border-radius: 12px; background: #f8fafc; text-align: center; border: 1px solid #e2e8f0;">
+        <p style="color: #64748b; margin: 0; font-size: 16px;">
+            <i class="fas fa-balance-scale" style="font-size: 24px; display: block; margin-bottom: 10px; color: #94a3b8;"></i>
+            Selecione um modelo e dois períodos acima para gerar o comparativo de vendas.
+        </p>
+    </div>
+</div>
                 <!-- SEÇÃO 3: Vendas por Fabricante (Dados Totais - Top 10 + Outros) com select por período / ano todo -->
                 <div class="card wide">
                     <h3>Vendas por Fabricante (Dados Totais - Top 10 + Outros)</h3>

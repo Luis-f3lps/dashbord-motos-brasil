@@ -8,6 +8,7 @@ function limparNumero(valor) {
     return Number(String(valor).replace(/[^0-9.-]+/g, "")) || 0;
 }
 
+// FUNÇÃO BLINDADA: Lê a data não importa se tem barra invertida ou não
 function obterMesAno(item) {
     return item['Mês/Ano'] || item['Mês\\/Ano'] || "";
 }
@@ -88,7 +89,7 @@ function popularFiltrosIniciais() {
     const datasDet = [...new Set(dadosDetalhados.map(d => obterMesAno(d)))];
     const datasTot = [...new Set(dadosTotais.map(d => obterMesAno(d)))];
     
-    // ORDENAÇÃO DE MESES: Do mais novo (2026, 2025...) para o mais antigo (2021)
+    // ORDENAÇÃO DE MESES: Do mais novo para o mais antigo
     const datasUnicasDecrescente = [...new Set([...datasDet, ...datasTot])].filter(Boolean).sort((a, b) => {
         const [mA, aA] = a.split('/'); const [mB, aB] = b.split('/');
         return new Date(aB, mB - 1) - new Date(aA, mA - 1);
@@ -104,6 +105,9 @@ function popularFiltrosIniciais() {
     // Popula todas as marcas para o select da Seção 2
     const marcasUnicas = [...new Set(dadosTotais.map(d => d['Fabricante']))].filter(Boolean).sort();
 
+    // Popula modelos únicos para o comparativo da Seção 5
+    const modelosUnicos = [...new Set(dadosDetalhados.map(d => `${d['Marca']} - ${d['Modelo']}`))].filter(x => x !== "undefined - undefined").sort();
+
     preencherSelect('filtroTipoSec1', [...new Set(dadosDetalhados.map(d => d['Tipo']))].filter(Boolean).sort());
     preencherSelect('filtroDataSec1', datasUnicasDecrescente);
     preencherSelect('filtroDataInicio', datasUnicasDecrescente);
@@ -111,6 +115,11 @@ function popularFiltrosIniciais() {
     preencherSelect('filtroPeriodoFabricante', opcoesPeriodo);
     preencherSelect('filtroModeloMesAno', opcoesPeriodo);
     preencherSelect('filtroMarcaSec2', marcasUnicas);
+    
+    // Seção 5
+    preencherSelect('filtroCompModelo', modelosUnicos, "Selecione um Modelo");
+    preencherSelect('filtroCompPeriodoA', opcoesPeriodo, "Selecione Período A");
+    preencherSelect('filtroCompPeriodoB', opcoesPeriodo, "Selecione Período B");
 }
 
 function atualizarDashboard() {
@@ -148,6 +157,9 @@ function atualizarDashboard() {
         dadosModeloFiltrados = dadosDetalhados.filter(d => obterMesAno(d) === periodoMod);
     }
     renderizarModelosMesAno(dadosModeloFiltrados);
+
+    // Renderiza o card comparativo (Seção 5)
+    renderizarComparativoModelo();
 
     document.getElementById('contadorRegistros').innerText = `Dashboard atualizado com sucesso.`;
 }
@@ -216,12 +228,11 @@ function renderizarSecaoTipoMes(dados) {
     containerLista.innerHTML = htmlLista;
 }
 
-// SEÇÃO 2 ATUALIZADA: Gráfico com comparativo Marca vs Resto do Mercado
+// SEÇÃO 2: Gráfico com comparativo Marca vs Resto do Mercado
 function renderizarEvolucaoPercentual(inicio, fim, marcaSelecionada = "") {
     const el = document.getElementById('graficoEvolucaoPercentual');
     if (graficoEvolucaoPercentual) graficoEvolucaoPercentual.destroy();
 
-    // Como os meses no select estão decrescentes, no gráfico precisamos reverter para ordem CRONOLÓGICA (crescente)
     const mesesUnicos = [...new Set(dadosTotais.map(d => obterMesAno(d)))].filter(Boolean).sort((a, b) => {
         const [mA, aA] = a.split('/'); const [mB, aB] = b.split('/');
         return new Date(aA, mA - 1) - new Date(aB, mB - 1);
@@ -240,11 +251,9 @@ function renderizarEvolucaoPercentual(inicio, fim, marcaSelecionada = "") {
     let fabricantesDataset = [];
     let top10Periodo = [];
 
-    // SE O USUÁRIO ESCOLHEU UMA MARCA ESPECÍFICA:
     if (marcaSelecionada !== "") {
         fabricantesDataset = [marcaSelecionada, 'Resto do Mercado'];
     } else {
-        // PADRÃO: TOP 10 + OUTROS
         const totalFabPeriodo = {};
         dadosFiltradosIntervalo.forEach(d => {
             totalFabPeriodo[d['Fabricante']] = (totalFabPeriodo[d['Fabricante']] || 0) + limparNumero(d['Quantidade Vendida']);
@@ -351,4 +360,102 @@ function renderizarModelosMesAno(dados) {
             }
         }
     });
+}
+
+// SEÇÃO 5: Comparativo de Vendas por Modelo (Crescimento / Queda)
+function renderizarComparativoModelo() {
+    const modeloSel = document.getElementById('filtroCompModelo') ? document.getElementById('filtroCompModelo').value : "";
+    const periodoA = document.getElementById('filtroCompPeriodoA') ? document.getElementById('filtroCompPeriodoA').value : "";
+    const periodoB = document.getElementById('filtroCompPeriodoB') ? document.getElementById('filtroCompPeriodoB').value : "";
+    const container = document.getElementById('areaResultadoComparativo');
+
+    if (!container) return;
+
+    if (!modeloSel || !periodoA || !periodoB) {
+        container.innerHTML = `
+            <p style="color: #64748b; margin: 0; font-size: 15px;">
+                <i class="fas fa-info-circle" style="font-size: 20px; display: block; margin-bottom: 8px; color: #3b82f6;"></i>
+                Para ver a análise de crescimento ou queda, por favor selecione o <strong>Modelo</strong> e os <strong>Dois Períodos</strong> nos campos acima.
+            </p>
+        `;
+        return;
+    }
+
+    const calcularVendasPeriodo = (periodoAlvo) => {
+        let dadosFiltrados = dadosDetalhados.filter(d => `${d['Marca']} - ${d['Modelo']}` === modeloSel);
+        
+        if (periodoAlvo.startsWith('Ano Todo')) {
+            const ano = periodoAlvo.match(/\((.*?)\)/)[1];
+            dadosFiltrados = dadosFiltrados.filter(d => obterMesAno(d).endsWith(`/${ano}`));
+        } else if (periodoAlvo !== "") {
+            dadosFiltrados = dadosFiltrados.filter(d => obterMesAno(d) === periodoAlvo);
+        }
+        
+        return dadosFiltrados.reduce((sum, d) => sum + limparNumero(d['Quantidade Vendida']), 0);
+    };
+
+    const qtdA = calcularVendasPeriodo(periodoA);
+    const qtdB = calcularVendasPeriodo(periodoB);
+    const diferenca = qtdB - qtdA;
+
+    let percentual = 0;
+    if (qtdA > 0) {
+        percentual = ((diferenca / qtdA) * 100).toFixed(2);
+    } else if (qtdA === 0 && qtdB > 0) {
+        percentual = 100;
+    }
+
+    let cor = "#64748b";
+    let icone = "fa-equals";
+    let textoStatus = "Vendas Estáveis";
+    let sinalDiff = "";
+    let sinalPerc = "";
+
+    if (diferenca > 0) {
+        cor = "#16a34a";
+        icone = "fa-arrow-trend-up";
+        textoStatus = "Crescimento nas Vendas";
+        sinalDiff = "+";
+        sinalPerc = "+";
+    } else if (diferenca < 0) {
+        cor = "#dc2626";
+        icone = "fa-arrow-trend-down";
+        textoStatus = "Queda nas Vendas";
+        sinalDiff = "";
+        sinalPerc = "";
+    }
+
+    container.innerHTML = `
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 20px;">
+            
+            <div style="flex: 1; min-width: 150px; background: #ffffff; padding: 15px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                <span style="font-size: 12px; color: #64748b; display: block; margin-bottom: 5px;">Período A (${periodoA})</span>
+                <strong style="font-size: 24px; color: #1e293b;">${qtdA.toLocaleString('pt-BR')}</strong>
+                <span style="font-size: 11px; color: #94a3b8; display: block;">unidades vendidas</span>
+            </div>
+
+            <div style="flex: 0 0 50px; font-size: 24px; color: #cbd5e1;">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <div style="flex: 1; min-width: 150px; background: #ffffff; padding: 15px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                <span style="font-size: 12px; color: #64748b; display: block; margin-bottom: 5px;">Período B (${periodoB})</span>
+                <strong style="font-size: 24px; color: #1e293b;">${qtdB.toLocaleString('pt-BR')}</strong>
+                <span style="font-size: 11px; color: #94a3b8; display: block;">unidades vendidas</span>
+            </div>
+
+            <div style="flex: 1.5; min-width: 220px; background: ${cor}15; border: 2px solid ${cor}; padding: 15px; border-radius: 8px;">
+                <span style="font-size: 13px; font-weight: bold; color: ${cor}; text-transform: uppercase; display: block; margin-bottom: 5px;">
+                    <i class="fas ${icone}" style="margin-right: 5px;"></i> ${textoStatus}
+                </span>
+                <div style="font-size: 28px; font-weight: 800; color: ${cor};">
+                    ${sinalPerc}${percentual}%
+                </div>
+                <span style="font-size: 12px; color: ${cor}; font-weight: 500;">
+                    (${sinalDiff}${diferenca.toLocaleString('pt-BR')} motos no período)
+                </span>
+            </div>
+
+        </div>
+    `;
 }
