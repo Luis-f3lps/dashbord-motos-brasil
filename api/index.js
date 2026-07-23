@@ -15,7 +15,8 @@ app.get('/index', (req, res) => {
 });
 
 app.get('/api/motos', (req, res) => {
-const caminhoArquivo = path.join(__dirname, '..', 'dados.json');
+    const caminhoArquivo = path.join(__dirname, 'dados.json');
+
     fs.readFile(caminhoArquivo, 'utf8', (err, data) => {
         if (err) {
             console.error("Erro ao ler o arquivo dados.json:", err);
