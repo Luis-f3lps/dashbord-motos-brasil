@@ -178,7 +178,8 @@ function obterTop10ComOutros(dados, chaveFab, chaveQtd) {
     const somatorio = {};
     dados.forEach(item => {
         const fab = item[chaveFab] || 'Outros';
-        somatorio[fab] = (somatorio[fab] || 0) + item[chaveQtd];
+        // AQUI: Usando limparNumero para garantir soma matemática sem erro de texto
+        somatorio[fab] = (somatorio[fab] || 0) + limparNumero(item[chaveQtd]);
     });
 
     const ordenado = Object.entries(somatorio).sort((a, b) => b[1] - a[1]);
@@ -197,7 +198,8 @@ function renderizarSecaoTipoMes(dados) {
 
     const agrupado = dados.reduce((acc, item) => {
         const chave = `${item['Marca']} - ${item['Modelo']}`;
-        acc[chave] = (acc[chave] || 0) + item['Quantidade Vendida'];
+        // AQUI: Protegendo a soma do gráfico de rosca contra textos com aspas
+        acc[chave] = (acc[chave] || 0) + limparNumero(item['Quantidade Vendida']);
         return acc;
     }, {});
 
@@ -223,11 +225,13 @@ function renderizarSecaoTipoMes(dados) {
     let htmlLista = '';
     dados.forEach(item => {
         const corMarca = obterCorFabricante(item['Marca']);
+        // Limpando também na exibição visual da lista ao lado do gráfico
+        const qtdLimpa = limparNumero(item['Quantidade Vendida']);
         htmlLista += `
             <div class="moto-item">
                 <strong style="color: ${corMarca};">${item['Marca']}</strong> <strong>${item['Modelo']}</strong><br>
                 Tipo: ${item['Tipo']} | Mês/Ano: ${item['Mês/Ano']}<br>
-                <strong>Qtd Vendida:</strong> ${item['Quantidade Vendida']}
+                <strong>Qtd Vendida:</strong> ${qtdLimpa}
             </div>
         `;
     });
@@ -254,7 +258,8 @@ function renderizarEvolucaoPercentual(inicio, fim) {
 
     const totalFabPeriodo = {};
     dadosFiltradosIntervalo.forEach(d => {
-        totalFabPeriodo[d['Fabricante']] = (totalFabPeriodo[d['Fabricante']] || 0) + d['Quantidade Vendida'];
+        // AQUI: Protegendo o cálculo das linhas de evolução percentual
+        totalFabPeriodo[d['Fabricante']] = (totalFabPeriodo[d['Fabricante']] || 0) + limparNumero(d['Quantidade Vendida']);
     });
     const top10Periodo = Object.entries(totalFabPeriodo).sort((a, b) => b[1] - a[1]).slice(0, 10).map(x => x[0]);
     const fabricantesDataset = [...top10Periodo, 'Outros'];
@@ -262,14 +267,15 @@ function renderizarEvolucaoPercentual(inicio, fim) {
     const datasets = fabricantesDataset.map((fab) => {
         const dataPoint = mesesFiltrados.map(mes => {
             const regMes = dadosFiltradosIntervalo.filter(d => d['Mês/Ano'] === mes);
-            const totalMes = regMes.reduce((sum, r) => sum + r['Quantidade Vendida'], 0) || 1;
+            // AQUI: Somando com limparNumero()
+            const totalMes = regMes.reduce((sum, r) => sum + limparNumero(r['Quantidade Vendida']), 0) || 1;
             
             let qtdFab = 0;
             if (fab === 'Outros') {
-                qtdFab = regMes.filter(r => !top10Periodo.includes(r['Fabricante'])).reduce((sum, r) => sum + r['Quantidade Vendida'], 0);
+                qtdFab = regMes.filter(r => !top10Periodo.includes(r['Fabricante'])).reduce((sum, r) => sum + limparNumero(r['Quantidade Vendida']), 0);
             } else {
                 const regFab = regMes.find(r => r['Fabricante'] === fab);
-                qtdFab = regFab ? regFab['Quantidade Vendida'] : 0;
+                qtdFab = regFab ? limparNumero(regFab['Quantidade Vendida']) : 0;
             }
             return ((qtdFab / totalMes) * 100).toFixed(2);
         });
