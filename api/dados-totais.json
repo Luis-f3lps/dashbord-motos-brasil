@@ -1,5 +1,761 @@
 [
     {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "HONDA",
+        "Quantidade Vendida": "76923",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "YAMAHA",
+        "Quantidade Vendida": "21552",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "MOTTU",
+        "Quantidade Vendida": "4444",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "SHINERAY",
+        "Quantidade Vendida": "1869",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "HAOJUE",
+        "Quantidade Vendida": "913",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "ROYAL ENFIELD",
+        "Quantidade Vendida": "866",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "BMW",
+        "Quantidade Vendida": "773",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "AVELLOZ",
+        "Quantidade Vendida": "615",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "KAWASAKI",
+        "Quantidade Vendida": "572",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "DAFRA",
+        "Quantidade Vendida": "502",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "TRIUMPH",
+        "Quantidade Vendida": "403",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "VOLTZ",
+        "Quantidade Vendida": "311",
+        "Motor (Gasolina/Elétrica)": "Elétrica"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "BAJAJ",
+        "Quantidade Vendida": "149",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "SUZUKI",
+        "Quantidade Vendida": "105",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "H.DAVIDSON",
+        "Quantidade Vendida": "69",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "BULL",
+        "Quantidade Vendida": "66",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "DUCATI",
+        "Quantidade Vendida": "61",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "SOUSA",
+        "Quantidade Vendida": "36",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "TVS",
+        "Quantidade Vendida": "33",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "NIU",
+        "Quantidade Vendida": "26",
+        "Motor (Gasolina/Elétrica)": "Elétrica"
+    },
+    {
+        "Mês/Ano": "01/2023",
+        "Fabricante": "GCX",
+        "Quantidade Vendida": "25",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "HONDA",
+        "Quantidade Vendida": "70274",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "YAMAHA",
+        "Quantidade Vendida": "19471",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "MOTTU",
+        "Quantidade Vendida": "3468",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "SHINERAY",
+        "Quantidade Vendida": "1688",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "HAOJUE",
+        "Quantidade Vendida": "953",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "BMW",
+        "Quantidade Vendida": "772",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "ROYAL ENFIELD",
+        "Quantidade Vendida": "766",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "AVELLOZ",
+        "Quantidade Vendida": "590",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "KAWASAKI",
+        "Quantidade Vendida": "488",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "DAFRA",
+        "Quantidade Vendida": "486",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "TRIUMPH",
+        "Quantidade Vendida": "349",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "VOLTZ",
+        "Quantidade Vendida": "199",
+        "Motor (Gasolina/Elétrica)": "Elétrica"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "BAJAJ",
+        "Quantidade Vendida": "161",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "TVS",
+        "Quantidade Vendida": "131",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "SUZUKI",
+        "Quantidade Vendida": "93",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "H.DAVIDSON",
+        "Quantidade Vendida": "92",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "DUCATI",
+        "Quantidade Vendida": "81",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "BULL",
+        "Quantidade Vendida": "61",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "AMAZON",
+        "Quantidade Vendida": "57",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "NIU",
+        "Quantidade Vendida": "51",
+        "Motor (Gasolina/Elétrica)": "Elétrica"
+    },
+    {
+        "Mês/Ano": "02/2023",
+        "Fabricante": "GCX",
+        "Quantidade Vendida": "40",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "HONDA",
+        "Quantidade Vendida": "104949",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "YAMAHA",
+        "Quantidade Vendida": "27652",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "MOTTU",
+        "Quantidade Vendida": "3000",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "SHINERAY",
+        "Quantidade Vendida": "2187",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "HAOJUE",
+        "Quantidade Vendida": "1437",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "BMW",
+        "Quantidade Vendida": "1298",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "ROYAL ENFIELD",
+        "Quantidade Vendida": "1107",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "KAWASAKI",
+        "Quantidade Vendida": "762",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "AVELLOZ",
+        "Quantidade Vendida": "713",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "TRIUMPH",
+        "Quantidade Vendida": "604",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "DAFRA",
+        "Quantidade Vendida": "516",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "VOLTZ",
+        "Quantidade Vendida": "290",
+        "Motor (Gasolina/Elétrica)": "Elétrica"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "BAJAJ",
+        "Quantidade Vendida": "196",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "H.DAVIDSON",
+        "Quantidade Vendida": "161",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "SUZUKI",
+        "Quantidade Vendida": "150",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "DUCATI",
+        "Quantidade Vendida": "121",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "BULL",
+        "Quantidade Vendida": "86",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "GCX",
+        "Quantidade Vendida": "75",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "ROTOM",
+        "Quantidade Vendida": "56",
+        "Motor (Gasolina/Elétrica)": "Elétrica"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "SOUSA",
+        "Quantidade Vendida": "47",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "03/2023",
+        "Fabricante": "TVS",
+        "Quantidade Vendida": "44",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "HONDA",
+        "Quantidade Vendida": "86914",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "YAMAHA",
+        "Quantidade Vendida": "22528",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "MOTTU",
+        "Quantidade Vendida": "2862",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "SHINERAY",
+        "Quantidade Vendida": "1834",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "HAOJUE",
+        "Quantidade Vendida": "1213",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "BMW",
+        "Quantidade Vendida": "1030",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "ROYAL ENFIELD",
+        "Quantidade Vendida": "898",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "KAWASAKI",
+        "Quantidade Vendida": "643",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "AVELLOZ",
+        "Quantidade Vendida": "637",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "TRIUMPH",
+        "Quantidade Vendida": "486",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "DAFRA",
+        "Quantidade Vendida": "455",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "BAJAJ",
+        "Quantidade Vendida": "257",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "H.DAVIDSON",
+        "Quantidade Vendida": "164",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "SUZUKI",
+        "Quantidade Vendida": "159",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "VOLTZ",
+        "Quantidade Vendida": "159",
+        "Motor (Gasolina/Elétrica)": "Elétrica"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "DUCATI",
+        "Quantidade Vendida": "94",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "GCX",
+        "Quantidade Vendida": "76",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "BULL",
+        "Quantidade Vendida": "69",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "ZONTES",
+        "Quantidade Vendida": "59",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "AMAZON",
+        "Quantidade Vendida": "48",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "04/2023",
+        "Fabricante": "SOUSA",
+        "Quantidade Vendida": "32",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "HONDA",
+        "Quantidade Vendida": "114904",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "YAMAHA",
+        "Quantidade Vendida": "31222",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "MOTTU",
+        "Quantidade Vendida": "3499",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "SHINERAY",
+        "Quantidade Vendida": "2598",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "BMW",
+        "Quantidade Vendida": "1548",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "HAOJUE",
+        "Quantidade Vendida": "1535",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "ROYAL ENFIELD",
+        "Quantidade Vendida": "965",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "AVELLOZ",
+        "Quantidade Vendida": "867",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "KAWASAKI",
+        "Quantidade Vendida": "746",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "TRIUMPH",
+        "Quantidade Vendida": "659",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "DAFRA",
+        "Quantidade Vendida": "604",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "BAJAJ",
+        "Quantidade Vendida": "421",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "VOLTZ",
+        "Quantidade Vendida": "295",
+        "Motor (Gasolina/Elétrica)": "Elétrica"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "ZONTES",
+        "Quantidade Vendida": "222",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "H.DAVIDSON",
+        "Quantidade Vendida": "206",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "SUZUKI",
+        "Quantidade Vendida": "205",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "DUCATI",
+        "Quantidade Vendida": "126",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "GCX",
+        "Quantidade Vendida": "84",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "BULL",
+        "Quantidade Vendida": "80",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "SOUSA",
+        "Quantidade Vendida": "78",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "05/2023",
+        "Fabricante": "TRAXX",
+        "Quantidade Vendida": "71",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "HONDA",
+        "Quantidade Vendida": "101067",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "YAMAHA",
+        "Quantidade Vendida": "25351",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "MOTTU",
+        "Quantidade Vendida": "3525",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "SHINERAY",
+        "Quantidade Vendida": "2657",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "HAOJUE",
+        "Quantidade Vendida": "1258",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "BMW",
+        "Quantidade Vendida": "1210",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "ROYAL ENFIELD",
+        "Quantidade Vendida": "859",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "AVELLOZ",
+        "Quantidade Vendida": "738",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "TRIUMPH",
+        "Quantidade Vendida": "664",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "KAWASAKI",
+        "Quantidade Vendida": "617",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "DAFRA",
+        "Quantidade Vendida": "511",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "BAJAJ",
+        "Quantidade Vendida": "304",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "H.DAVIDSON",
+        "Quantidade Vendida": "209",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "SUZUKI",
+        "Quantidade Vendida": "190",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "VOLTZ",
+        "Quantidade Vendida": "153",
+        "Motor (Gasolina/Elétrica)": "Elétrica"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "GCX",
+        "Quantidade Vendida": "106",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "DUCATI",
+        "Quantidade Vendida": "99",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "ZONTES",
+        "Quantidade Vendida": "98",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "BULL",
+        "Quantidade Vendida": "66",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "SOUSA",
+        "Quantidade Vendida": "58",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
+        "Mês/Ano": "06/2023",
+        "Fabricante": "TRAXX",
+        "Quantidade Vendida": "49",
+        "Motor (Gasolina/Elétrica)": "Gasolina"
+    },
+    {
         "Mês/Ano": "07/2023",
         "Fabricante": "HONDA",
         "Quantidade Vendida": "84503",
