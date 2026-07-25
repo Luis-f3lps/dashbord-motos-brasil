@@ -8,7 +8,6 @@ function limparNumero(valor) {
     return Number(String(valor).replace(/[^0-9.-]+/g, "")) || 0;
 }
 
-// FUNÇÃO BLINDADA: Lê a data não importa se tem barra invertida ou não
 function obterMesAno(item) {
     return item['Mês/Ano'] || item['Mês\\/Ano'] || "";
 }
@@ -55,7 +54,6 @@ window.onload = async () => {
         
         popularFiltrosIniciais();
         
-        // Define o Tipo padrão e seleciona o Mês MAIS RECENTE no primeiro select
         const selectTipoSec1 = document.getElementById('filtroTipoSec1');
         if (selectTipoSec1) selectTipoSec1.value = "City";
 
@@ -89,23 +87,18 @@ function popularFiltrosIniciais() {
     const datasDet = [...new Set(dadosDetalhados.map(d => obterMesAno(d)))];
     const datasTot = [...new Set(dadosTotais.map(d => obterMesAno(d)))];
     
-    // ORDENAÇÃO DE MESES: Do mais novo para o mais antigo
     const datasUnicasDecrescente = [...new Set([...datasDet, ...datasTot])].filter(Boolean).sort((a, b) => {
         const [mA, aA] = a.split('/'); const [mB, aB] = b.split('/');
         return new Date(aB, mB - 1) - new Date(aA, mA - 1);
     });
 
-    // ORDENAÇÃO DE ANOS: Do mais recente para o antigo
     const anosUnicosDecrescente = [...new Set(datasUnicasDecrescente.map(d => d.split('/')[1]))].filter(Boolean).sort().reverse();
     const opcoesAnos = anosUnicosDecrescente.map(ano => `Ano Todo (${ano})`);
     
-    // Opções gerais: Primeiro os Anos (do atual para trás), depois os Meses (do atual para trás)
     const opcoesPeriodo = [...opcoesAnos, ...datasUnicasDecrescente];
 
-    // Popula todas as marcas para o select da Seção 2
     const marcasUnicas = [...new Set(dadosTotais.map(d => d['Fabricante']))].filter(Boolean).sort();
 
-    // Popula modelos únicos para o comparativo da Seção 5
     const modelosUnicos = [...new Set(dadosDetalhados.map(d => `${d['Marca']} - ${d['Modelo']}`))].filter(x => x !== "undefined - undefined").sort();
 
     preencherSelect('filtroTipoSec1', [...new Set(dadosDetalhados.map(d => d['Tipo']))].filter(Boolean).sort());
@@ -116,7 +109,6 @@ function popularFiltrosIniciais() {
     preencherSelect('filtroModeloMesAno', opcoesPeriodo);
     preencherSelect('filtroMarcaSec2', marcasUnicas);
     
-    // Seção 5
     preencherSelect('filtroCompModelo', modelosUnicos, "Selecione um Modelo");
     preencherSelect('filtroCompPeriodoA', opcoesPeriodo, "Selecione Período A");
     preencherSelect('filtroCompPeriodoB', opcoesPeriodo, "Selecione Período B");
@@ -158,7 +150,6 @@ function atualizarDashboard() {
     }
     renderizarModelosMesAno(dadosModeloFiltrados);
 
-    // Renderiza o card comparativo (Seção 5)
     renderizarComparativoModelo();
 
     document.getElementById('contadorRegistros').innerText = `Dashboard atualizado com sucesso.`;
@@ -362,7 +353,6 @@ function renderizarModelosMesAno(dados) {
     });
 }
 
-// SEÇÃO 5: Comparativo de Vendas por Modelo (Crescimento / Queda)
 function renderizarComparativoModelo() {
     const modeloSel = document.getElementById('filtroCompModelo') ? document.getElementById('filtroCompModelo').value : "";
     const periodoA = document.getElementById('filtroCompPeriodoA') ? document.getElementById('filtroCompPeriodoA').value : "";

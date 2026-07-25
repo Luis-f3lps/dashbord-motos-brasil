@@ -7,7 +7,6 @@
     <title>Dashboard de Vendas - Motos</title>
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Volte a usar os links CDN abaixo: -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -37,8 +36,6 @@
             </header>
 
             <section class="dashboard-grid">
-
-                <!-- SEÇÃO 1: Tipo da Moto (City padrão) + Último Mês padrão + Gráfico + Lista (Sem Motor) -->
                 <div class="card wide">
                     <h3>Análise por Tipo e Mês/Ano</h3>
                     <div class="filtros-container">
@@ -61,8 +58,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- SEÇÃO 2: Evolução de Participação (%) Top 10 + Outros com intervalo de período -->
                 <div class="card wide" id="evolucao">
                     <h3>Evolução de Participação (%) por Fabricante</h3>
                     <div class="filtros-container">
@@ -90,7 +85,6 @@
                         <canvas id="graficoEvolucaoPercentual"></canvas>
                     </div>
                 </div>
-                <!-- SEÇÃO 5: Comparativo de Crescimento / Queda por Modelo -->
                 <div class="card wide" id="modelo">
                     <h3>Comparativo de Vendas por Modelo (Crescimento / Queda)</h3>
                     <div class="filtros-container">
@@ -115,7 +109,6 @@
                         </div>
                     </div>
 
-                    <!-- Área onde o JS vai desenhar o resultado -->
                     <div id="areaResultadoComparativo"
                         style="margin-top: 20px; padding: 25px; border-radius: 12px; background: #f8fafc; text-align: center; border: 1px solid #e2e8f0;">
                         <p style="color: #64748b; margin: 0; font-size: 16px;">
@@ -125,7 +118,17 @@
                         </p>
                     </div>
                 </div>
-                <!-- SEÇÃO 3: Vendas por Fabricante (Dados Totais - Top 10 + Outros) com select por período / ano todo -->
+                <div class="card wide">
+                    <h3>Modelos Vendidos por Mês / Ano (Todos os Tipos)</h3>
+                    <div class="filtros-container">
+                        <select id="filtroModeloMesAno">
+                            <option value="">Todo o Período</option>
+                        </select>
+                    </div>
+                    <div class="chart-container" style="position: relative; height:45vh; width:100%">
+                        <canvas id="graficoModelosMesAno"></canvas>
+                    </div>
+                </div>
                 <div class="card wide" id="fabricante">
                     <h3>Vendas por Fabricante (Dados Totais - Top 10 + Outros)</h3>
                     <div class="filtros-container">
@@ -136,21 +139,6 @@
                     <div class="chart-container" style="position: relative; height:35vh;"><canvas
                             id="graficoVendasFabricanteTotais"></canvas></div>
                 </div>
-
-                <!-- SEÇÃO 4: Modelos Vendidos por Mês / Ano (Considerando todos os tipos) -->
-                <div class="card wide">
-                    <h3>Modelos Vendidos por Mês / Ano (Todos os Tipos)</h3>
-                    <div class="filtros-container">
-                        <select id="filtroModeloMesAno">
-                            <option value="">Todo o Período</option>
-                            <!-- As opções de Anos e Meses serão injetadas automaticamente pelo JS -->
-                        </select>
-                    </div>
-                    <div class="chart-container" style="position: relative; height:45vh; width:100%">
-                        <canvas id="graficoModelosMesAno"></canvas>
-                    </div>
-                </div>
-
             </section>
         </main>
     </div>
