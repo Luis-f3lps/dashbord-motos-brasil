@@ -1,5 +1,3749 @@
 [
     {
+        "Mês/Ano": "01/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 160",
+        "Quantidade Vendida": "18147",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 125",
+        "Quantidade Vendida": "2635",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 250F TWISTER",
+        "Quantidade Vendida": "1922",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 150",
+        "Quantidade Vendida": "1479",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 250",
+        "Quantidade Vendida": "894",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 125",
+        "Quantidade Vendida": "879",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YS150 FAZER",
+        "Quantidade Vendida": "793",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG150",
+        "Quantidade Vendida": "442",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "City",
+        "Marca": "SUZUKI",
+        "Modelo": "GS120",
+        "Quantidade Vendida": "146",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "City",
+        "Marca": "SUZUKI",
+        "Modelo": "GSR 125",
+        "Quantidade Vendida": "119",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "XL 1200",
+        "Quantidade Vendida": "60",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FXSB",
+        "Quantidade Vendida": "58",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "XL 883",
+        "Quantidade Vendida": "51",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Custom",
+        "Marca": "KAWASAKI",
+        "Modelo": "VULCAN S",
+        "Quantidade Vendida": "43",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLSTFB",
+        "Quantidade Vendida": "42",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Custom",
+        "Marca": "TRAXX",
+        "Modelo": "JH250",
+        "Quantidade Vendida": "40",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "BONNEVILLE",
+        "Quantidade Vendida": "25",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Custom",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 250",
+        "Quantidade Vendida": "22",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FXDB",
+        "Quantidade Vendida": "19",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Custom",
+        "Marca": "INDIAN",
+        "Modelo": "SCOUT",
+        "Quantidade Vendida": "18",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR160",
+        "Quantidade Vendida": "8607",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 300",
+        "Quantidade Vendida": "1484",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 190",
+        "Quantidade Vendida": "1372",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ150",
+        "Quantidade Vendida": "1014",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ 250",
+        "Quantidade Vendida": "876",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "102",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR125",
+        "Quantidade Vendida": "96",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR150",
+        "Quantidade Vendida": "81",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NC 750X",
+        "Quantidade Vendida": "58",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 150GY",
+        "Quantidade Vendida": "47",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "R1200",
+        "Quantidade Vendida": "168",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER",
+        "Quantidade Vendida": "97",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "YAMAHA",
+        "Modelo": "XT 660",
+        "Quantidade Vendida": "75",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CRF 1000L",
+        "Quantidade Vendida": "57",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F700",
+        "Quantidade Vendida": "55",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F800 GS",
+        "Quantidade Vendida": "55",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "SUZUKI",
+        "Modelo": "VSTROM650",
+        "Quantidade Vendida": "48",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER XRX",
+        "Quantidade Vendida": "47",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "SUZUKI",
+        "Modelo": "VSTROM1000",
+        "Quantidade Vendida": "31",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "DUCATI",
+        "Modelo": "MTS 1200",
+        "Quantidade Vendida": "25",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT03",
+        "Quantidade Vendida": "468",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "132",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT07",
+        "Quantidade Vendida": "106",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z300",
+        "Quantidade Vendida": "99",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "XJ6",
+        "Quantidade Vendida": "79",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT09",
+        "Quantidade Vendida": "53",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "TRIUMPH",
+        "Modelo": "STREET TRIPLE",
+        "Quantidade Vendida": "43",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z800",
+        "Quantidade Vendida": "36",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 650",
+        "Quantidade Vendida": "35",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KTM",
+        "Modelo": "390 DUKE",
+        "Quantidade Vendida": "24",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "BIZ",
+        "Quantidade Vendida": "8897",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 110I",
+        "Quantidade Vendida": "6394",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "PCX 150",
+        "Quantidade Vendida": "2186",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 50",
+        "Quantidade Vendida": "1172",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NMAX",
+        "Quantidade Vendida": "700",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NEO 125",
+        "Quantidade Vendida": "660",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "TRAXX",
+        "Modelo": "JL50",
+        "Quantidade Vendida": "561",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 100",
+        "Quantidade Vendida": "301",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "DAFRA",
+        "Modelo": "ZIG 50",
+        "Quantidade Vendida": "176",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "DAFRA",
+        "Modelo": "CITYCOM 300I",
+        "Quantidade Vendida": "119",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 300",
+        "Quantidade Vendida": "102",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Sport",
+        "Marca": "YAMAHA",
+        "Modelo": "YZF R3",
+        "Quantidade Vendida": "74",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX S1000",
+        "Quantidade Vendida": "60",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Sport",
+        "Marca": "BMW",
+        "Modelo": "S1000",
+        "Quantidade Vendida": "54",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 500R",
+        "Quantidade Vendida": "40",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSXR750",
+        "Quantidade Vendida": "37",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 650F",
+        "Quantidade Vendida": "36",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Sport",
+        "Marca": "DUCATI",
+        "Modelo": "959 PANIGALE",
+        "Quantidade Vendida": "18",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX10",
+        "Quantidade Vendida": "17",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX1250",
+        "Quantidade Vendida": "10",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHTK",
+        "Quantidade Vendida": "55",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHX",
+        "Quantidade Vendida": "31",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHRC",
+        "Quantidade Vendida": "19",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLSTC",
+        "Quantidade Vendida": "19",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "K 1600",
+        "Quantidade Vendida": "2",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEFTAIN",
+        "Quantidade Vendida": "2",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEF",
+        "Quantidade Vendida": "1",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEF VINTAGE",
+        "Quantidade Vendida": "1",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 160",
+        "Quantidade Vendida": "16369",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 125",
+        "Quantidade Vendida": "2153",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 250F TWISTER",
+        "Quantidade Vendida": "1627",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 150",
+        "Quantidade Vendida": "1464",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 250",
+        "Quantidade Vendida": "784",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 125",
+        "Quantidade Vendida": "703",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YS150 FAZER",
+        "Quantidade Vendida": "697",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG150",
+        "Quantidade Vendida": "336",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "City",
+        "Marca": "SUZUKI",
+        "Modelo": "GS120",
+        "Quantidade Vendida": "147",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "City",
+        "Marca": "SUZUKI",
+        "Modelo": "GSR 125",
+        "Quantidade Vendida": "71",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FXSB",
+        "Quantidade Vendida": "61",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Custom",
+        "Marca": "KAWASAKI",
+        "Modelo": "VULCAN S",
+        "Quantidade Vendida": "54",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "XL 883",
+        "Quantidade Vendida": "44",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "XL 1200",
+        "Quantidade Vendida": "32",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLSTFB",
+        "Quantidade Vendida": "31",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Custom",
+        "Marca": "TRAXX",
+        "Modelo": "JH250",
+        "Quantidade Vendida": "26",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "BONNEVILLE",
+        "Quantidade Vendida": "23",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Custom",
+        "Marca": "INDIAN",
+        "Modelo": "SCOUT",
+        "Quantidade Vendida": "21",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FXDF",
+        "Quantidade Vendida": "15",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Custom",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 250",
+        "Quantidade Vendida": "10",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR160",
+        "Quantidade Vendida": "7274",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 300",
+        "Quantidade Vendida": "1513",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 190",
+        "Quantidade Vendida": "1296",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ150",
+        "Quantidade Vendida": "1061",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ 250",
+        "Quantidade Vendida": "759",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "234",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR150",
+        "Quantidade Vendida": "69",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR125",
+        "Quantidade Vendida": "61",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NC 750X",
+        "Quantidade Vendida": "59",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 150GY",
+        "Quantidade Vendida": "38",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "R1200",
+        "Quantidade Vendida": "131",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER",
+        "Quantidade Vendida": "118",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "YAMAHA",
+        "Modelo": "XT 660",
+        "Quantidade Vendida": "103",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F800 GS",
+        "Quantidade Vendida": "78",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER XRX",
+        "Quantidade Vendida": "67",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "SUZUKI",
+        "Modelo": "VSTROM1000",
+        "Quantidade Vendida": "56",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "SUZUKI",
+        "Modelo": "VSTROM650",
+        "Quantidade Vendida": "47",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "KAWASAKI",
+        "Modelo": "VERSYS",
+        "Quantidade Vendida": "44",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F700",
+        "Quantidade Vendida": "43",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "S1000XR",
+        "Quantidade Vendida": "39",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT03",
+        "Quantidade Vendida": "349",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "228",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z300",
+        "Quantidade Vendida": "99",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT07",
+        "Quantidade Vendida": "96",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "XJ6",
+        "Quantidade Vendida": "87",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT09",
+        "Quantidade Vendida": "62",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 650",
+        "Quantidade Vendida": "61",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z800",
+        "Quantidade Vendida": "41",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KTM",
+        "Modelo": "200 DUKE",
+        "Quantidade Vendida": "32",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "TRIUMPH",
+        "Modelo": "STREET TRIPLE",
+        "Quantidade Vendida": "30",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "BIZ",
+        "Quantidade Vendida": "8044",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 110I",
+        "Quantidade Vendida": "5229",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "PCX 150",
+        "Quantidade Vendida": "2009",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 50",
+        "Quantidade Vendida": "988",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NEO 125",
+        "Quantidade Vendida": "767",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NMAX",
+        "Quantidade Vendida": "733",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "TRAXX",
+        "Modelo": "JL50",
+        "Quantidade Vendida": "454",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 100",
+        "Quantidade Vendida": "316",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "DAFRA",
+        "Modelo": "ZIG 50",
+        "Quantidade Vendida": "180",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "DAFRA",
+        "Modelo": "CITYCOM 300I",
+        "Quantidade Vendida": "114",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 300",
+        "Quantidade Vendida": "73",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Sport",
+        "Marca": "YAMAHA",
+        "Modelo": "YZF R3",
+        "Quantidade Vendida": "61",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX S1000",
+        "Quantidade Vendida": "61",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 500R",
+        "Quantidade Vendida": "59",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Sport",
+        "Marca": "BMW",
+        "Modelo": "S1000",
+        "Quantidade Vendida": "52",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 650F",
+        "Quantidade Vendida": "38",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSXR750",
+        "Quantidade Vendida": "30",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX10",
+        "Quantidade Vendida": "28",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX 1300",
+        "Quantidade Vendida": "18",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX1250",
+        "Quantidade Vendida": "13",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLSTC",
+        "Quantidade Vendida": "17",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHTK",
+        "Quantidade Vendida": "16",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHX",
+        "Quantidade Vendida": "11",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHRC",
+        "Quantidade Vendida": "7",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "K 1600",
+        "Quantidade Vendida": "3",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEFTAIN",
+        "Quantidade Vendida": "2",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEF VINTAGE",
+        "Quantidade Vendida": "2",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEF",
+        "Quantidade Vendida": "1",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 160",
+        "Quantidade Vendida": "22157",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 125",
+        "Quantidade Vendida": "2598",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 250F TWISTER",
+        "Quantidade Vendida": "2256",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 150",
+        "Quantidade Vendida": "1957",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 250",
+        "Quantidade Vendida": "998",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 125",
+        "Quantidade Vendida": "949",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YS150 FAZER",
+        "Quantidade Vendida": "823",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG150",
+        "Quantidade Vendida": "405",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "City",
+        "Marca": "SUZUKI",
+        "Modelo": "GS120",
+        "Quantidade Vendida": "146",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "City",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 150",
+        "Quantidade Vendida": "95",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "XL 883",
+        "Quantidade Vendida": "68",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLSTFB",
+        "Quantidade Vendida": "66",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "XL 1200",
+        "Quantidade Vendida": "60",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FXSB",
+        "Quantidade Vendida": "58",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Custom",
+        "Marca": "KAWASAKI",
+        "Modelo": "VULCAN S",
+        "Quantidade Vendida": "45",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FXDF",
+        "Quantidade Vendida": "45",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Custom",
+        "Marca": "TRAXX",
+        "Modelo": "JH250",
+        "Quantidade Vendida": "40",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Custom",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 250",
+        "Quantidade Vendida": "38",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "BONNEVILLE",
+        "Quantidade Vendida": "33",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FXDB",
+        "Quantidade Vendida": "21",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR160",
+        "Quantidade Vendida": "10856",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 300",
+        "Quantidade Vendida": "2050",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 190",
+        "Quantidade Vendida": "1564",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ 250",
+        "Quantidade Vendida": "1507",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ150",
+        "Quantidade Vendida": "1459",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NC 750X",
+        "Quantidade Vendida": "231",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "210",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR150",
+        "Quantidade Vendida": "93",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 150GY",
+        "Quantidade Vendida": "71",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR125",
+        "Quantidade Vendida": "46",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "R1200",
+        "Quantidade Vendida": "259",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F800 GS",
+        "Quantidade Vendida": "160",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER",
+        "Quantidade Vendida": "150",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "YAMAHA",
+        "Modelo": "XT 660",
+        "Quantidade Vendida": "90",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER XRX",
+        "Quantidade Vendida": "75",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "SUZUKI",
+        "Modelo": "VSTROM650",
+        "Quantidade Vendida": "75",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F700",
+        "Quantidade Vendida": "73",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "S1000XR",
+        "Quantidade Vendida": "65",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "SUZUKI",
+        "Modelo": "VSTROM1000",
+        "Quantidade Vendida": "60",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "KAWASAKI",
+        "Modelo": "VERSYS",
+        "Quantidade Vendida": "54",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT03",
+        "Quantidade Vendida": "564",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "217",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT07",
+        "Quantidade Vendida": "135",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 650",
+        "Quantidade Vendida": "127",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "XJ6",
+        "Quantidade Vendida": "115",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z300",
+        "Quantidade Vendida": "103",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT09",
+        "Quantidade Vendida": "63",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KTM",
+        "Modelo": "200 DUKE",
+        "Quantidade Vendida": "60",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z800",
+        "Quantidade Vendida": "57",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "TRIUMPH",
+        "Modelo": "STREET TRIPLE",
+        "Quantidade Vendida": "48",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "BIZ",
+        "Quantidade Vendida": "11429",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 110I",
+        "Quantidade Vendida": "7195",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "PCX 150",
+        "Quantidade Vendida": "2321",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 50",
+        "Quantidade Vendida": "1359",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NMAX",
+        "Quantidade Vendida": "1070",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NEO 125",
+        "Quantidade Vendida": "1007",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "TRAXX",
+        "Modelo": "JL50",
+        "Quantidade Vendida": "528",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 100",
+        "Quantidade Vendida": "376",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "DAFRA",
+        "Modelo": "ZIG 50",
+        "Quantidade Vendida": "262",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "DAFRA",
+        "Modelo": "CITYCOM 300I",
+        "Quantidade Vendida": "151",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Sport",
+        "Marca": "YAMAHA",
+        "Modelo": "YZF R3",
+        "Quantidade Vendida": "145",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 650F",
+        "Quantidade Vendida": "107",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 300",
+        "Quantidade Vendida": "96",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 500R",
+        "Quantidade Vendida": "95",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Sport",
+        "Marca": "BMW",
+        "Modelo": "S1000",
+        "Quantidade Vendida": "74",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX S1000",
+        "Quantidade Vendida": "74",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX10",
+        "Quantidade Vendida": "37",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX 1300",
+        "Quantidade Vendida": "27",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSXR750",
+        "Quantidade Vendida": "27",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Sport",
+        "Marca": "DUCATI",
+        "Modelo": "959 PANIGALE",
+        "Quantidade Vendida": "9",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHTK",
+        "Quantidade Vendida": "66",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHX",
+        "Quantidade Vendida": "34",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHRC",
+        "Quantidade Vendida": "16",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLSTC",
+        "Quantidade Vendida": "15",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEF VINTAGE",
+        "Quantidade Vendida": "3",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEF",
+        "Quantidade Vendida": "3",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "K 1600",
+        "Quantidade Vendida": "1",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEFTAIN",
+        "Quantidade Vendida": "1",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 160",
+        "Quantidade Vendida": "17138",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 125",
+        "Quantidade Vendida": "2077",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 250F TWISTER",
+        "Quantidade Vendida": "1755",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 150",
+        "Quantidade Vendida": "1699",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 250",
+        "Quantidade Vendida": "814",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 125",
+        "Quantidade Vendida": "694",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YS150 FAZER",
+        "Quantidade Vendida": "641",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG150",
+        "Quantidade Vendida": "261",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "City",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 150",
+        "Quantidade Vendida": "94",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "City",
+        "Marca": "SUZUKI",
+        "Modelo": "GS120",
+        "Quantidade Vendida": "79",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "XL 883",
+        "Quantidade Vendida": "92",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FXSB",
+        "Quantidade Vendida": "60",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLSTFB",
+        "Quantidade Vendida": "57",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Custom",
+        "Marca": "TRAXX",
+        "Modelo": "JH250",
+        "Quantidade Vendida": "44",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Custom",
+        "Marca": "KAWASAKI",
+        "Modelo": "VULCAN S",
+        "Quantidade Vendida": "43",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "XL 1200",
+        "Quantidade Vendida": "42",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Custom",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 250",
+        "Quantidade Vendida": "26",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "STREET TWIN 900",
+        "Quantidade Vendida": "21",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "BONNEVILLE",
+        "Quantidade Vendida": "16",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FXDF",
+        "Quantidade Vendida": "5",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR160",
+        "Quantidade Vendida": "8785",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 300",
+        "Quantidade Vendida": "1794",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ 250",
+        "Quantidade Vendida": "1228",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ150",
+        "Quantidade Vendida": "1138",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 190",
+        "Quantidade Vendida": "1097",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "98",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NC 750X",
+        "Quantidade Vendida": "97",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 150GY",
+        "Quantidade Vendida": "63",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR150",
+        "Quantidade Vendida": "57",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR125",
+        "Quantidade Vendida": "46",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "R1200",
+        "Quantidade Vendida": "230",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER",
+        "Quantidade Vendida": "139",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F800 GS",
+        "Quantidade Vendida": "131",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "YAMAHA",
+        "Modelo": "XT 660",
+        "Quantidade Vendida": "109",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "SUZUKI",
+        "Modelo": "VSTROM650",
+        "Quantidade Vendida": "89",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER XRX",
+        "Quantidade Vendida": "71",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "SUZUKI",
+        "Modelo": "VSTROM1000",
+        "Quantidade Vendida": "48",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F700",
+        "Quantidade Vendida": "45",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "S1000XR",
+        "Quantidade Vendida": "45",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "KAWASAKI",
+        "Modelo": "VERSYS",
+        "Quantidade Vendida": "33",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT03",
+        "Quantidade Vendida": "567",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT07",
+        "Quantidade Vendida": "131",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "116",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z300",
+        "Quantidade Vendida": "97",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 650",
+        "Quantidade Vendida": "78",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z800",
+        "Quantidade Vendida": "71",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "XJ6",
+        "Quantidade Vendida": "61",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT09",
+        "Quantidade Vendida": "52",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KTM",
+        "Modelo": "200 DUKE",
+        "Quantidade Vendida": "52",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "TRIUMPH",
+        "Modelo": "STREET TRIPLE",
+        "Quantidade Vendida": "41",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "BIZ",
+        "Quantidade Vendida": "8676",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 110I",
+        "Quantidade Vendida": "5871",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "PCX 150",
+        "Quantidade Vendida": "1868",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 50",
+        "Quantidade Vendida": "1013",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NMAX",
+        "Quantidade Vendida": "813",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NEO 125",
+        "Quantidade Vendida": "794",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "TRAXX",
+        "Modelo": "JL50",
+        "Quantidade Vendida": "328",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 100",
+        "Quantidade Vendida": "304",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "DAFRA",
+        "Modelo": "ZIG 50",
+        "Quantidade Vendida": "197",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "DAFRA",
+        "Modelo": "CITYCOM 300I",
+        "Quantidade Vendida": "78",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Sport",
+        "Marca": "YAMAHA",
+        "Modelo": "YZF R3",
+        "Quantidade Vendida": "124",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 500R",
+        "Quantidade Vendida": "85",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 300",
+        "Quantidade Vendida": "78",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX S1000",
+        "Quantidade Vendida": "68",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 650F",
+        "Quantidade Vendida": "56",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Sport",
+        "Marca": "BMW",
+        "Modelo": "S1000",
+        "Quantidade Vendida": "28",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSXR750",
+        "Quantidade Vendida": "21",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX 1300",
+        "Quantidade Vendida": "19",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX10",
+        "Quantidade Vendida": "17",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 650",
+        "Quantidade Vendida": "9",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHTK",
+        "Quantidade Vendida": "65",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHRC",
+        "Quantidade Vendida": "22",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLSTC",
+        "Quantidade Vendida": "18",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHX",
+        "Quantidade Vendida": "16",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEFTAIN",
+        "Quantidade Vendida": "5",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEF ROADMASTER",
+        "Quantidade Vendida": "5",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEF VINTAGE",
+        "Quantidade Vendida": "3",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "K 1600",
+        "Quantidade Vendida": "3",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 160",
+        "Quantidade Vendida": "21843",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 125",
+        "Quantidade Vendida": "2661",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 150",
+        "Quantidade Vendida": "2393",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 250F TWISTER",
+        "Quantidade Vendida": "2063",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YS150 FAZER",
+        "Quantidade Vendida": "958",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 250",
+        "Quantidade Vendida": "908",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 125",
+        "Quantidade Vendida": "818",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG150",
+        "Quantidade Vendida": "302",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "City",
+        "Marca": "SUZUKI",
+        "Modelo": "GS120",
+        "Quantidade Vendida": "174",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "City",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 150",
+        "Quantidade Vendida": "70",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "XL 883",
+        "Quantidade Vendida": "76",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "XL 1200",
+        "Quantidade Vendida": "69",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Custom",
+        "Marca": "TRAXX",
+        "Modelo": "JH250",
+        "Quantidade Vendida": "52",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Custom",
+        "Marca": "KAWASAKI",
+        "Modelo": "VULCAN S",
+        "Quantidade Vendida": "50",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLSTFB",
+        "Quantidade Vendida": "48",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FXSB",
+        "Quantidade Vendida": "47",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Custom",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 250",
+        "Quantidade Vendida": "33",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "STREET TWIN 900",
+        "Quantidade Vendida": "24",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "BONNEVILLE",
+        "Quantidade Vendida": "21",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FXDF",
+        "Quantidade Vendida": "8",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR160",
+        "Quantidade Vendida": "10795",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 300",
+        "Quantidade Vendida": "2185",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 190",
+        "Quantidade Vendida": "1352",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ150",
+        "Quantidade Vendida": "1297",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ 250",
+        "Quantidade Vendida": "1023",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NC 750X",
+        "Quantidade Vendida": "107",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR150",
+        "Quantidade Vendida": "87",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "85",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 150GY",
+        "Quantidade Vendida": "68",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR125",
+        "Quantidade Vendida": "41",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "R1200",
+        "Quantidade Vendida": "271",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER",
+        "Quantidade Vendida": "202",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "YAMAHA",
+        "Modelo": "XT 660",
+        "Quantidade Vendida": "148",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F800 GS",
+        "Quantidade Vendida": "146",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "SUZUKI",
+        "Modelo": "VSTROM650",
+        "Quantidade Vendida": "87",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER XRX",
+        "Quantidade Vendida": "76",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "SUZUKI",
+        "Modelo": "VSTROM1000",
+        "Quantidade Vendida": "68",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F700",
+        "Quantidade Vendida": "45",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "S1000XR",
+        "Quantidade Vendida": "36",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CRF 1000L",
+        "Quantidade Vendida": "23",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT03",
+        "Quantidade Vendida": "686",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT07",
+        "Quantidade Vendida": "130",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z300",
+        "Quantidade Vendida": "99",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "97",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT09",
+        "Quantidade Vendida": "82",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 650",
+        "Quantidade Vendida": "81",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z800",
+        "Quantidade Vendida": "72",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KTM",
+        "Modelo": "200 DUKE",
+        "Quantidade Vendida": "48",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "XJ6",
+        "Quantidade Vendida": "47",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "TRIUMPH",
+        "Modelo": "STREET TRIPLE",
+        "Quantidade Vendida": "19",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "BIZ",
+        "Quantidade Vendida": "10654",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 110I",
+        "Quantidade Vendida": "7573",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "PCX 150",
+        "Quantidade Vendida": "2003",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 50",
+        "Quantidade Vendida": "1151",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NMAX",
+        "Quantidade Vendida": "789",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NEO 125",
+        "Quantidade Vendida": "748",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "TRAXX",
+        "Modelo": "JL50",
+        "Quantidade Vendida": "393",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 100",
+        "Quantidade Vendida": "337",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "DAFRA",
+        "Modelo": "ZIG 50",
+        "Quantidade Vendida": "147",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "DAFRA",
+        "Modelo": "CITYCOM 300I",
+        "Quantidade Vendida": "92",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Sport",
+        "Marca": "YAMAHA",
+        "Modelo": "YZF R3",
+        "Quantidade Vendida": "143",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 300",
+        "Quantidade Vendida": "114",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX S1000",
+        "Quantidade Vendida": "103",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 650F",
+        "Quantidade Vendida": "79",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Sport",
+        "Marca": "BMW",
+        "Modelo": "S1000",
+        "Quantidade Vendida": "57",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 500R",
+        "Quantidade Vendida": "50",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX 1300",
+        "Quantidade Vendida": "20",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 650",
+        "Quantidade Vendida": "18",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Sport",
+        "Marca": "DUCATI",
+        "Modelo": "PANIGALE V4",
+        "Quantidade Vendida": "14",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX10",
+        "Quantidade Vendida": "11",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHTK",
+        "Quantidade Vendida": "73",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLSTC",
+        "Quantidade Vendida": "36",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHX",
+        "Quantidade Vendida": "31",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHRC",
+        "Quantidade Vendida": "12",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEF ROADMASTER",
+        "Quantidade Vendida": "12",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEFTAIN",
+        "Quantidade Vendida": "5",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEF VINTAGE",
+        "Quantidade Vendida": "5",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Tipo": "Touring",
+        "Marca": "BMW",
+        "Modelo": "K 1600",
+        "Quantidade Vendida": "0",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 160",
+        "Quantidade Vendida": "19724",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG 125",
+        "Quantidade Vendida": "2520",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 150",
+        "Quantidade Vendida": "2324",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CB 250F TWISTER",
+        "Quantidade Vendida": "1774",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YS150 FAZER",
+        "Quantidade Vendida": "1461",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "FAZER 250",
+        "Quantidade Vendida": "890",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "City",
+        "Marca": "YAMAHA",
+        "Modelo": "YBR 125",
+        "Quantidade Vendida": "720",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "City",
+        "Marca": "HONDA",
+        "Modelo": "CG150",
+        "Quantidade Vendida": "254",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "City",
+        "Marca": "SUZUKI",
+        "Modelo": "GS120",
+        "Quantidade Vendida": "106",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "City",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 150",
+        "Quantidade Vendida": "69",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "XL 1200",
+        "Quantidade Vendida": "84",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FXSB",
+        "Quantidade Vendida": "50",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "XL 883",
+        "Quantidade Vendida": "40",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLSTFB",
+        "Quantidade Vendida": "36",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Custom",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 250",
+        "Quantidade Vendida": "32",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Custom",
+        "Marca": "KAWASAKI",
+        "Modelo": "VULCAN S",
+        "Quantidade Vendida": "31",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "BONNEVILLE",
+        "Quantidade Vendida": "28",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Custom",
+        "Marca": "TRIUMPH",
+        "Modelo": "STREET TWIN 900",
+        "Quantidade Vendida": "28",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Custom",
+        "Marca": "TRAXX",
+        "Modelo": "JH250",
+        "Quantidade Vendida": "24",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Custom",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FXDF",
+        "Quantidade Vendida": "5",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR160",
+        "Quantidade Vendida": "9407",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 300",
+        "Quantidade Vendida": "1818",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ150",
+        "Quantidade Vendida": "1183",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "XRE 190",
+        "Quantidade Vendida": "1127",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "YAMAHA",
+        "Modelo": "XTZ 250",
+        "Quantidade Vendida": "872",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR150",
+        "Quantidade Vendida": "72",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 150GY",
+        "Quantidade Vendida": "69",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NC 750X",
+        "Quantidade Vendida": "57",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "NXR125",
+        "Quantidade Vendida": "22",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Trail/Fun",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "12",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "R1200",
+        "Quantidade Vendida": "287",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER",
+        "Quantidade Vendida": "155",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F800 GS",
+        "Quantidade Vendida": "149",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "SUZUKI",
+        "Modelo": "VSTROM650",
+        "Quantidade Vendida": "92",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "YAMAHA",
+        "Modelo": "XT 660",
+        "Quantidade Vendida": "81",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "TRIUMPH",
+        "Modelo": "TIGER XRX",
+        "Quantidade Vendida": "77",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "F700",
+        "Quantidade Vendida": "73",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "SUZUKI",
+        "Modelo": "VSTROM1000",
+        "Quantidade Vendida": "56",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "HONDA",
+        "Modelo": "CRF 1000L",
+        "Quantidade Vendida": "31",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Maxtrail",
+        "Marca": "BMW",
+        "Modelo": "S1000XR",
+        "Quantidade Vendida": "24",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT03",
+        "Quantidade Vendida": "628",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT07",
+        "Quantidade Vendida": "140",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 500",
+        "Quantidade Vendida": "119",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z300",
+        "Quantidade Vendida": "84",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "XJ6",
+        "Quantidade Vendida": "68",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "YAMAHA",
+        "Modelo": "MT09",
+        "Quantidade Vendida": "61",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "HONDA",
+        "Modelo": "CB 650",
+        "Quantidade Vendida": "60",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KAWASAKI",
+        "Modelo": "Z800",
+        "Quantidade Vendida": "45",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "KTM",
+        "Modelo": "200 DUKE",
+        "Quantidade Vendida": "23",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Naked/Roadster",
+        "Marca": "TRIUMPH",
+        "Modelo": "STREET TRIPLE",
+        "Quantidade Vendida": "12",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "BIZ",
+        "Quantidade Vendida": "9579",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 110I",
+        "Quantidade Vendida": "6370",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "PCX 150",
+        "Quantidade Vendida": "2456",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "SHINERAY",
+        "Modelo": "XY 50",
+        "Quantidade Vendida": "838",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NEO 125",
+        "Quantidade Vendida": "689",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "YAMAHA",
+        "Modelo": "NMAX",
+        "Quantidade Vendida": "621",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "TRAXX",
+        "Modelo": "JL50",
+        "Quantidade Vendida": "326",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "POP 100",
+        "Quantidade Vendida": "274",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "HONDA",
+        "Modelo": "SH 150",
+        "Quantidade Vendida": "240",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Scooter/Cub",
+        "Marca": "DAFRA",
+        "Modelo": "ZIG 50",
+        "Quantidade Vendida": "133",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Sport",
+        "Marca": "YAMAHA",
+        "Modelo": "YZF R3",
+        "Quantidade Vendida": "135",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Sport",
+        "Marca": "HONDA",
+        "Modelo": "CBR 650F",
+        "Quantidade Vendida": "107",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 300",
+        "Quantidade Vendida": "87",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Sport",
+        "Marca": "BMW",
+        "Modelo": "S1000",
+        "Quantidade Vendida": "82",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX S1000",
+        "Quantidade Vendida": "79",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX 6",
+        "Quantidade Vendida": "30",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Sport",
+        "Marca": "DUCATI",
+        "Modelo": "PANIGALE V4",
+        "Quantidade Vendida": "30",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Sport",
+        "Marca": "SUZUKI",
+        "Modelo": "GSX 1300",
+        "Quantidade Vendida": "24",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA ZX10",
+        "Quantidade Vendida": "21",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Sport",
+        "Marca": "KAWASAKI",
+        "Modelo": "NINJA 650",
+        "Quantidade Vendida": "17",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHTK",
+        "Quantidade Vendida": "77",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLSTC",
+        "Quantidade Vendida": "40",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHX",
+        "Quantidade Vendida": "25",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Touring",
+        "Marca": "H.DAVIDSON",
+        "Modelo": "FLHRC",
+        "Quantidade Vendida": "19",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEF ROADMASTER",
+        "Quantidade Vendida": "4",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEF VINTAGE",
+        "Quantidade Vendida": "1",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEFTAIN",
+        "Quantidade Vendida": "1",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Tipo": "Touring",
+        "Marca": "INDIAN",
+        "Modelo": "CHIEF",
+        "Quantidade Vendida": "1",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
         "Mês/Ano": "07/2017",
         "Tipo": "City",
         "Marca": "HONDA",

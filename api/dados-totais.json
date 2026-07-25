@@ -1,5 +1,761 @@
 [
     {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "HONDA",
+        "Quantidade Vendida": "53184",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "YAMAHA",
+        "Quantidade Vendida": "8329",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "SHINERAY",
+        "Quantidade Vendida": "1471",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "SUZUKI",
+        "Quantidade Vendida": "692",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "DAFRA",
+        "Quantidade Vendida": "684",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "TRAXX",
+        "Quantidade Vendida": "683",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "H.DAVIDSON",
+        "Quantidade Vendida": "407",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "BMW",
+        "Quantidade Vendida": "362",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "KAWASAKI",
+        "Quantidade Vendida": "356",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "WUYANG",
+        "Quantidade Vendida": "268",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "TRIUMPH",
+        "Quantidade Vendida": "238",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "DUCATI",
+        "Quantidade Vendida": "95",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "BRAVAX",
+        "Quantidade Vendida": "93",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "JONNY",
+        "Quantidade Vendida": "74",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "KASINSKI",
+        "Quantidade Vendida": "72",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "BULL",
+        "Quantidade Vendida": "66",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "KTM",
+        "Quantidade Vendida": "48",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "SUNDOWN",
+        "Quantidade Vendida": "37",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "DAJIANG",
+        "Quantidade Vendida": "34",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "SOUSA",
+        "Quantidade Vendida": "30",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "01/2017",
+        "Fabricante": "AVELLOZ",
+        "Quantidade Vendida": "28",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 86]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "HONDA",
+        "Quantidade Vendida": "47172",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "YAMAHA",
+        "Quantidade Vendida": "7852",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "SHINERAY",
+        "Quantidade Vendida": "1196",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "SUZUKI",
+        "Quantidade Vendida": "679",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "DAFRA",
+        "Quantidade Vendida": "592",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "TRAXX",
+        "Quantidade Vendida": "554",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "KAWASAKI",
+        "Quantidade Vendida": "398",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "BMW",
+        "Quantidade Vendida": "353",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "H.DAVIDSON",
+        "Quantidade Vendida": "323",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "WUYANG",
+        "Quantidade Vendida": "314",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "TRIUMPH",
+        "Quantidade Vendida": "284",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "BULL",
+        "Quantidade Vendida": "82",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "JONNY",
+        "Quantidade Vendida": "80",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "BRAVAX",
+        "Quantidade Vendida": "63",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "DUCATI",
+        "Quantidade Vendida": "63",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "KASINSKI",
+        "Quantidade Vendida": "61",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "KTM",
+        "Quantidade Vendida": "44",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "INDIAN",
+        "Quantidade Vendida": "31",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "MOTOCAR",
+        "Quantidade Vendida": "31",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "SUNDOWN",
+        "Quantidade Vendida": "31",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "02/2017",
+        "Fabricante": "MARVA",
+        "Quantidade Vendida": "29",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 87]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "HONDA",
+        "Quantidade Vendida": "64559",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "YAMAHA",
+        "Quantidade Vendida": "11083",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "SHINERAY",
+        "Quantidade Vendida": "1658",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "DAFRA",
+        "Quantidade Vendida": "841",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "SUZUKI",
+        "Quantidade Vendida": "819",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "BMW",
+        "Quantidade Vendida": "644",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "TRAXX",
+        "Quantidade Vendida": "637",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "H.DAVIDSON",
+        "Quantidade Vendida": "488",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "KAWASAKI",
+        "Quantidade Vendida": "456",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "TRIUMPH",
+        "Quantidade Vendida": "345",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "WUYANG",
+        "Quantidade Vendida": "343",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "BULL",
+        "Quantidade Vendida": "122",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "DUCATI",
+        "Quantidade Vendida": "100",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "BRAVAX",
+        "Quantidade Vendida": "81",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "KTM",
+        "Quantidade Vendida": "79",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "KASINSKI",
+        "Quantidade Vendida": "60",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "JONNY",
+        "Quantidade Vendida": "59",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "SOUSA",
+        "Quantidade Vendida": "57",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "MARVA",
+        "Quantidade Vendida": "40",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "HUARI",
+        "Quantidade Vendida": "35",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "03/2017",
+        "Fabricante": "SUNDOWN",
+        "Quantidade Vendida": "33",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 88]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "HONDA",
+        "Quantidade Vendida": "50458",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "YAMAHA",
+        "Quantidade Vendida": "9016",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "SHINERAY",
+        "Quantidade Vendida": "1271",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "DAFRA",
+        "Quantidade Vendida": "581",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "SUZUKI",
+        "Quantidade Vendida": "547",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "BMW",
+        "Quantidade Vendida": "493",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "H.DAVIDSON",
+        "Quantidade Vendida": "414",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "TRAXX",
+        "Quantidade Vendida": "399",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "KAWASAKI",
+        "Quantidade Vendida": "390",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "TRIUMPH",
+        "Quantidade Vendida": "300",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "WUYANG",
+        "Quantidade Vendida": "263",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "BULL",
+        "Quantidade Vendida": "96",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "DUCATI",
+        "Quantidade Vendida": "92",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "KTM",
+        "Quantidade Vendida": "86",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "KASINSKI",
+        "Quantidade Vendida": "55",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "BRAVAX",
+        "Quantidade Vendida": "44",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "JONNY",
+        "Quantidade Vendida": "41",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "MARVA",
+        "Quantidade Vendida": "39",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "DAJIANG",
+        "Quantidade Vendida": "36",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "INDIAN",
+        "Quantidade Vendida": "32",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "04/2017",
+        "Fabricante": "AVELLOZ",
+        "Quantidade Vendida": "26",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 89]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "HONDA",
+        "Quantidade Vendida": "62847",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "YAMAHA",
+        "Quantidade Vendida": "10319",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "SHINERAY",
+        "Quantidade Vendida": "1413",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "SUZUKI",
+        "Quantidade Vendida": "701",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "BMW",
+        "Quantidade Vendida": "564",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "DAFRA",
+        "Quantidade Vendida": "518",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "TRAXX",
+        "Quantidade Vendida": "483",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "H.DAVIDSON",
+        "Quantidade Vendida": "471",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "KAWASAKI",
+        "Quantidade Vendida": "451",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "TRIUMPH",
+        "Quantidade Vendida": "365",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "WUYANG",
+        "Quantidade Vendida": "297",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "HAOJUE",
+        "Quantidade Vendida": "136",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "BULL",
+        "Quantidade Vendida": "112",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "DUCATI",
+        "Quantidade Vendida": "98",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "KTM",
+        "Quantidade Vendida": "81",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "KASINSKI",
+        "Quantidade Vendida": "56",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "KYMCO",
+        "Quantidade Vendida": "50",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "BRAVAX",
+        "Quantidade Vendida": "45",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "INDIAN",
+        "Quantidade Vendida": "41",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "DAJIANG",
+        "Quantidade Vendida": "38",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "05/2017",
+        "Fabricante": "MARVA",
+        "Quantidade Vendida": "37",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 90]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "HONDA",
+        "Quantidade Vendida": "56166",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "YAMAHA",
+        "Quantidade Vendida": "9988",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "SHINERAY",
+        "Quantidade Vendida": "1083",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "BMW",
+        "Quantidade Vendida": "622",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "SUZUKI",
+        "Quantidade Vendida": "526",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "DAFRA",
+        "Quantidade Vendida": "475",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "H.DAVIDSON",
+        "Quantidade Vendida": "446",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "TRAXX",
+        "Quantidade Vendida": "372",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "TRIUMPH",
+        "Quantidade Vendida": "368",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "KAWASAKI",
+        "Quantidade Vendida": "333",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "HAOJUE",
+        "Quantidade Vendida": "282",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "WUYANG",
+        "Quantidade Vendida": "221",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "DUCATI",
+        "Quantidade Vendida": "102",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "BULL",
+        "Quantidade Vendida": "92",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "KYMCO",
+        "Quantidade Vendida": "67",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "MOTOCAR",
+        "Quantidade Vendida": "62",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "KTM",
+        "Quantidade Vendida": "52",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "BRAVAX",
+        "Quantidade Vendida": "50",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "KASINSKI",
+        "Quantidade Vendida": "37",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "DAJIANG",
+        "Quantidade Vendida": "34",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
+        "Mês/Ano": "06/2017",
+        "Fabricante": "INDIAN",
+        "Quantidade Vendida": "30",
+        "Motor (Gasolina/Elétrica)": "Gasolina[cite: 85]"
+    },
+    {
         "Mês/Ano": "07/2017",
         "Fabricante": "HONDA",
         "Quantidade Vendida": "55158",
