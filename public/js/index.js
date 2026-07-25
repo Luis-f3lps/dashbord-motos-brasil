@@ -59,7 +59,27 @@ window.onload = async () => {
 
         const selectDataSec1 = document.getElementById('filtroDataSec1');
         if (selectDataSec1 && selectDataSec1.options.length > 1) {
-            selectDataSec1.selectedIndex = 1; // Pega o primeiro mês (que agora é o mais recente!)
+            selectDataSec1.selectedIndex = 1;
+        }
+
+        const selectCompModelo = document.getElementById('filtroCompModelo');
+        if (selectCompModelo) {
+            const opcaoHonda = Array.from(selectCompModelo.options).find(opt => 
+                opt.value.toUpperCase().includes("HONDA") && opt.value.toUpperCase().includes("CG 160")
+            );
+            if (opcaoHonda) {
+                selectCompModelo.value = opcaoHonda.value;
+            }
+        }
+
+        const selectCompPeriodoA = document.getElementById('filtroCompPeriodoA');
+        if (selectCompPeriodoA) {
+            selectCompPeriodoA.value = "Ano Todo (2017)";
+        }
+
+        const selectCompPeriodoB = document.getElementById('filtroCompPeriodoB');
+        if (selectCompPeriodoB) {
+            selectCompPeriodoB.value = "Ano Todo (2026)";
         }
 
         atualizarDashboard();
@@ -152,7 +172,7 @@ function atualizarDashboard() {
 
     renderizarComparativoModelo();
 
-    document.getElementById('contadorRegistros').innerText = `Dashboard atualizado com sucesso.`;
+    document.getElementById('contadorRegistros').innerText = `Análise de dados de Vendas de Motos no Brasil.`;
 }
 
 function obterTop10ComOutros(dados, chaveFab, chaveQtd) {
@@ -219,7 +239,6 @@ function renderizarSecaoTipoMes(dados) {
     containerLista.innerHTML = htmlLista;
 }
 
-// SEÇÃO 2: Gráfico com comparativo Marca vs Resto do Mercado
 function renderizarEvolucaoPercentual(inicio, fim, marcaSelecionada = "") {
     const el = document.getElementById('graficoEvolucaoPercentual');
     if (graficoEvolucaoPercentual) graficoEvolucaoPercentual.destroy();

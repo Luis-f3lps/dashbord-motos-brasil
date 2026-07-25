@@ -70,9 +70,7 @@ body {
 
 .nav-links li a:hover,
 .nav-links li.active a {
-  background-color: #f1f5f9;
   color: #2563eb;
-  border-left: 3px solid #2563eb;
 }
 
 .nav-links i {

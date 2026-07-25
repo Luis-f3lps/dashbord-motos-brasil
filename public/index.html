@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard de Vendas - Motos</title>
+    <title>Análise de dados de Vendas de Motos no Brasil</title>
     <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="icon" type="image/png" href="logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -16,13 +16,13 @@
         <nav class="sidebar" id="sidemenu">
             <div class="logo"><span>Painel Motos</span></div>
             <ul class="nav-links">
-                <li class="active"><a href="#topo"><i class="fas fa-motorcycle"></i> <span>Análise por Tipo</span></a>
+                <li class="active"><a href="#topo"> <span>Análise por Tipo</span></a>
                 </li>
-                <li class="active"><a href="#evolucao"><i class="fas fa-motorcycle"></i> <span>Evolução por
+                <li class="active"><a href="#evolucao"> <span>Evolução por
                             periodo</span></a></li>
-                <li class="active"><a href="#modelo"><i class="fas fa-motorcycle"></i> <span>Comparação entre
+                <li class="active"><a href="#modelo"> <span>Comparação entre
                             modelos</span></a></li>
-                <li class="active"><a href="#fabricante"><i class="fas fa-motorcycle"></i> <span>Vendaas por
+                <li class="active"><a href="#fabricante"> <span>Vendas por
                             fabricante</span></a></li>
             </ul>
         </nav>
@@ -30,7 +30,8 @@
         <main class="main-content">
             <header class="top-header" id="topo">
                 <div class="header-left">
-                    <div class="breadcrumb"><i class="fas fa-home"></i> / Dashboard / Vendas</div>
+                    <div class="breadcrumb"><i class="fas fa-home"></i> /Fonte:
+                        https://www.fenabrave.org.br/portalv2/Conteudo/Emplacamentos</div>
                     <p id="contadorRegistros" style="font-weight: bold; color: #4caf50;">Carregando dados...</p>
                 </div>
             </header>
@@ -40,7 +41,6 @@
                     <h3>Análise por Tipo e Mês/Ano</h3>
                     <div class="filtros-container">
                         <select id="filtroTipoSec1">
-                            <option value="">Selecione o Tipo</option>
                         </select>
                         <select id="filtroDataSec1">
                             <option value="">Selecione o Mês/Ano</option>
@@ -65,7 +65,7 @@
                             <label style="font-size: 12px; display:block; color:#94a3b8;">Fabricante
                                 (Comparativo):</label>
                             <select id="filtroMarcaSec2">
-                                <option value="">Top 10 + Outros (Padrão)</option>
+                                <option value="">Todas</option>
                             </select>
                         </div>
                         <div>
@@ -81,7 +81,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="chart-container" style="position: relative; height:40vh; width:100%">
+                    <div class="chart-container" style="position: relative; height:70vh; width:100%">
                         <canvas id="graficoEvolucaoPercentual"></canvas>
                     </div>
                 </div>
